@@ -25,14 +25,21 @@ body {
   font-family: 'Orbitron 700', sans-serif;
 }
 
+ul {
+  padding: 0;
+  margin: 0;
+}
+
 .container {
-  width: 1600px;
+  max-width: 1600px;
   margin: 0 auto;
-  background: green;
+  background: url("../assets/bg-main.png");
+  height: 6620px;
 }
 
 
 @import "common/fonts";
+@import "common/mixins";
 @import "common/var";
 @import "components/header";
 

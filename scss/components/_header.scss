@@ -1,0 +1,32 @@
+.header {
+  padding: 48px 111px 0 109px;
+  min-height: 195px;
+  @include flex(space-between);
+}
+
+.navigation, .menu, .user {
+  @include flex(space-between)
+}
+
+.navigation {
+  width: 800px;
+}
+
+.menu__li {
+  margin-right: 66px;
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.menu__link {
+  font-size: 20px;
+  line-height: 34px;
+  color: #ffffff;
+  opacity: 60%;
+}
+
+.user {
+  width: 93px;
+  margin-top: 6px;
+}
