@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html {
   box-sizing: border-box;
   scroll-behavior: smooth; }
@@ -144,6 +145,45 @@ ul {
   /* IE9 Compat Modes */
   src: local(""), url("../fonts/inter-v12-latin-800.eot?#iefix") format("embedded-opentype"), url("../fonts/inter-v12-latin-800.woff2") format("woff2"), url("../fonts/inter-v12-latin-800.woff") format("woff"), url("../fonts/inter-v12-latin-800.ttf") format("truetype"), url("../fonts/inter-v12-latin-800.svg#Inter") format("svg");
   /* Legacy iOS */ }
+.burger-menu {
+  width: 30px;
+  height: 30px;
+  position: relative; }
+  .burger-menu__item {
+    width: 100%;
+    height: 2px;
+    background: #ffffff;
+    border-radius: 50%; }
+
+.first {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transition: all .4s; }
+
+.second {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 50%;
+  transform: translateY(-50%); }
+
+.third {
+  position: absolute;
+  bottom: 0;
+  transition: all .4s; }
+
+.burger-menu_active > .first {
+  top: 50%;
+  transform: rotate(45deg); }
+
+.burger-menu_active > .second {
+  display: none; }
+
+.burger-menu_active > .third {
+  top: 50%;
+  transform: rotate(-45deg); }
+
 .header {
   padding: 48px 111px 0 109px;
   min-height: 195px;
@@ -153,7 +193,7 @@ ul {
   flex-direction: row;
   flex-wrap: nowrap; }
 
-.navigation, .menu, .user {
+.navigation, .menu, .user-desktop, .user-mobile {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -162,6 +202,10 @@ ul {
 
 .navigation {
   width: 800px; }
+
+.logо {
+  position: relative;
+  z-index: 2; }
 
 .menu__li {
   margin-right: 66px; }
@@ -174,9 +218,14 @@ ul {
   color: #ffffff;
   opacity: 60%; }
 
-.user {
+.user-desktop {
   width: 93px;
   margin-top: 6px; }
+
+.user-mobile {
+  display: none;
+  width: 93px;
+  margin: 0 auto; }
 
 @media (max-width: 1200px) {
   .header {
@@ -188,7 +237,42 @@ ul {
   .menu__li {
     margin-right: 46px; }
 
-  .user {
+  .user-desktop {
     width: 70px; } }
+@media (max-width: 940px) {
+  .header {
+    padding: 15px 15px 0 15px; }
+
+  .navbar {
+    position: fixed;
+    background: #20083b;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 0;
+    transform: translateX(100%);
+    transition: transform .5s; }
+
+  .navigation {
+    width: auto; }
+
+  .menu {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    margin-top: 70px; }
+    .menu__li {
+      margin-right: 0; }
+
+  .user-desktop {
+    display: none; }
+
+  .user-mobile {
+    display: flex; } }
+.navbar-active {
+  transform: translateX(0); }
 
 /*# sourceMappingURL=style.css.map */
