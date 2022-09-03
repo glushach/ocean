@@ -211,6 +211,9 @@ button {
   width: 800px; }
 
 .logо {
+  width: 140.17px;
+  height: 29.42px;
+  background: url("../assets/header/logo.svg");
   position: relative;
   z-index: 2; }
 
@@ -345,7 +348,14 @@ h1 {
   flex-direction: row;
   flex-wrap: nowrap; }
   .btn-hero div {
-    margin-right: 10px; }
+    margin-right: 10px;
+    position: relative; }
+    .btn-hero div:after {
+      content: url("../assets/hero/arrow-big-promo.svg");
+      width: 51px;
+      margin: 10px;
+      position: absolute;
+      top: -40%; }
 
 .statistics {
   color: #ffffff;

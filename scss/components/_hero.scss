@@ -59,6 +59,14 @@ h1 {
   @include flex(flex-start, center);
   div {
     margin-right: 10px;
+    position: relative;
+    &:after {
+      content: url("../assets/hero/arrow-big-promo.svg");
+      width: 51px;
+      margin: 10px;
+      position: absolute;
+      top: -40%;
+    }
   }
 }
 
