@@ -178,4 +178,17 @@ ul {
   width: 93px;
   margin-top: 6px; }
 
+@media (max-width: 1200px) {
+  .header {
+    padding: 48px 50px 0 50px; }
+
+  .navigation {
+    width: 650px; }
+
+  .menu__li {
+    margin-right: 46px; }
+
+  .user {
+    width: 70px; } }
+
 /*# sourceMappingURL=style.css.map */
