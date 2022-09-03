@@ -1,0 +1,93 @@
+.hero {
+  width: 100%;
+  padding: 0 111px 0 102px;
+}
+
+.promo {
+  @include flex()
+}
+
+h1 {
+  max-width: 770px;
+  font-family: 'League Spartan 600', sans-serif;
+  font-size: 80px;
+  line-height: 92px;
+  color: #ffffff;
+  letter-spacing: 2px;
+
+  span {
+    background: -webkit-linear-gradient(140deg, #43a5e3, #ff56f6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+.descr {
+  max-width: 650px;
+  font-family: 'Rajdhani 400', sans-serif;
+  color: #ffffff;
+  font-size: 24px;
+  line-height: 45px;
+  margin: 17px 0 42px;
+  letter-spacing: 1px;
+}
+
+.btn-block {
+  @include flex(flex-start, flex-end);
+  span {
+    background: -webkit-linear-gradient(140deg, #42a6e3, #ff56f6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 20px;
+    line-height: 25px;
+    margin-bottom: 20px;
+    margin-left: 36px;
+  }
+}
+
+
+.btn-hero {
+  background: url("../assets/hero/button-big-bg.svg");
+  width: 250px;
+  height: 65px;
+  border: none;
+  font-size: 20px;
+  line-height: 25px;
+  color: #ffffff;
+  padding-left: 65px;
+  letter-spacing: 1px;
+  @include flex(flex-start, center);
+  div {
+    margin-right: 10px;
+  }
+}
+
+
+.statistics {
+  color: #ffffff;
+  @include flex();
+  margin-top: 70px;
+  &__item {
+    padding-left: 42px;
+    padding-right: 19px;
+    border-right: 1px solid rgba(255, 255, 255, 0.26);
+    &:first-child {
+      padding-left: 0;
+    }
+    &:last-child {
+      padding-right: 0;
+      border-right: none;
+    }
+  }
+
+  .digit {
+    font-family: 'Aldrich 400', sans-serif;
+    font-size: 40px;
+  }
+
+  .text {
+    font-family: 'Alethia Next 300', sans-serif;
+    font-size: 16px;
+    margin-top: 5px;
+  }
+}

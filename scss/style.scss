@@ -25,9 +25,13 @@ body {
   font-family: 'Orbitron 700', sans-serif;
 }
 
-ul {
+ul, h1 {
   padding: 0;
   margin: 0;
+}
+
+button {
+  cursor: pointer;
 }
 
 .container {
@@ -43,4 +47,7 @@ ul {
 @import "common/burger";
 @import "common/var";
 @import "components/header";
+@import "components/hero";
+@import "components/blockchain";
+@import "components/_hero-img";
 
