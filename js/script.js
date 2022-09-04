@@ -14,37 +14,36 @@
 new Swiper(".swiper-first", {
   loop: true,
   breakpoints: {
-    0: {
-      slidesPerView: 1.13,
-      spaceBetween: 22,
+    300: {
+      slidesPerView: 0.95,
+      spaceBetween: 10,
     },
-    450: {
+    375: {
+      slidesPerView: 1.05,
+    },
+    440: {
+      slidesPerView: 1.2,
+    },
+    540: {
       slidesPerView: 1.4,
-      spaceBetween: 25,
     },
-    500: {
-      slidesPerView: 1.5,
-      spaceBetween: 25,
+    640: {
+      slidesPerView: 1.3,
     },
-    560: {
+    870: {
+      slidesPerView: 1.6,
+    },
+    840: {
       slidesPerView: 1.7,
-      spaceBetween: 33,
     },
-    641: {
-      slidesPerView: 1.5,
-      spaceBetween: 33,
+    1000: {
+      slidesPerView: 1.9,
     },
-    1051: {
+    1100: {
       slidesPerView: 2.1,
-      spaceBetween: 33,
     },
-    1110: {
-      slidesPerView: 2.3,
-      spaceBetween: 33,
-    },
-    1210: {
+    1400: {
       slidesPerView: 2.5,
-      spaceBetween: 33,
     },
     1600: {
       slidesPerView: 3,
