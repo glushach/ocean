@@ -1,0 +1,132 @@
+* {
+  box-sizing: border-box;
+}
+.slider1 {
+  margin: 200px 106.52px 0 109.44px;
+
+  .title-block {
+    width: 100%;
+    @include flex(space-between);
+    font-size: 26.53px;
+    h2 {
+      font-size: 26.53px;
+    }
+  }
+  .view-all {
+    margin-right: 81px;
+    position: relative;
+    &:after {
+    content: url("../assets/slider1/arrow-right.svg");
+      position: absolute;
+      right: -60%;
+  }
+  }
+}
+
+.swiper-first {
+  margin-top: 50px;
+}
+
+.card-swiper-first {
+  @include flex(flex-start, flex-start, column);
+}
+
+// CARD WITH INFO UNDER PHOTO
+.card-swiper-info {
+  width: 100%;
+  height: 234px;
+  background: linear-gradient(120deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.024));
+  border: 3px solid rgba(255, 255, 255, 0.28);
+  padding: 42px 20px 0 28px;
+  @include flex(space-between);
+}
+
+
+.card-swiper-info__left {
+  h4 {
+    font-family: 'Rajdhani 700', sans-serif;
+    font-size: 23.04px;
+  }
+
+  .email {
+    margin-top: 14px;
+    @include flex(flex-start, center)
+  }
+
+  .email-link {
+    margin: 0 3px;
+  }
+  h5 {
+    margin-top: 27px;
+    color: rgba(255, 255, 255, .2);
+    font-size: 14.4px;
+    font-family: 'Rajdhani 600', sans-serif;
+  }
+
+  .cost {
+    margin-top: 10px;
+  }
+
+  .price {
+    font-size: 12.66px;
+    margin: 0 5px 0 7px;
+  }
+
+  .digit {
+    font-family: 'Rajdhani 400', sans-serif;
+    font-size: 14.4px;
+    color: rgba(255, 255, 255, .7);
+  }
+}
+
+
+
+.card-swiper-info__right {
+  h5 {
+    font-family: 'Rajdhani 600', sans-serif;
+    font-size: 14.4px;
+    color: rgba(255, 255, 255, .2);
+  }
+  .time {
+    width: 87%;
+    margin-top: 14px;
+    @include flex(space-between);
+    &__item {
+      //@include flex();
+      .clock {
+        font-family: 'Rajdhani 600', sans-serif;
+        font-size: 23.04px;
+      }
+      .time-name {
+        font-family: 'Rajdhani 500', sans-serif;
+        color: rgba(255, 255, 255, .2);
+      }
+    }
+  }
+
+  .btn {
+    margin-top: 40px;
+    margin-right: 3px;
+    height: 48.96px;
+    width: 160px;
+    font-family: 'Rajdhani 600', sans-serif;
+    font-size: 23.04px;
+    color: #ffffff;
+    text-align: left;
+    padding-left: 11px;
+    border: 2.88px solid transparent;
+    border-image: linear-gradient(to right, rgb(255, 166, 250),
+    rgb(60, 121, 212)) 1;
+    background: linear-gradient(90deg,
+                    rgba(255, 86, 246, 1),
+                    rgba(185, 54, 238, 1),
+                    rgba(59, 172, 226, 1),
+                    rgba(64, 106, 255, 1));
+    position: relative;
+    &:after {
+      content: url("../assets/slider1/arrow.svg");
+      position: absolute;
+      right: 10px;
+    }
+  }
+}

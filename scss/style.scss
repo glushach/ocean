@@ -49,6 +49,7 @@ button {
   margin: 0 auto;
   background: url("../assets/bg-main.png");
   height: 6620px;
+  color: #ffffff;
 }
 
 
@@ -59,5 +60,6 @@ button {
 @import "components/header";
 @import "components/hero";
 @import "components/blockchain";
-@import "components/_hero-img";
+@import "components/hero-img";
+@import "components/slider1";
 

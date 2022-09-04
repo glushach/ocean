@@ -40,7 +40,8 @@ button {
   max-width: 1600px;
   margin: 0 auto;
   background: url("../assets/bg-main.png");
-  height: 6620px; }
+  height: 6620px;
+  color: #ffffff; }
 
 /* orbitron-700 - latin */
 @font-face {
@@ -560,7 +561,9 @@ h1 {
     margin-left: 3%; }
 
   .hero-descr {
-    right: 0; }
+    right: 0;
+    width: 324px;
+    height: 174px; }
 
   .promo-banner {
     margin-top: 50px;
@@ -569,5 +572,113 @@ h1 {
   .promo-banner {
     min-width: 324px;
     min-height: 385px; } }
+* {
+  box-sizing: border-box; }
+
+.slider1 {
+  margin: 200px 106.52px 0 109.44px; }
+  .slider1 .title-block {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    font-size: 26.53px; }
+    .slider1 .title-block h2 {
+      font-size: 26.53px; }
+  .slider1 .view-all {
+    margin-right: 81px;
+    position: relative; }
+    .slider1 .view-all:after {
+      content: url("../assets/slider1/arrow-right.svg");
+      position: absolute;
+      right: -60%; }
+
+.swiper-first {
+  margin-top: 50px; }
+
+.card-swiper-first {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  flex-wrap: nowrap; }
+
+.card-swiper-info {
+  width: 100%;
+  height: 234px;
+  background: linear-gradient(120deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.024));
+  border: 3px solid rgba(255, 255, 255, 0.28);
+  padding: 42px 20px 0 28px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: row;
+  flex-wrap: nowrap; }
+
+.card-swiper-info__left h4 {
+  font-family: 'Rajdhani 700', sans-serif;
+  font-size: 23.04px; }
+.card-swiper-info__left .email {
+  margin-top: 14px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap; }
+.card-swiper-info__left .email-link {
+  margin: 0 3px; }
+.card-swiper-info__left h5 {
+  margin-top: 27px;
+  color: rgba(255, 255, 255, 0.2);
+  font-size: 14.4px;
+  font-family: 'Rajdhani 600', sans-serif; }
+.card-swiper-info__left .cost {
+  margin-top: 10px; }
+.card-swiper-info__left .price {
+  font-size: 12.66px;
+  margin: 0 5px 0 7px; }
+.card-swiper-info__left .digit {
+  font-family: 'Rajdhani 400', sans-serif;
+  font-size: 14.4px;
+  color: rgba(255, 255, 255, 0.7); }
+
+.card-swiper-info__right h5 {
+  font-family: 'Rajdhani 600', sans-serif;
+  font-size: 14.4px;
+  color: rgba(255, 255, 255, 0.2); }
+.card-swiper-info__right .time {
+  width: 87%;
+  margin-top: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: row;
+  flex-wrap: nowrap; }
+  .card-swiper-info__right .time__item .clock {
+    font-family: 'Rajdhani 600', sans-serif;
+    font-size: 23.04px; }
+  .card-swiper-info__right .time__item .time-name {
+    font-family: 'Rajdhani 500', sans-serif;
+    color: rgba(255, 255, 255, 0.2); }
+.card-swiper-info__right .btn {
+  margin-top: 40px;
+  margin-right: 3px;
+  height: 48.96px;
+  width: 160px;
+  font-family: 'Rajdhani 600', sans-serif;
+  font-size: 23.04px;
+  color: #ffffff;
+  text-align: left;
+  padding-left: 11px;
+  border: 2.88px solid transparent;
+  border-image: linear-gradient(to right, #ffa6fa, #3c79d4) 1;
+  background: linear-gradient(90deg, #ff56f6, #b936ee, #3bace2, #406aff);
+  position: relative; }
+  .card-swiper-info__right .btn:after {
+    content: url("../assets/slider1/arrow.svg");
+    position: absolute;
+    right: 10px; }
 
 /*# sourceMappingURL=style.css.map */
