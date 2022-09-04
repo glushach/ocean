@@ -1,0 +1,17 @@
+.title-block {
+  width: 100%;
+  @include flex(space-between);
+  font-size: 26.53px;
+  h2 {
+    font-size: 26.53px;
+  }
+}
+.view-all {
+  margin-right: 81px;
+  position: relative;
+  &:after {
+    content: url("../assets/slider1/arrow-right.svg");
+    position: absolute;
+    right: -60%;
+  }
+}

@@ -5,3 +5,7 @@
   flex-direction: $fd;
   flex-wrap: $fw;
 }
+
+@mixin border() {
+  border: 3px solid rgba(255, 255, 255, 0.28);
+}

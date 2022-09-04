@@ -3,24 +3,6 @@
 }
 .slider1 {
   margin: 200px 106.52px 0 109.44px;
-
-  .title-block {
-    width: 100%;
-    @include flex(space-between);
-    font-size: 26.53px;
-    h2 {
-      font-size: 26.53px;
-    }
-  }
-  .view-all {
-    margin-right: 81px;
-    position: relative;
-    &:after {
-    content: url("../assets/slider1/arrow-right.svg");
-      position: absolute;
-      right: -60%;
-  }
-  }
 }
 
 .swiper-first {
@@ -37,7 +19,7 @@
   width: 100%;
   height: 234px;
   background: linear-gradient(120deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.024));
-  border: 3px solid rgba(255, 255, 255, 0.28);
+  @include border();
   padding: 42px 20px 0 28px;
   @include flex(space-between);
 }

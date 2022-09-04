@@ -1,0 +1,13 @@
+.slider2 {
+  margin: 167px 106.52px 0 109.44px;
+
+  .card {
+    width: 437.76px;
+    height: 560.89px;
+    background-image: url("../assets/slider2/top-bg.png"), linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.024));
+    background-repeat: no-repeat;
+    @include border();
+    text-align: center;
+    padding-top: 100px;
+  }
+}
