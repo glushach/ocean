@@ -744,4 +744,61 @@ h1 {
     position: absolute;
     right: -70px; }
 
+@media (max-width: 1470px) {
+  .tabs {
+    max-width: 530px;
+    gap: 34px; }
+    .tabs__item {
+      width: 230px;
+      height: 70px; } }
+@media (max-width: 1200px) {
+  .tabs-wrapper {
+    margin-left: 40px; }
+
+  .tabs-section {
+    margin: 158px 48px 0 10.44px; } }
+@media (max-width: 1070px) {
+  .tabs__item {
+    font-size: 20.53px; }
+
+  .girl {
+    width: 300px; } }
+@media (max-width: 900px) {
+  .tabs {
+    max-width: 410px; }
+
+  .tabs__item {
+    font-size: 16.53px;
+    width: 180px;
+    height: 50px; } }
+@media (max-width: 820px) {
+  .tabs-section {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap; } }
+@media (max-width: 550px) {
+  .tabs-section {
+    margin: 158px 0 0 0; }
+
+  .tabs-wrapper {
+    margin: 0; }
+
+  .tabs {
+    max-width: 340px; }
+
+  .tabs__item {
+    font-size: 13.78px;
+    width: 152.52px;
+    height: 40.76px; } }
+@media (max-width: 370px) {
+  .tabs {
+    max-width: 305px; }
+
+  .tabs__item {
+    font-size: 13.78px;
+    width: 130px;
+    height: 35px; } }
+
 /*# sourceMappingURL=style.css.map */
