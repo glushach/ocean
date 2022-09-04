@@ -20,6 +20,9 @@ body {
   margin: 0;
   font-family: 'Orbitron 700', sans-serif; }
 
+.body-active {
+  overflow: hidden; }
+
 ul,
 h1,
 h2,
@@ -158,7 +161,8 @@ button {
   display: none;
   width: 30px;
   height: 30px;
-  position: relative; }
+  position: relative;
+  z-index: 6; }
   .burger-menu__item {
     width: 100%;
     height: 2px;
@@ -221,7 +225,7 @@ button {
   height: 29.42px;
   background: url("../assets/header/logo.svg");
   position: relative;
-  z-index: 2; }
+  z-index: 5; }
 
 .menu__li {
   margin-right: 66px; }
@@ -266,7 +270,7 @@ button {
     right: 0;
     left: 0;
     bottom: 0;
-    z-index: 0;
+    z-index: 4;
     transform: translateX(100%);
     transition: transform .5s; }
 
@@ -388,6 +392,56 @@ h1 {
     font-size: 16px;
     margin-top: 5px; }
 
+@media (max-width: 1200px) {
+  .hero {
+    padding: 48px 50px 0 50px; } }
+@media (max-width: 1000px) {
+  .promo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap; }
+
+  h1 {
+    max-width: none;
+    font-size: 60px;
+    line-height: 92px;
+    letter-spacing: 2px; }
+
+  .statistics .digit {
+    font-size: 30px; } }
+@media (max-width: 940px) {
+  .hero {
+    padding: 15px 15px 0 15px; } }
+@media (max-width: 700px) {
+  h1 {
+    font-size: 42px;
+    line-height: 60px;
+    letter-spacing: normal; }
+
+  .descr {
+    max-width: none;
+    font-size: 20px;
+    line-height: 35px;
+    margin: 17px 0 42px;
+    letter-spacing: normal; }
+
+  .btn-hero {
+    width: 133px;
+    height: 34px;
+    font-size: 12px;
+    line-height: 15.05px;
+    padding-left: 28px;
+    letter-spacing: normal;
+    background: url("../assets/hero/button-big-bg-mobile.png"); }
+    .btn-hero div:after {
+      content: url(../assets/hero/arrow-big-promo-mob.svg);
+      margin: 6px; }
+
+  .btn-block span {
+    font-size: 12px;
+    margin-bottom: 7px; } }
 .blockchain {
   margin-top: 120px;
   display: flex;
@@ -398,6 +452,11 @@ h1 {
   .blockchain img {
     margin: 0 0 20px 9px; }
 
+@media (max-width: 1200px) {
+  .blockchain {
+    gap: 30px; }
+    .blockchain img {
+      margin: 0 0 20px 0; } }
 .promo-banner {
   position: relative;
   margin-top: 11px;
@@ -487,5 +546,20 @@ h1 {
     position: absolute;
     top: 9px;
     right: 10px; }
+
+@media (max-width: 1200px) {
+  .promo-banner {
+    margin-left: 3%; }
+
+  .hero-descr {
+    right: 0; }
+
+  .promo-banner {
+    margin-top: 50px;
+    margin-left: 0; } }
+@media (max-width: 467px) {
+  .promo-banner {
+    min-width: 324px;
+    min-height: 385px; } }
 
 /*# sourceMappingURL=style.css.map */

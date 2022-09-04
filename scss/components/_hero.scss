@@ -99,3 +99,70 @@ h1 {
     margin-top: 5px;
   }
 }
+
+@media (max-width: 1200px) {
+  .hero {
+    padding: 48px 50px 0 50px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .promo {
+    @include flex(flex-start, center, column, nowrap);
+  }
+
+  h1 {
+    max-width: none;
+    font-size: 60px;
+    line-height: 92px;
+    letter-spacing: 2px;
+  }
+
+  .statistics {
+    .digit {
+      font-size: 30px;
+    }
+  }
+}
+
+@media (max-width: 940px) {
+  .hero {
+    padding: 15px 15px 0 15px;
+  }
+}
+
+@media (max-width: 700px) {
+  h1 {
+    font-size: 42px;
+    line-height: 60px;
+    letter-spacing: normal;
+  }
+  .descr {
+    max-width: none;
+    font-size: 20px;
+    line-height: 35px;
+    margin: 17px 0 42px;
+    letter-spacing: normal;
+  }
+  .btn-hero {
+    width: 133px;
+    height: 34px;
+    //background: red;
+    font-size: 12px;
+    line-height: 15.05px;
+    padding-left: 28px;
+    letter-spacing: normal;
+    background: url("../assets/hero/button-big-bg-mobile.png");
+    div:after {
+      content: url(../assets/hero/arrow-big-promo-mob.svg);
+      margin: 6px;
+    }
+  }
+
+  .btn-block {
+    span {
+      font-size: 12px;
+      margin-bottom: 7px;
+    }
+  }
+}

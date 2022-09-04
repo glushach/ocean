@@ -100,3 +100,23 @@
     right: 10px;
   }
 }
+
+@media (max-width: 1200px) {
+  .promo-banner {
+    margin-left: 3%;
+  }
+  .hero-descr {
+    right: 0;
+  }
+  .promo-banner {
+    margin-top: 50px;
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 467px) {
+  .promo-banner {;
+    min-width: 324px;
+    min-height: 385px;
+  }
+}
