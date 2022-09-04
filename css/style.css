@@ -441,7 +441,15 @@ h1 {
 
   .btn-block span {
     font-size: 12px;
-    margin-bottom: 7px; } }
+    margin-bottom: 7px; }
+
+  .statistics .digit {
+    font-family: 'Aldrich 400', sans-serif;
+    font-size: 18px; }
+  .statistics .text {
+    font-family: 'Alethia Next 300', sans-serif;
+    font-size: 12px;
+    margin-top: 5px; } }
 .blockchain {
   margin-top: 120px;
   display: flex;
