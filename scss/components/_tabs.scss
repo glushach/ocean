@@ -1,0 +1,57 @@
+
+.tabs-section {
+  @include flex(space-between);
+  margin: 158px 144.11px 0 10.44px;
+  img {
+    //margin-left: 30px;
+  }
+}
+
+.tads-title {
+  font-size: 26.53px;
+  margin-top: 55px;
+}
+
+.tabs-wrapper {
+  margin-left: 99px;
+}
+
+.tabs {
+  max-width: 800px;
+  margin-top: 47px;
+  @include flex();
+  flex-wrap: wrap;
+  gap: 44px;
+  &__item {
+    width: 368.12px;
+    height: 99.39px;
+    font-size: 26.53px;
+    color: rgba(255, 255, 255, 0.5);
+    background: none;
+    border: 2.88px solid transparent;
+    border-image: linear-gradient(to right, rgb(255, 166, 250),
+            rgb(60, 121, 212)) 1;
+  }
+}
+
+.tabs__item_active {
+  color: rgba(255, 255, 255, 1);
+  background: linear-gradient(90deg,
+          rgba(255, 86, 246, 1),
+          rgba(185, 54, 238, 1),
+          rgba(59, 172, 226, 1),
+          rgba(64, 106, 255, 1));
+}
+
+.view {
+  font-size: 19.9px;
+  text-align: right;
+  margin-top: 46px;
+  margin-right: 88px;
+  position: relative;
+  &:after {
+    content: url("../assets/tabs/arrow-all.svg");
+    position: absolute;
+    right: -70px;
+  }
+}

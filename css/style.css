@@ -34,7 +34,8 @@ h6 {
   margin: 0; }
 
 button {
-  cursor: pointer; }
+  cursor: pointer;
+  color: #ffffff; }
 
 .container {
   max-width: 1600px;
@@ -694,5 +695,53 @@ h1 {
 
   .view-all {
     display: none; } }
+.tabs-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  margin: 158px 144.11px 0 10.44px; }
+
+.tads-title {
+  font-size: 26.53px;
+  margin-top: 55px; }
+
+.tabs-wrapper {
+  margin-left: 99px; }
+
+.tabs {
+  max-width: 800px;
+  margin-top: 47px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  flex-wrap: wrap;
+  gap: 44px; }
+  .tabs__item {
+    width: 368.12px;
+    height: 99.39px;
+    font-size: 26.53px;
+    color: rgba(255, 255, 255, 0.5);
+    background: none;
+    border: 2.88px solid transparent;
+    border-image: linear-gradient(to right, #ffa6fa, #3c79d4) 1; }
+
+.tabs__item_active {
+  color: white;
+  background: linear-gradient(90deg, #ff56f6, #b936ee, #3bace2, #406aff); }
+
+.view {
+  font-size: 19.9px;
+  text-align: right;
+  margin-top: 46px;
+  margin-right: 88px;
+  position: relative; }
+  .view:after {
+    content: url("../assets/tabs/arrow-all.svg");
+    position: absolute;
+    right: -70px; }
 
 /*# sourceMappingURL=style.css.map */
