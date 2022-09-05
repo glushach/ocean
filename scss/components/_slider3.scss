@@ -1,5 +1,6 @@
 .slider3 {
   margin: 162px 109.89px 0 109px;
+  text-align: center;
 }
 
 .slider3-title {
@@ -43,6 +44,7 @@
   }
 
   .column__info {
+    text-align: left;
     .name {
       font-family: 'Roboto 500', sans-serif;
       font-size: 19.05px;
@@ -110,5 +112,21 @@
 
 .swiper-third {
   margin-top: 59px;
+  margin-bottom: 26px;
+}
+
+@media (max-width: 1200px) {
+  .slider3 {
+    margin: 162px 0 0 50px;
+  }
+}
+
+@media (max-width: 640px) {
+  .slider3 {
+    margin: 162px 0 0 25px;
+  }
+  .column {
+    width: 316.8px;
+  }
 }
 

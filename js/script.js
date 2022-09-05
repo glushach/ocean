@@ -62,5 +62,41 @@ new Swiper(".swiper-second", {
 
 new Swiper(".swiper-third", {
   loop: true,
-  breakpoints: breakpoints,
+  breakpoints: {
+    300: {
+      slidesPerView: .5,
+    },
+    350: {
+      slidesPerView: 1,
+    },
+    440: {
+      slidesPerView: 1.2,
+    },
+    540: {
+      slidesPerView: 1.4,
+    },
+    640: {
+      slidesPerView: 1.3,
+    },
+    870: {
+      slidesPerView: 1.6,
+    },
+    840: {
+      slidesPerView: 1.7,
+    },
+    1000: {
+      slidesPerView: 1.9,
+    },
+    1100: {
+      slidesPerView: 2.1,
+    },
+    1400: {
+      slidesPerView: 2.5,
+    },
+    1600: {
+      slidesPerView: 3,
+      spaceBetween: 33,
+    }
+  },
+
 });
