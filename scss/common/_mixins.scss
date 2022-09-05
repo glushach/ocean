@@ -9,3 +9,17 @@
 @mixin border() {
   border: 3px solid rgba(255, 255, 255, 0.28);
 }
+
+@mixin border-gradient($br, $pd, $lg) {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: $br;
+  padding: $pd;
+  background: $lg;
+  -webkit-mask:
+          linear-gradient(#fff 0 0) content-box,
+          linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+}

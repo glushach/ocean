@@ -59,3 +59,8 @@ new Swiper(".swiper-second", {
   loop: true,
   breakpoints: breakpoints,
 });
+
+new Swiper(".swiper-third", {
+  loop: true,
+  breakpoints: breakpoints,
+});

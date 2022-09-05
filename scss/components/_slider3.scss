@@ -1,0 +1,114 @@
+.slider3 {
+  margin: 162px 109.89px 0 109px;
+}
+
+.slider3-title {
+  font-size: 26.53px;
+  max-width: 339px;
+  margin: 0 auto;
+  position: relative;
+  span {
+    color: rgba(255, 86, 246, 1);
+    &:after {
+      content: url("../assets/top-sellers/drobdown.svg");
+      position: absolute;
+      top: -7px;
+      right: -10px;
+    }
+  }
+}
+
+.slider3-descr {
+  max-width: 500px;
+  margin: 24.3px auto 0 auto;
+  font-family: 'Roboto 400', sans-serif;
+  text-align: center;
+  font-size: 17.69px;
+  line-height: 24.8px;
+}
+
+.column {
+  width: 437.04px;
+  margin-bottom: 20px;
+  &__item {
+    margin-bottom: 34.26px;
+    @include flex(space-between);
+    padding: 27.51px 20.29px 26.46px 18px;
+    width: 100%;
+    height: 123.81px;
+    position: relative;
+    &:before {
+      @include border-gradient(28.57px, 2.76px, linear-gradient(135deg, rgba(255, 255, 255, 0.28), rgba(255, 255, 255, 0)));
+    }
+  }
+
+  .column__info {
+    .name {
+      font-family: 'Roboto 500', sans-serif;
+      font-size: 19.05px;
+      margin-left: 12px;
+      margin-top: 5px;
+    }
+    .rate {
+      font-family: 'Roboto 500', sans-serif;
+      font-size: 13.76px;
+      margin-left: 25px;
+      margin-top: 16px;
+      position: relative;
+      &:before {
+        content: url("../assets/top-sellers/seller-eth-icon.svg");
+        position: absolute;
+        left: -15px;
+      }
+    }
+  }
+
+  .number {
+    margin-top: 23px;
+    margin-right: 17px;
+    font-family: 'Roboto 500', sans-serif;
+    font-size: 19.05px;
+    span {
+      color: transparent;
+    }
+  }
+
+  .progress {
+    margin-top: 24px;
+    font-family: 'Roboto 500', sans-serif;
+    font-size: 14.7px;
+    height: 35.37px;
+    width: 100.59px;
+    border-radius: 17.52px;
+    border: none;
+
+    &_green {
+      color: rgba(0, 255, 102, 1);
+      background: linear-gradient(rgba(0, 178, 71, 0.42),
+      rgba(73, 182, 73, 0.15));
+      position: relative;
+      &:before {
+        @include border-gradient(28.57px, 1.13px, linear-gradient(315deg, rgba(0, 178, 71, 0.72), rgba(73, 182, 73, 0)));
+      }
+    }
+
+    &_red {
+      color: rgba(255, 0, 0, 1);
+      background: linear-gradient(rgba(235, 20, 20, 0.15),
+              rgba(235, 20, 20, 0.1005));
+      position: relative;
+      &:before {
+        @include border-gradient(28.57px, 1.13px, linear-gradient(315deg, rgba(178, 0, 0, 0.72), rgba(182, 73, 73, 0)));
+      }
+    }
+  }
+
+  &__wrap {
+    @include flex()
+  }
+}
+
+.swiper-third {
+  margin-top: 59px;
+}
+
