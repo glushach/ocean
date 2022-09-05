@@ -1,9 +1,12 @@
 .slider2 {
   margin: 167px 106.52px 0 109.44px;
 
-  .card {
+  .card-swiper-second {
     width: 437.76px;
     height: 565px;
+  }
+
+  .card {
     background-image: url("../assets/slider2/top-bg.png"), linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.024));
     background-repeat: no-repeat;
     @include border();
@@ -57,3 +60,25 @@
 .swiper-second {
   margin-top: 47.53px;
 }
+
+@media (max-width: 1200px) {
+  .slider2 {
+    margin: 200px 0 0 50px;
+  }
+}
+
+@media (max-width: 640px) {
+  .slider2 {
+    margin: 200px 0 0 25px;
+
+    .card-swiper-second {
+      width: 303px;
+    }
+
+    .card__popular {
+      width: 290px;
+    }
+  }
+}
+
+
