@@ -51,3 +51,18 @@ new Swiper(".swiper-first", {
     }
   },
 });
+
+
+new Swiper(".swiper-second", {
+  loop: true,
+  breakpoints: {
+  300: {
+    slidesPerView: 0.95,
+    spaceBetween: 10,
+  },
+  1600: {
+    slidesPerView: 3,
+    spaceBetween: 33,
+  }
+  }
+});

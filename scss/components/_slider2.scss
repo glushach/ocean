@@ -3,11 +3,57 @@
 
   .card {
     width: 437.76px;
-    height: 560.89px;
+    height: 565px;
     background-image: url("../assets/slider2/top-bg.png"), linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.024));
     background-repeat: no-repeat;
     @include border();
     text-align: center;
     padding-top: 100px;
+
+    &__name {
+      margin-top: 10px;
+      font-family: 'Rajdhani 500', sans-serif;
+      font-size: 24.32px;
+    }
+
+    &__email {
+      width: 117px;
+      margin: 5px auto 0 auto;
+      font-family: 'Rajdhani 400', sans-serif;
+      color: rgba(255, 177, 238, 1);
+      font-size: 20.16px;
+      position: relative;
+      &:after {
+        content: url("../assets/slider2/checked.svg");
+        position: absolute;
+        top: 3.1px;
+        right: -10px;
+      }
+    }
+
+    &__popular {
+      @include flex(space-between);
+      margin: 32px auto 42px auto;
+      width: 350px;
+    }
+
+    .statistic-block {
+
+    }
+
+    .statistic {
+      font-family: 'Rajdhani 600', sans-serif;
+      font-size: 31.69px;
+    }
+
+    .folowers {
+      font-family: 'Rajdhani 500', sans-serif;
+      font-size: 19.81px;
+      color: rgba(255, 255, 255, .7);
+    }
   }
+}
+
+.swiper-second {
+  margin-top: 47.53px;
 }
