@@ -1,0 +1,68 @@
+.info-block {
+  width: 100%;
+  min-height: 556.37px;
+  background: url("../assets/info-question/question-back-bg.png");
+  margin-top: 160.48px;
+  position: relative;
+
+  .question {
+    width: 577.05px;
+    height: 473.14px;
+    padding: 60px 47.39px 50.62px 71.21px;
+    background: url("../assets/info-question/question-front-bg.png");
+    position: absolute;
+    right: 8.6%;
+    bottom: -128px;
+    &__title {
+      font-family: "Inter 800", sans-serif;
+      font-size: 44.51px;
+      line-height: 60.09px;
+    }
+    &__descr {
+      font-family: "Inter 400", sans-serif;
+      font-size: 20.03px;
+      line-height: 35.61px;
+      margin-top: 21px;
+    }
+    &__footer {
+      font-family: "Inter 500", sans-serif;
+      font-size: 16px;
+      line-height: 24px;
+      margin-top: 44.76px;
+      .learn {
+        margin-right: 65.65px;
+        letter-spacing: 1px;
+      }
+      .watch {
+        letter-spacing: 1px;
+        position: relative;
+        &:before {
+          content: url("../assets/info-question/btn-play.svg");
+          position: absolute;
+          left: -25px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .info-block {
+    .question {
+      width: 335px;
+      height: 275px;
+      right: 50%;
+      transform: translateX(50%);
+      background: url("../assets/info-question/question-front-mobile.png");
+      padding: 33.68px 27.54px 29.27px 41.39px;
+      &__title {
+        font-size: 25.87px;
+        line-height: 34.92px;
+      }
+      &__descr {
+        font-size: 11.64px;
+        line-height: 20.7px;
+      }
+    }
+  }
+}
