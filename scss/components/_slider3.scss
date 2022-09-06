@@ -111,7 +111,10 @@
 }
 
 .swiper-third {
-  margin: 25px 0 8px 29px;
+  margin: 60px 0 25px 0;
+}
+.wrapper-explore-all {
+  text-align: center;
 }
 
 @media (max-width: 1200px) {
@@ -121,6 +124,9 @@
 }
 
 @media (max-width: 640px) {
+  .swiper-third {
+    margin: 25px 0 8px 29px;
+  }
   .slider3 {
     margin: 106px 0 0 0;
   }
