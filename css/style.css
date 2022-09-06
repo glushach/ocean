@@ -962,13 +962,23 @@ h1 {
   .tabs__item {
     font-size: 10.99px;
     width: 152.52px;
-    height: 40.76px; } }
+    height: 40.76px; }
+
+  .view {
+    font-size: 8.24px;
+    margin-top: 19.9px;
+    margin-right: 44px; }
+    .view:after {
+      content: url(../assets/tabs/arrow-all-mob.svg);
+      right: -29px; }
+
+  .girl {
+    width: 185px; } }
 @media (max-width: 370px) {
   .tabs {
     max-width: 305px; }
 
   .tabs__item {
-    font-size: 13.78px;
     width: 130px;
     height: 35px; } }
 .slider2 {
