@@ -48,10 +48,13 @@
 
 @media (max-width: 700px) {
   .info-block {
+    margin-top: 103px;
+    min-height: 300px;
     .question {
       width: 335px;
       height: 275px;
       right: 50%;
+      bottom: -33.2%;
       transform: translateX(50%);
       background: url("../assets/info-question/question-front-mobile.png");
       padding: 33.68px 27.54px 29.27px 41.39px;
@@ -62,7 +65,31 @@
       &__descr {
         font-size: 11.64px;
         line-height: 20.7px;
+        margin-top: 10.8px;
       }
+      &__footer {
+        margin-top: 21.76px;
+        font-size: 10.35px;
+        .learn {
+          margin-right: 36.5px;
+          letter-spacing: normal;
+        }
+        .watch {
+          letter-spacing: normal;
+          &:before {
+            content: url(../assets/info-question/btn-play-mob.svg);
+            left: -15px;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 350px) {
+  .info-block {
+    .question {
+      padding: 21px 29px;
+      width: 300px;
     }
   }
 }
