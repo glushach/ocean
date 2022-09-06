@@ -128,5 +128,16 @@
   .column {
     width: 316.8px;
   }
+  .slider3-title {
+    font-size: 19.23px;
+    max-width: 241.19px;
+    span {
+      &:after {
+        position: absolute;
+        top: -7px;
+        right: -7px;
+      }
+    }
+  }
 }
 

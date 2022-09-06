@@ -566,6 +566,11 @@ h1 {
   flex-wrap: nowrap;
   padding: 36px 20px 0 24px; }
 
+.img-banner {
+  background: url("../assets/hero/hero-promo.png") no-repeat;
+  width: 401.28px;
+  height: 477.33px; }
+
 .left-block-title {
   font-family: 'Rajdhani 700', sans-serif;
   font-size: 17.69px; }
@@ -634,22 +639,49 @@ h1 {
     top: 9px;
     right: 10px; }
 
-@media (max-width: 1200px) {
+@media (max-width: 1400px) {
   .promo-banner {
-    margin-left: 3%; }
+    margin-left: 10px; }
 
   .hero-descr {
-    right: 0;
-    width: 324px;
-    height: 174px; }
+    right: 0; } }
+@media (max-width: 1000px) {
+  .promo-banner {
+    margin-top: 57px;
+    margin-left: 0;
+    min-width: 330px;
+    height: 174.79px; }
 
-  .promo-banner {
-    margin-top: 50px;
-    margin-left: 0; } }
-@media (max-width: 467px) {
-  .promo-banner {
-    min-width: 324px;
-    min-height: 385px; } }
+  .hero-descr {
+    right: -10.5px;
+    bottom: -39px;
+    background: url("../assets/hero/hero-promo-bg-modile.png") no-repeat;
+    padding: 35.5px 30.5px 0 21.4px; }
+
+  .img-banner {
+    width: 100%;
+    height: 100%;
+    background: url("../assets/hero/hero-promo-mobile.png") no-repeat; }
+
+  .left-block-title {
+    font-size: 17.05px; }
+
+  .left-block .email {
+    margin-top: 7.5px; }
+    .left-block .email span {
+      margin: 0 1px; }
+  .left-block .price {
+    margin-top: 20px;
+    margin-bottom: 6.3px; }
+
+  .btn-little-promo {
+    margin-top: 25.6px; } }
+@media (max-width: 350px) {
+  .hero {
+    padding: 15px 0 0 0; }
+
+  .hero-descr {
+    background-position: 0; } }
 * {
   box-sizing: border-box; }
 
@@ -1044,7 +1076,15 @@ h1 {
     margin: 162px 0 0 25px; }
 
   .column {
-    width: 316.8px; } }
+    width: 316.8px; }
+
+  .slider3-title {
+    font-size: 19.23px;
+    max-width: 241.19px; }
+    .slider3-title span:after {
+      position: absolute;
+      top: -7px;
+      right: -7px; } }
 .info-block {
   width: 100%;
   min-height: 556.37px;
