@@ -701,6 +701,8 @@ h1 {
 @media (max-width: 640px) {
   .explore {
     display: inline; }
+    .explore-third {
+      margin-left: 5px; }
 
   .explore-all {
     display: none; } }
@@ -1188,15 +1190,14 @@ h1 {
     flex-wrap: nowrap; }
 
 .swiper-third {
-  margin-top: 59px;
-  margin-bottom: 26px; }
+  margin: 25px 0 8px 29px; }
 
 @media (max-width: 1200px) {
   .slider3 {
-    margin: 162px 0 0 50px; } }
+    margin: 162px 0 10px 50px; } }
 @media (max-width: 640px) {
   .slider3 {
-    margin: 162px 0 0 25px; }
+    margin: 106px 0 0 0; }
 
   .column {
     width: 316.8px; }
@@ -1205,9 +1206,40 @@ h1 {
     font-size: 19.23px;
     max-width: 241.19px; }
     .slider3-title span:after {
-      position: absolute;
-      top: -7px;
-      right: -7px; } }
+      top: -3px;
+      right: -14px; }
+
+  .slider3-descr {
+    font-size: 14px;
+    max-width: 320px;
+    line-height: 19.63px;
+    margin-top: 19.6px; }
+
+  .column__wrap .number {
+    font-size: 13.81px;
+    margin-right: 13.6px;
+    margin-top: 16.5px; }
+  .column__wrap img {
+    width: 50.63px;
+    height: 50.63px; }
+
+  .column__item {
+    height: 90.21px;
+    padding: 21.51px 16px 0 11px;
+    margin-bottom: 24.86px; }
+
+  .column .progress {
+    font-size: 10.66px;
+    margin-top: 17px;
+    height: 25.57px;
+    width: 70.09px; }
+
+  .column .column__info .name {
+    font-size: 13.81px; }
+
+  .column .column__info .rate {
+    font-size: 8.17px;
+    margin-top: 9.3px; } }
 .info-block {
   width: 100%;
   min-height: 556.37px;
