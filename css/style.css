@@ -682,6 +682,23 @@ h1 {
 
   .hero-descr {
     background-position: 0; } }
+.explore-all {
+  display: block; }
+
+.explore {
+  display: none;
+  width: 138px;
+  height: 38px;
+  margin-left: 96px;
+  background: transparent url("../assets/explore-border.png") no-repeat;
+  border: none; }
+
+@media (max-width: 640px) {
+  .explore {
+    display: inline; }
+
+  .explore-all {
+    display: none; } }
 * {
   box-sizing: border-box; }
 
@@ -780,13 +797,68 @@ h1 {
     margin: 200px 0 0 50px; } }
 @media (max-width: 640px) {
   .slider1 {
-    margin: 200px 0 0 25px; }
+    margin: 140px 0 0 25px; }
+
+  .swiper-first {
+    margin-top: 36px;
+    margin-bottom: 40px; }
 
   .card-swiper-first {
     width: 303px; }
 
+  .title-block h2 {
+    font-size: 16px;
+    line-height: 20.06px; }
+
   .view-all {
-    display: none; } }
+    display: none; }
+
+  .card-swiper-info {
+    padding: 32.8px 11.6px 0 18.1px;
+    height: 166px; }
+
+  .card-swiper-info__left .email {
+    margin-top: 9.5px; }
+    .card-swiper-info__left .email img[alt=avatar] {
+      width: 26px; }
+    .card-swiper-info__left .email img[alt=checked] {
+      width: 11px; }
+  .card-swiper-info__left h4 {
+    font-size: 13.6px; }
+  .card-swiper-info__left .email-link {
+    margin: 0 3px;
+    margin-right: 15px;
+    font-size: 9px; }
+  .card-swiper-info__left h5 {
+    margin-top: 20px;
+    font-size: 8.5px; }
+  .card-swiper-info__left .cost {
+    margin-top: 3.5px; }
+  .card-swiper-info__left .price {
+    font-size: 7.47px;
+    margin: 0 5px 0 2.1px; }
+  .card-swiper-info__left .digit {
+    font-size: 8.5px; }
+
+  .card-swiper-info__right h5 {
+    font-size: 8.5px;
+    margin-left: 5px; }
+  .card-swiper-info__right .time {
+    margin-top: 11.4px;
+    width: 83.6%; }
+    .card-swiper-info__right .time__item .clock {
+      font-size: 13.6px; }
+    .card-swiper-info__right .time__item .time-name {
+      font-size: 8.5px; }
+  .card-swiper-info__right .btn {
+    margin-top: 31.2px;
+    height: 34px;
+    width: 107.99px;
+    font-size: 13.6px;
+    padding-left: 7.2px; }
+    .card-swiper-info__right .btn:after {
+      content: url("../assets/slider1/arrow-mobile.svg");
+      right: 5.5px; } }
 .tabs-section {
   display: flex;
   justify-content: space-between;
