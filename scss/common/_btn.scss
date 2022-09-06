@@ -11,3 +11,12 @@
   border-image: linear-gradient(to left, rgb(255, 166, 250),
           rgb(60, 121, 212)) 1;
 }
+
+@media (max-width: 640px) {
+  .btn {
+    width: 166px;
+    height: 40px;
+    font-size: 13.78px;
+  }
+}
+

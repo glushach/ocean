@@ -1,6 +1,5 @@
 .slider2 {
   margin: 167px 106.52px 0 109.44px;
-
   .card-swiper-second {
     width: 437.76px;
     height: 565px;
@@ -40,10 +39,6 @@
       width: 350px;
     }
 
-    .statistic-block {
-
-    }
-
     .statistic {
       font-family: 'Rajdhani 600', sans-serif;
       font-size: 31.69px;
@@ -69,15 +64,54 @@
 
 @media (max-width: 640px) {
   .slider2 {
-    margin: 200px 0 0 25px;
+    margin: 120px 0 0 25px;
+    h2 {
+      font-size: 18.06px;
+    }
 
     .card-swiper-second {
       width: 303px;
+      height: 393.5px;
     }
 
     .card__popular {
       width: 290px;
     }
+    .card {
+      background-image: url("../assets/slider2/top-bg-mob.png");
+      padding-top: 70px;
+      &-avatar {
+        width: 112.52px;
+      }
+      &__name {
+        margin-top: 7px;
+        font-size: 16.84px;
+      }
+      &__email {
+        font-size: 13.96px;
+        margin-top: 3px;
+        width: 73.8px;
+        &:after {
+          content: url(../assets/slider2/checked-mob.svg);
+        }
+      }
+      &__popular {
+        margin-top: 24px;
+        margin-bottom: 27px;
+        width: 244px;
+      }
+      .statistic {
+        font-size: 21.94px;
+      }
+
+      .folowers {
+        font-size: 13.71px;
+      }
+    }
+  }
+  .swiper-second {
+    margin-top: 28px;
+    margin-bottom: 40px;
   }
 }
 

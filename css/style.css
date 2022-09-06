@@ -233,6 +233,11 @@ button {
   border: 3.12px solid transparent;
   border-image: linear-gradient(to left, #ffa6fa, #3c79d4) 1; }
 
+@media (max-width: 640px) {
+  .btn {
+    width: 166px;
+    height: 40px;
+    font-size: 13.78px; } }
 .header {
   padding: 48px 111px 0 109px;
   min-height: 195px;
@@ -948,7 +953,7 @@ h1 {
 
   .tads-title {
     font-size: 16px;
-    margin-left: 9px; }
+    margin-left: 15.3px; }
 
   .tabs-wrapper {
     margin: 0; }
@@ -1032,11 +1037,40 @@ h1 {
     margin: 200px 0 0 50px; } }
 @media (max-width: 640px) {
   .slider2 {
-    margin: 200px 0 0 25px; }
+    margin: 120px 0 0 25px; }
+    .slider2 h2 {
+      font-size: 18.06px; }
     .slider2 .card-swiper-second {
-      width: 303px; }
+      width: 303px;
+      height: 393.5px; }
     .slider2 .card__popular {
-      width: 290px; } }
+      width: 290px; }
+    .slider2 .card {
+      background-image: url("../assets/slider2/top-bg-mob.png");
+      padding-top: 70px; }
+      .slider2 .card-avatar {
+        width: 112.52px; }
+      .slider2 .card__name {
+        margin-top: 7px;
+        font-size: 16.84px; }
+      .slider2 .card__email {
+        font-size: 13.96px;
+        margin-top: 3px;
+        width: 73.8px; }
+        .slider2 .card__email:after {
+          content: url(../assets/slider2/checked-mob.svg); }
+      .slider2 .card__popular {
+        margin-top: 24px;
+        margin-bottom: 27px;
+        width: 244px; }
+      .slider2 .card .statistic {
+        font-size: 21.94px; }
+      .slider2 .card .folowers {
+        font-size: 13.71px; }
+
+  .swiper-second {
+    margin-top: 28px;
+    margin-bottom: 40px; } }
 .slider3 {
   margin: 162px 109.89px 0 109px;
   text-align: center; }
