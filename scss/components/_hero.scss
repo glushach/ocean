@@ -155,7 +155,7 @@ h1 {
     background: url("../assets/hero/button-big-bg-mobile.png");
     div:after {
       content: url(../assets/hero/arrow-big-promo-mob.svg);
-      margin: 6px;
+      margin: 5px 6px 5px -1px;
     }
   }
 
@@ -179,3 +179,35 @@ h1 {
     }
   }
 }
+
+@media (max-width: 375px) {
+  .promo-text {
+    margin-left: 18px;
+  }
+  h1 {
+    max-width: 290px;
+    margin-top: 2px;
+    line-height: 58px;
+    letter-spacing: 1px;
+  }
+  .descr {
+    margin: 25px 0 32px;
+    font-size: 14px;
+    line-height: 23.22px;
+  }
+  .btn-hero {
+    margin-left: -3px;
+  }
+
+  .btn-block {
+    span {
+      margin-left: 23px;
+      margin-bottom: 4px;
+    }
+  }
+
+  .statistics {
+    margin-top: 48px;
+  }
+}
+

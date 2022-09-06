@@ -5,29 +5,31 @@
     margin: 0 0 20px 9px;
   }
 }
+.blockchain-modile {
+  display: none;
+  max-width: 308px;
+  margin-top: 40px;
+  .blackchain-binance {
+    margin-bottom: 30px;
+  }
+  .blackchain-ethereum {
+    margin-bottom: 30px;
+    margin-right: 18px;
+  }
+  .blackchain-blockchain {
+    margin-left: -15px;
+  }
+  .blackchain-bitmex {
 
-@media (max-width: 1200px) {
-  .blockchain {
-    gap: 30px;
-    img {
-      margin: 0 0 20px 0;
-    }
   }
 }
 
-
-.blockchain {
-  .binance {
-
-  }
-  .eth {
-
-  }
+@media (max-width: 1000px) {
   .blockchain {
-
+    display: none;
   }
-  .bitmex {
-
+  .blockchain-modile {
+    @include flex(space-between, center, row, wrap);
   }
 }
 
