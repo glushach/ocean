@@ -23,6 +23,8 @@ img {
 body {
   margin: 0;
   font-family: 'Orbitron 700', sans-serif;
+  background: url("../assets/bg-main.png");
+  background-size: cover;
 }
 
 .body-active {
@@ -48,8 +50,6 @@ button {
 .container {
   max-width: 1600px;
   margin: 0 auto;
-  background: url("../assets/bg-main.png");
-  height: 6620px;
   color: #ffffff;
 }
 

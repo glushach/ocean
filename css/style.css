@@ -18,7 +18,9 @@ img {
 
 body {
   margin: 0;
-  font-family: 'Orbitron 700', sans-serif; }
+  font-family: 'Orbitron 700', sans-serif;
+  background: url("../assets/bg-main.png");
+  background-size: cover; }
 
 .body-active {
   overflow: hidden; }
@@ -40,8 +42,6 @@ button {
 .container {
   max-width: 1600px;
   margin: 0 auto;
-  background: url("../assets/bg-main.png");
-  height: 6620px;
   color: #ffffff; }
 
 /* orbitron-700 - latin */
@@ -1326,6 +1326,9 @@ h1 {
   flex-direction: row;
   flex-wrap: nowrap; }
 
+.bg-block-mob {
+  display: none; }
+
 .contact {
   max-width: 574px;
   padding: 31px 0 0 74px;
@@ -1340,7 +1343,11 @@ h1 {
     margin-top: 27px; }
   .contact form {
     margin-top: 50px;
-    display: flex; }
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: row;
+    flex-wrap: nowrap; }
   .contact input {
     font-family: "Inter 400", sans-serif;
     line-height: 26.53px;
@@ -1381,13 +1388,33 @@ h1 {
     flex-wrap: nowrap; }
 
   .contact {
-    padding: 31px 0 0 0; }
+    padding: 31px 25px 0 25px;
+    margin-bottom: 107px; } }
+@media (max-width: 600px) {
+  .bg-block {
+    display: none; }
 
-  form {
-    margin-bottom: 50px; } }
-@media (max-width: 500px) {
-  form {
-    display: flex;
-    flex-direction: column; } }
+  .bg-block-mob {
+    display: block; }
+
+  .subscribe {
+    margin: 167px 0 0 0; }
+
+  .contact__title {
+    font-size: 26.27px; }
+  .contact__descr {
+    font-size: 13.14px;
+    line-height: 23.35px;
+    margin-top: 9.9px; }
+  .contact input {
+    width: 180px;
+    height: 35px;
+    font-size: 10.22px; }
+  .contact .button-overlay {
+    width: 100px;
+    height: 36px; }
+  .contact form {
+    margin-top: 32px;
+    font-size: 10.22px; } }
 
 /*# sourceMappingURL=style.css.map */

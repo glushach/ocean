@@ -1,6 +1,9 @@
 .subscribe {
   margin: 291px 0 0 110.55px;
-  @include flex()
+  @include flex();
+}
+.bg-block-mob {
+  display: none;
 }
 
 .contact {
@@ -20,7 +23,7 @@
 
   form {
     margin-top: 50px;
-    display: flex;
+    @include flex();
   }
 
   input {
@@ -63,18 +66,44 @@
     @include flex(flex-start, center, column-reverse);
   }
   .contact {
-    padding: 31px 0 0 0;
-  }
-
-  form {
-    margin-bottom: 50px;
+    padding: 31px 25px 0 25px;
+    margin-bottom: 107px;
   }
 }
 
-@media (max-width: 500px) {
-  form {
-    display: flex;
-    flex-direction: column;
+@media (max-width: 600px) {
+  .bg-block {
+    display: none;
+  }
+  .bg-block-mob {
+    display: block;
+  }
+  .subscribe {
+    margin: 167px 0 0 0;
+  }
+  .contact {
+    &__title {
+      font-size: 26.27px;
+    }
+    &__descr {
+      font-size: 13.14px;
+      line-height: 23.35px;
+      margin-top: 9.9px;
+    }
+
+    input {
+      width: 180px;
+      height: 35px;
+      font-size: 10.22px;
+    }
+    .button-overlay {
+      width: 100px;
+      height: 36px;
+    }
+    form {
+      margin-top: 32px;
+      font-size: 10.22px;
+    }
   }
 }
 
