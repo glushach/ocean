@@ -161,10 +161,12 @@ button {
   /* Legacy iOS */ }
 .burger-menu {
   display: none;
-  width: 30px;
-  height: 30px;
+  width: 20.71px;
+  height: 17px;
   position: relative;
-  z-index: 6; }
+  z-index: 6;
+  right: 14px;
+  top: 13px; }
   .burger-menu__item {
     width: 100%;
     height: 2px;
@@ -181,7 +183,7 @@ button {
   position: absolute;
   top: 50%;
   right: 0;
-  width: 50%;
+  width: 52%;
   transform: translateY(-50%); }
 
 .third {
@@ -253,8 +255,10 @@ button {
 .logо {
   width: 140.17px;
   height: 29.42px;
-  background: url("../assets/header/logo.svg");
+  background: url("../assets/header/logo.svg") no-repeat;
   position: relative;
+  left: 7px;
+  top: 8px;
   z-index: 5; }
 
 .menu__li {
@@ -321,7 +325,10 @@ button {
     display: none; }
 
   .user-mobile {
-    display: flex; } }
+    display: flex; }
+
+  .logо {
+    background: url("../assets/header/logo-mob.png") no-repeat; } }
 .navbar-active {
   transform: translateX(0); }
 

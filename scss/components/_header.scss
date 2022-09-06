@@ -15,8 +15,10 @@
 .logо {
   width: 140.17px;
   height: 29.42px;
-  background: url("../assets/header/logo.svg");
+  background: url("../assets/header/logo.svg") no-repeat;
   position: relative;
+  left: 7px;
+  top: 8px;
   z-index: 5;
 }
 
@@ -98,6 +100,10 @@
 
   .user-mobile {
     display: flex;
+  }
+
+  .logо {
+    background: url("../assets/header/logo-mob.png") no-repeat;
   }
 }
 
