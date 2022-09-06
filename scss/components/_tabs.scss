@@ -102,16 +102,23 @@
 
 @media (max-width: 550px) {
   .tabs-section {
-    margin: 158px 0 0 0;
+    margin: 48px 0 0 0;
+  }
+  .tads-title {
+    font-size: 16px;
+    margin-left: 9px;
   }
   .tabs-wrapper {
     margin: 0;
   }
   .tabs {
     max-width: 340px;
+    margin-top: 21px;
+    gap: 18.7px;
+    margin-left: 15px;
   }
   .tabs__item {
-    font-size: 13.78px;
+    font-size: 10.99px;
     width: 152.52px;
     height: 40.76px;
   }
