@@ -17,8 +17,8 @@
   height: 29.42px;
   background: url("../assets/header/logo.svg") no-repeat;
   position: relative;
-  left: 7px;
-  top: 8px;
+  left: 2px;
+  top: 2px;
   z-index: 5;
 }
 
@@ -105,6 +105,8 @@
 
   .logо {
     background: url("../assets/header/logo-mob.png") no-repeat;
+    left: 7px;
+    top: 8px;
   }
 }
 

@@ -262,8 +262,8 @@ button {
   height: 29.42px;
   background: url("../assets/header/logo.svg") no-repeat;
   position: relative;
-  left: 7px;
-  top: 8px;
+  left: 2px;
+  top: 2px;
   z-index: 5; }
 
 .menu__li {
@@ -334,7 +334,9 @@ button {
     display: flex; }
 
   .logо {
-    background: url("../assets/header/logo-mob.png") no-repeat; } }
+    background: url("../assets/header/logo-mob.png") no-repeat;
+    left: 7px;
+    top: 8px; } }
 .navbar-active {
   transform: translateX(0); }
 
@@ -562,8 +564,8 @@ h1 {
   height: 181.3px;
   background: url("../assets/hero/hero-promo-bg.png") no-repeat;
   position: absolute;
-  bottom: -54px;
-  right: -84px;
+  bottom: -64px;
+  right: -91px;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
