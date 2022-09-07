@@ -159,6 +159,15 @@ button {
   /* IE9 Compat Modes */
   src: local(""), url("../fonts/inter-v12-latin-800.eot?#iefix") format("embedded-opentype"), url("../fonts/inter-v12-latin-800.woff2") format("woff2"), url("../fonts/inter-v12-latin-800.woff") format("woff"), url("../fonts/inter-v12-latin-800.ttf") format("truetype"), url("../fonts/inter-v12-latin-800.svg#Inter") format("svg");
   /* Legacy iOS */ }
+/* museomoderno-regular - latin */
+@font-face {
+  font-family: 'MuseoModerno';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/museomoderno-v22-latin-regular.eot");
+  /* IE9 Compat Modes */
+  src: local(""), url("../fonts/museomoderno-v22-latin-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/museomoderno-v22-latin-regular.woff2") format("woff2"), url("../fonts/museomoderno-v22-latin-regular.woff") format("woff"), url("../fonts/museomoderno-v22-latin-regular.ttf") format("truetype"), url("../fonts/museomoderno-v22-latin-regular.svg#MuseoModerno") format("svg");
+  /* Legacy iOS */ }
 .burger-menu {
   display: none;
   width: 20.71px;
@@ -1421,5 +1430,80 @@ h1 {
   .contact form {
     margin-top: 32px;
     font-size: 10.22px; } }
+hr {
+  height: 1.11px;
+  opacity: 20%; }
+
+.top {
+  margin-bottom: 96px; }
+
+.footer {
+  margin: 156px 178.38px 0 82.91px; }
+  .footer__content {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: row;
+    flex-wrap: nowrap; }
+  .footer__logo {
+    width: 222px;
+    height: 26.81px;
+    background: url("../assets/footer/footer-logo.png") no-repeat; }
+  .footer__descr {
+    max-width: 300px;
+    font-size: 14.18px;
+    line-height: 26.53px;
+    margin: 33px 0 26.53px 0; }
+
+.social-icon {
+  width: 160px;
+  height: 27px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: row;
+  flex-wrap: nowrap; }
+
+.copyright {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  font-size: 14.28px;
+  margin: 26.53px 0 30px 0; }
+
+.left-block {
+  margin-right: 73px; }
+
+.right-block {
+  margin-top: 3px;
+  margin-bottom: 58px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: row;
+  flex-wrap: nowrap; }
+  .right-block__item {
+    width: 176.87px;
+    margin-right: 33.16px; }
+    .right-block__item:last-child {
+      margin-right: 0;
+      width: 127.87px; }
+  .right-block__title {
+    font-family: 'Inter 500', sans-serif;
+    font-size: 19.9px;
+    margin-bottom: 24px; }
+  .right-block ul:last-child {
+    margin-bottom: 0; }
+  .right-block li {
+    font-family: 'Inter 400', sans-serif;
+    font-size: 15.48px;
+    margin-bottom: 22px; }
+    .right-block li span {
+      font-family: 'MuseoModerno', sans-serif;
+      color: #2EC5CE;
+      font-size: 22.11px;
+      margin-left: 7px; }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,76 @@
+hr {
+  height: 1.11px;
+  opacity: 20%;
+}
+.top {
+  margin-bottom: 96px;
+}
+
+.footer {
+  margin: 156px 178.38px 0 82.91px;
+  &__content {
+    @include flex();
+  }
+  &__logo {
+    width: 222px;
+    height: 26.81px;
+    background: url("../assets/footer/footer-logo.png") no-repeat;
+  }
+  &__descr {
+    max-width: 300px;
+    font-size: 14.18px;
+    line-height: 26.53px;
+    margin: 33px 0 26.53px 0;
+  }
+}
+.social-icon {
+  width: 160px;
+  height: 27px;
+  @include flex(space-between)
+}
+
+.copyright {
+  @include flex(space-between);
+  font-size: 14.28px;
+  margin: 26.53px 0 30px 0;
+}
+
+.left-block {
+  margin-right: 73px;
+}
+
+.right-block {
+  margin-top: 3px;
+  margin-bottom: 58px;
+  @include flex();
+  &__item {
+    width: 176.87px;
+    margin-right: 33.16px;
+    &:last-child {
+      margin-right: 0;
+      width: 127.87px;
+    }
+  }
+
+  &__title {
+    font-family: 'Inter 500', sans-serif;
+    font-size: 19.9px;
+    margin-bottom: 24px;
+  }
+  ul {
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  li {
+    font-family: 'Inter 400', sans-serif;
+    font-size: 15.48px;
+    margin-bottom: 22px;
+    span {
+      font-family: 'MuseoModerno', sans-serif;
+      color: #2EC5CE;
+      font-size: 22.11px;
+      margin-left: 7px;
+    }
+  }
+}
