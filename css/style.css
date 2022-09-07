@@ -1571,7 +1571,8 @@ hr {
         width: 8px;
         height: 1.3px;
         background: rgba(255, 255, 255, 0.6);
-        position: absolute; }
+        position: absolute;
+        transition: all .5s; }
       .right-block__title:before {
         transform: rotate(-40deg);
         right: 23.5px;
@@ -1580,6 +1581,12 @@ hr {
         transform: rotate(40deg);
         right: 30px;
         top: 10px; }
+    .right-block__title.active-accordion:before, .right-block__title.active-accordion:after {
+      background: #2EC5CE; }
+    .right-block__title.active-accordion:before {
+      transform: rotate(40deg); }
+    .right-block__title.active-accordion:after {
+      transform: rotate(-40deg); }
     .right-block__text {
       display: none; }
 
@@ -1594,6 +1601,9 @@ hr {
       margin-bottom: 51px; }
     .copyright:last-child {
       margin-bottom: 0; } }
+.active-accordion {
+  display: block; }
+
 @media (max-width: 350px) {
   .footer {
     margin: 103px 15px 0 15px; }

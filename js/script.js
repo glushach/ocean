@@ -100,3 +100,37 @@ new Swiper(".swiper-third", {
   },
 
 });
+
+// $(document).ready(function () {
+//   $('.right-block__title').click(function () {
+//     $(this).togg
+//   });
+// });
+
+(function () {
+  const title = document.querySelectorAll('.right-block__title');
+  const text = document.querySelectorAll('.right-block__text');
+
+
+  title.forEach(item => {
+    item.addEventListener('click', (evt => {
+      const element = evt.target;
+      const sibling = evt.target.nextElementSibling;
+
+      title.forEach(t1 => {
+        if (t1 !== element) {
+          t1.classList.remove('active-accordion');
+        }
+      });
+      text.forEach(t2 => {
+        if (t2 !== sibling) {
+          t2.classList.remove('active-accordion');
+        }
+      });
+
+      element.classList.toggle('active-accordion');
+      sibling.classList.toggle('active-accordion');
+    }));
+  });
+
+}())

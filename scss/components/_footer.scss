@@ -149,6 +149,7 @@ hr {
         height: 1.3px;
         background: rgba(256, 256, 256, .6);
         position: absolute;
+        transition: all .5s;
       }
       &:before {
         transform: rotate(-40deg);
@@ -161,6 +162,17 @@ hr {
         top: 10px;
       }
     }
+    &__title.active-accordion:before,
+    &__title.active-accordion:after {
+      background: #2EC5CE;
+    }
+    &__title.active-accordion:before {
+      transform: rotate(40deg);
+    }
+    &__title.active-accordion:after {
+      transform: rotate(-40deg);
+    }
+
     &__text {
       display: none;
     }
@@ -175,6 +187,10 @@ hr {
       margin-bottom: 0;
     }
   }
+}
+
+.active-accordion {
+    display: block;
 }
 
 @media (max-width: 350px) {
