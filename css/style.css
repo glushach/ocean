@@ -588,29 +588,29 @@ h1 {
   width: 401.28px;
   height: 477.33px; }
 
-.left-block-title {
+.hero-left-block-title {
   font-family: 'Rajdhani 700', sans-serif;
   font-size: 17.69px; }
-.left-block .email, .left-block .price {
+.hero-left-block .email, .hero-left-block .price {
   font-family: 'Rajdhani 600', sans-serif; }
-.left-block .email {
+.hero-left-block .email {
   margin-top: 10px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
   flex-direction: row;
   flex-wrap: nowrap; }
-  .left-block .email span {
+  .hero-left-block .email span {
     margin: 0 2px; }
-.left-block .price {
+.hero-left-block .price {
   margin-top: 20px;
   margin-bottom: 8px; }
-.left-block .price, .left-block .eth-dollars {
+.hero-left-block .price, .hero-left-block .eth-dollars {
   opacity: 70%;
   font-size: 11.05px; }
-.left-block .eth-cost {
+.hero-left-block .eth-cost {
   font-size: 9.72px; }
-.left-block .eth-dollars {
+.hero-left-block .eth-dollars {
   font-family: 'Rajdhani 400', sans-serif; }
 
 .time {
