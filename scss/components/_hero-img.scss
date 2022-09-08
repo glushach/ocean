@@ -159,17 +159,38 @@
     font-size: 17.05px;
   }
 
-  .left-block {
+  .hero-left-block {
     .email {
-      margin-top: 7.5px;
+      margin-top: 8.6px;
       span {
-        margin: 0 1px;
+        font-size: 14.92px;
+        margin: 0 4px 0.8px 0.7px;
       }
     }
     .price {
       margin-top: 20px;
       margin-bottom: 6.3px;
     }
+  }
+  .right-block-title {
+    margin: 2.8px 0 5px 8.5px;
+  }
+  .time__item .name {
+    margin-top: 2.6px;
+  }
+  .time {
+    width: 102.9px;
+  }
+  .hero-left-block .eth-cost {
+    letter-spacing: -0.8px;
+  }
+  .btn-little-promo:after {
+    top: 8.4px;
+    right: 10.7px;
+  }
+  .hero-left-block .price {
+    margin-top: 19.2px;
+    margin-bottom: 1.8px;
   }
 
   .btn-little-wrapper {

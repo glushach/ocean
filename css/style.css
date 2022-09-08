@@ -71,6 +71,15 @@ button {
   font-display: swap;
   font-style: normal;
   font-weight: 600; }
+/* lato-regular - latin */
+@font-face {
+  font-family: 'Lato 600';
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/lato-v23-latin-regular.eot");
+  /* IE9 Compat Modes */
+  src: local(""), url("../fonts/lato-v23-latin-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/lato-v23-latin-regular.woff2") format("woff2"), url("../fonts/lato-v23-latin-regular.woff") format("woff"), url("../fonts/lato-v23-latin-regular.ttf") format("truetype"), url("../fonts/lato-v23-latin-regular.svg#Lato") format("svg");
+  /* Legacy iOS */ }
 /* rajdhani-500 - latin */
 @font-face {
   font-family: 'Rajdhani 500';
@@ -492,9 +501,11 @@ h1 {
     padding: 15px 15px 0 15px; } }
 @media (max-width: 700px) {
   h1 {
+    font-family: "Lato 600", sans-serif;
+    line-height: 57.71px;
     font-size: 42px;
-    line-height: 60px;
-    letter-spacing: normal; }
+    letter-spacing: -1.9px;
+    margin: 0; }
 
   .descr {
     max-width: none;
@@ -508,15 +519,16 @@ h1 {
     height: 36.1px; }
 
   .btn-hero {
-    width: 100%;
-    height: 100%;
-    font-size: 12px;
-    line-height: 15.05px;
-    padding-left: 28px;
-    letter-spacing: normal; }
-    .btn-hero div:after {
-      content: url(../assets/hero/arrow-big-promo-mob.svg);
-      margin: 5px 0 5px -1px; }
+    padding-left: 26.3px;
+    padding-bottom: 5px; }
+    .btn-hero div {
+      position: relative;
+      font-size: 12px;
+      line-height: 15.05px;
+      letter-spacing: normal; }
+      .btn-hero div:after {
+        content: url(../assets/hero/arrow-little-promo.svg);
+        margin: 1.6px 0 4.2px -3.1px; }
 
   .btn-block span {
     font-size: 12px;
@@ -528,19 +540,17 @@ h1 {
   .statistics .text {
     font-family: 'Alethia Next 300', sans-serif;
     font-size: 12px;
-    margin-top: 5px; } }
+    margin-top: 6px; } }
 @media (max-width: 375px) {
+  h1 {
+    max-width: 290px;
+    margin: 1px 0 0 0; }
+
   .promo-text {
     margin-left: 18px; }
 
-  h1 {
-    max-width: 290px;
-    margin-top: 2px;
-    line-height: 58px;
-    letter-spacing: 1px; }
-
   .descr {
-    margin: 25px 0 32px;
+    margin: 25.7px 0 32.5px 0.1px;
     font-size: 14px;
     line-height: 23.22px; }
 
@@ -548,8 +558,8 @@ h1 {
     margin-left: -3px; }
 
   .btn-block span {
-    margin-left: 23px;
-    margin-bottom: 4px; }
+    margin-left: 20.1px;
+    margin-bottom: 4.4px; }
 
   .statistics {
     margin-top: 44.3px; } }
@@ -566,14 +576,15 @@ h1 {
 .blockchain-modile {
   display: none;
   max-width: 308px;
-  margin-top: 40px; }
+  margin-top: 39.9px; }
   .blockchain-modile .blackchain-binance {
-    margin-bottom: 30px; }
+    margin-bottom: 31.3px;
+    margin-left: -1px; }
   .blockchain-modile .blackchain-ethereum {
     margin-bottom: 30px;
-    margin-right: 18px; }
+    margin-right: 17.6px; }
   .blockchain-modile .blackchain-blockchain {
-    margin-left: -15px; }
+    margin-left: -12.8px; }
 
 @media (max-width: 1000px) {
   .blockchain {
@@ -720,13 +731,34 @@ h1 {
   .hero-left-block-title {
     font-size: 17.05px; }
 
-  .left-block .email {
-    margin-top: 7.5px; }
-    .left-block .email span {
-      margin: 0 1px; }
-  .left-block .price {
+  .hero-left-block .email {
+    margin-top: 8.6px; }
+    .hero-left-block .email span {
+      font-size: 14.92px;
+      margin: 0 4px 0.8px 0.7px; }
+  .hero-left-block .price {
     margin-top: 20px;
     margin-bottom: 6.3px; }
+
+  .right-block-title {
+    margin: 2.8px 0 5px 8.5px; }
+
+  .time__item .name {
+    margin-top: 2.6px; }
+
+  .time {
+    width: 102.9px; }
+
+  .hero-left-block .eth-cost {
+    letter-spacing: -0.8px; }
+
+  .btn-little-promo:after {
+    top: 8.4px;
+    right: 10.7px; }
+
+  .hero-left-block .price {
+    margin-top: 19.2px;
+    margin-bottom: 1.8px; }
 
   .btn-little-wrapper {
     margin-top: 25.6px; } }
