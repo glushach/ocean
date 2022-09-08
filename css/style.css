@@ -260,6 +260,12 @@ button {
   border: 3.12px solid transparent;
   border-image: linear-gradient(to left, #ffa6fa, #3c79d4) 1; }
 
+.btn-mr {
+  margin-right: -8.5px; }
+
+.box-shadow {
+  box-shadow: 0 4.45px 107px rgba(255, 86, 246, 0.5); }
+
 .view-all {
   cursor: pointer; }
 
@@ -1101,23 +1107,25 @@ h1 {
     width: 130px;
     height: 35px; } }
 .slider2 {
-  margin: 167px 106.52px 0 109.44px; }
+  margin: 164.9px 106.52px 0 109.44px; }
   .slider2 .card-swiper-second {
     width: 437.76px;
     height: 565px; }
   .slider2 .card {
     background-image: url("../assets/slider2/top-bg.png"), linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.024));
     background-repeat: no-repeat;
-    border: 3px solid rgba(255, 255, 255, 0.28);
+    border: 2.88px solid;
+    border-image: linear-gradient(150deg, rgba(255, 255, 255, 0.28) 0%, rgba(255, 255, 255, 0) 100%);
+    border-image-slice: 1;
     text-align: center;
     padding-top: 100px; }
     .slider2 .card__name {
-      margin-top: 10px;
+      margin-top: 8.5px;
       font-family: 'Rajdhani 500', sans-serif;
       font-size: 24.32px; }
     .slider2 .card__email {
       width: 117px;
-      margin: 5px auto 0 auto;
+      margin: 5.8px auto 0 auto;
       font-family: 'Rajdhani 400', sans-serif;
       color: #ffb1ee;
       font-size: 20.16px;
@@ -1133,11 +1141,12 @@ h1 {
       align-items: flex-start;
       flex-direction: row;
       flex-wrap: nowrap;
-      margin: 32px auto 42px auto;
+      margin: 33.5px auto 39px auto;
       width: 350px; }
     .slider2 .card .statistic {
       font-family: 'Rajdhani 600', sans-serif;
-      font-size: 31.69px; }
+      font-size: 31.69px;
+      margin-bottom: 2.5px; }
     .slider2 .card .folowers {
       font-family: 'Rajdhani 500', sans-serif;
       font-size: 19.81px;
@@ -1151,7 +1160,7 @@ h1 {
     margin: 200px 0 0 50px; } }
 @media (max-width: 640px) {
   .slider2 {
-    margin: 120px 0 0 25px; }
+    margin: 112.8px 0 0 25px; }
     .slider2 h2 {
       font-size: 18.06px; }
     .slider2 .card-swiper-second {
@@ -1172,18 +1181,20 @@ h1 {
         margin-top: 3px;
         width: 73.8px; }
         .slider2 .card__email:after {
-          content: url(../assets/slider2/checked-mob.svg); }
+          content: url(../assets/slider2/checked-mob.svg);
+          top: 1.3px; }
       .slider2 .card__popular {
         margin-top: 24px;
         margin-bottom: 27px;
         width: 244px; }
       .slider2 .card .statistic {
-        font-size: 21.94px; }
+        font-size: 21.94px;
+        margin-bottom: 1.2px; }
       .slider2 .card .folowers {
         font-size: 13.71px; }
 
   .swiper-second {
-    margin-top: 28px;
+    margin-top: 30.6px;
     margin-bottom: 40px; } }
 .slider3 {
   margin: 162px 109.89px 0 109px;

@@ -78,9 +78,13 @@ new Swiper(".swiper-third", {
     350: {
       slidesPerView: 1,
     },
-    440: {
-      spaceBetween: 24.56,
+    375: {
       slidesPerView: 1.2,
+      spaceBetween: 24.56
+    },
+    440: {
+      slidesPerView: 1.2,
+      spaceBetween: 24.56,
     },
     540: {
       slidesPerView: 1.4,
