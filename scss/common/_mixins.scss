@@ -23,3 +23,7 @@
   -webkit-mask-composite: xor;
   mask-composite: exclude;
 }
+
+@mixin placeBidBg() {
+  background: linear-gradient(90deg, #ff56f6 20%, #b936ee 50%, #3bace2 100%, #406aff 120%);
+}

@@ -87,25 +87,25 @@
     }
   }
 
-  .btn {
+  .btn-border {
     margin-top: 40px;
-    margin-right: 3px;
-    height: 48.96px;
+    padding: 2.88px;
+    background: linear-gradient(270deg, #ffa6fa 50%, #3c79d4 90%);
     width: 160px;
+    height: 48.96px;
+  }
+  .btn-little {
+    margin-right: 3px;
+    height: 100%;
+    width: 100%;
     font-family: 'Rajdhani 600', sans-serif;
     font-size: 23.04px;
     color: #ffffff;
     text-align: left;
     padding-left: 11px;
-    border: 2.88px solid transparent;
-    border-image: linear-gradient(to right, rgb(255, 166, 250),
-    rgb(60, 121, 212)) 1;
-    background: linear-gradient(90deg,
-                    rgba(255, 86, 246, 1),
-                    rgba(185, 54, 238, 1),
-                    rgba(59, 172, 226, 1),
-                    rgba(64, 106, 255, 1));
+    @include placeBidBg();
     position: relative;
+    border: none;
     &:after {
       content: url("../assets/slider1/arrow.svg");
       position: absolute;
@@ -201,7 +201,7 @@
         }
       }
     }
-    .btn {
+    .btn-little {
       margin-top: 31.2px;
       height: 34px;
       width: 107.99px;
