@@ -829,7 +829,8 @@ h1 {
   flex-direction: row;
   flex-wrap: nowrap; }
 .card-swiper-info__left .email-link {
-  margin: 0 3px; }
+  margin: 0 3px;
+  font-family: "Rajdhani 600", sans-serif; }
 .card-swiper-info__left h5 {
   margin-top: 27px;
   color: rgba(255, 255, 255, 0.2);
@@ -1530,7 +1531,8 @@ hr {
     max-width: 300px;
     font-size: 14.18px;
     line-height: 26.53px;
-    margin: 33px 0 26.53px 0; }
+    margin: 33px 0 26.53px 0;
+    font-family: "Inter 400", sans-serif; }
 
 .social-icon {
   width: 160px;
@@ -1542,6 +1544,7 @@ hr {
   flex-wrap: nowrap; }
 
 .copyright {
+  font-family: "Inter 400", sans-serif;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;

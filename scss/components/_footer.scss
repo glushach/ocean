@@ -21,6 +21,7 @@ hr {
     font-size: 14.18px;
     line-height: 26.53px;
     margin: 33px 0 26.53px 0;
+    font-family: "Inter 400", sans-serif;
   }
 }
 .social-icon {
@@ -30,6 +31,7 @@ hr {
 }
 
 .copyright {
+  font-family: "Inter 400", sans-serif;
   @include flex(space-between);
   font-size: 14.28px;
   margin: 26.53px 0 30px 0;
