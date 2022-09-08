@@ -895,10 +895,13 @@ h1 {
       font-size: 13.6px; }
     .card-swiper-info__right .time__item .time-name {
       font-size: 8.5px; }
-  .card-swiper-info__right .btn-little {
+  .card-swiper-info__right .btn-border {
     margin-top: 31.2px;
-    height: 34px;
-    width: 107.99px;
+    width: 112px;
+    height: 37.5px; }
+  .card-swiper-info__right .btn-little {
+    width: 100%;
+    height: 100%;
     font-size: 13.6px;
     padding-left: 7.2px; }
     .card-swiper-info__right .btn-little:after {
@@ -1592,7 +1595,7 @@ hr {
       cursor: pointer; }
       .right-block__title:before, .right-block__title:after {
         content: '';
-        width: 8px;
+        width: 8.2px;
         height: 1.3px;
         background: rgba(255, 255, 255, 0.6);
         position: absolute;
