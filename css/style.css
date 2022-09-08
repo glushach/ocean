@@ -240,7 +240,7 @@ button {
   height: 55px;
   font-family: 'Rajdhani 600', sans-serif;
   font-size: 19.9px;
-  background: linear-gradient(to right, #ff56f6, #b936ee, #3bace2, #406aff);
+  background: linear-gradient(90deg, #ff56f6 20%, #b936ee 50%, #3bace2 100%, #406aff 120%);
   border: 3.12px solid transparent;
   border-image: linear-gradient(to left, #ffa6fa, #3c79d4) 1; }
 
