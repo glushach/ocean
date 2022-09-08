@@ -1,7 +1,8 @@
 @charset "UTF-8";
 html {
   box-sizing: border-box;
-  scroll-behavior: smooth; }
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%; }
 
 *, *::before, *::after {
   box-sizing: inherit; }
@@ -64,6 +65,12 @@ button {
   /* IE9 Compat Modes */
   src: local(""), url("../fonts/league-spartan-v6-latin-600.eot?#iefix") format("embedded-opentype"), url("../fonts/league-spartan-v6-latin-600.woff2") format("woff2"), url("../fonts/league-spartan-v6-latin-600.woff") format("woff"), url("../fonts/league-spartan-v6-latin-600.ttf") format("truetype"), url("../fonts/league-spartan-v6-latin-600.svg#LeagueSpartan") format("svg");
   /* Legacy iOS */ }
+@font-face {
+  font-family: 'Spartan';
+  src: url("../fonts/spartan.ttf");
+  font-display: swap;
+  font-style: normal;
+  font-weight: 600; }
 /* rajdhani-500 - latin */
 @font-face {
   font-family: 'Rajdhani 500';
@@ -364,11 +371,13 @@ button {
 
 h1 {
   max-width: 770px;
-  font-family: 'League Spartan 600', sans-serif;
-  font-size: 80px;
-  line-height: 92px;
+  font-family: 'Spartan', sans-serif;
+  font-weight: 600;
+  font-size: 66.13px;
+  line-height: 91.13px;
   color: #ffffff;
-  letter-spacing: 2px; }
+  margin: 0 0 0 3.1px;
+  letter-spacing: 0.15px; }
   h1 span {
     background: -webkit-linear-gradient(140deg, #43a5e3, #ff56f6);
     -webkit-background-clip: text;
@@ -379,8 +388,8 @@ h1 {
   font-family: 'Rajdhani 400', sans-serif;
   color: #ffffff;
   font-size: 24px;
-  line-height: 45px;
-  margin: 17px 0 40px;
+  line-height: 44px;
+  margin: 20.2px 0 40px 1.8px;
   letter-spacing: 1px; }
 
 .btn-block {
@@ -395,12 +404,12 @@ h1 {
     -webkit-text-fill-color: transparent;
     font-size: 20px;
     line-height: 25px;
-    margin-bottom: 20px;
-    margin-left: 36px; }
+    margin-bottom: 20.9px;
+    margin-left: 35.4px; }
 
 .wrapper-btn-hero {
   width: 255px;
-  height: 68.7px;
+  height: 69.3px;
   border-radius: 6px;
   padding: 2.88px;
   clip-path: polygon(0% 30.8%, 17.9% 0%, 100% 0%, 100% 0%, 100% 74%, 86.6% 100%, 0% 100%, 0 100%);
@@ -412,8 +421,6 @@ h1 {
   width: 100%;
   height: 100%;
   border-radius: 6px;
-  font-size: 20px;
-  line-height: 25px;
   color: #ffffff;
   padding-left: 65px;
   letter-spacing: 1px;
@@ -423,14 +430,17 @@ h1 {
   flex-direction: row;
   flex-wrap: nowrap; }
   .btn-hero div {
-    margin-right: 10px;
-    position: relative; }
+    position: relative;
+    font-size: 19.9px;
+    line-height: 24.95px;
+    padding-top: 3.5px;
+    letter-spacing: 0.1px; }
     .btn-hero div:after {
       content: url("../assets/hero/arrow-big-promo.svg");
       width: 51px;
-      margin: 10px;
+      margin-left: 13px;
       position: absolute;
-      top: -40%; }
+      top: 19.5%; }
 
 .statistics {
   color: #ffffff;
@@ -439,7 +449,7 @@ h1 {
   align-items: flex-start;
   flex-direction: row;
   flex-wrap: nowrap;
-  margin-top: 70px; }
+  margin-top: 68.7px; }
   .statistics__item {
     padding-left: 42px;
     padding-right: 19px;
@@ -455,7 +465,8 @@ h1 {
   .statistics .text {
     font-family: 'Alethia Next 300', sans-serif;
     font-size: 16px;
-    margin-top: 5px; }
+    margin-top: 1.5px;
+    margin-left: 1.6px; }
 
 @media (max-width: 1200px) {
   .hero {
@@ -543,7 +554,7 @@ h1 {
   .statistics {
     margin-top: 44.3px; } }
 .blockchain {
-  margin-top: 120px;
+  margin-top: 125.1px;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
@@ -588,18 +599,19 @@ h1 {
   background: url("../assets/hero/hero-promo-bg.png") no-repeat;
   position: absolute;
   bottom: -64px;
-  right: -91px;
+  right: -88.4px;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
   flex-direction: row;
   flex-wrap: nowrap;
-  padding: 36px 20px 0 24px; }
+  padding: 36px 19.1px 0 24px; }
 
 .img-banner {
   background: url("../assets/hero/hero-promo.png") no-repeat;
   width: 401.28px;
-  height: 477.33px; }
+  height: 477.33px;
+  margin: 2.9px 0 0 -4px; }
 
 .hero-left-block-title {
   font-family: 'Rajdhani 700', sans-serif;
@@ -607,28 +619,32 @@ h1 {
 .hero-left-block .email, .hero-left-block .price {
   font-family: 'Rajdhani 600', sans-serif; }
 .hero-left-block .email {
-  margin-top: 10px;
+  margin-top: 9.2px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
   flex-direction: row;
   flex-wrap: nowrap; }
   .hero-left-block .email span {
-    margin: 0 2px; }
+    margin: 0 2.9px 0 0.4px; }
 .hero-left-block .price {
-  margin-top: 20px;
-  margin-bottom: 8px; }
+  margin-top: 20.8px;
+  margin-bottom: 4.3px; }
 .hero-left-block .price, .hero-left-block .eth-dollars {
   opacity: 70%;
   font-size: 11.05px; }
+.hero-left-block .eth-icon {
+  width: 10.93px;
+  height: 17.8px;
+  transform: translateY(4.9px); }
 .hero-left-block .eth-cost {
-  font-size: 9.72px; }
+  font-size: 10.22px; }
 .hero-left-block .eth-dollars {
   font-family: 'Rajdhani 400', sans-serif; }
 
 .time {
   margin: 0 auto;
-  width: 105px;
+  width: 106.2px;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -636,7 +652,7 @@ h1 {
   flex-wrap: nowrap; }
 
 .right-block-title {
-  margin: 5px 0 5px 6px;
+  margin: 4.4px 0 5px 9.3px;
   font-family: 'Rajdhani 600', sans-serif;
   opacity: 70%;
   font-size: 11.05px; }
@@ -647,13 +663,14 @@ h1 {
 .time__item .name {
   font-family: 'Rajdhani 500', sans-serif;
   font-size: 11.05px;
-  opacity: 70%; }
+  opacity: 70%;
+  margin-top: 3px; }
 
 .btn-little-wrapper {
-  margin-top: 30px;
+  margin-top: 29px;
   padding: 2.21px;
   width: 122px;
-  height: 43px;
+  height: 41.9px;
   border-radius: 2.21px;
   background: linear-gradient(270deg, #ffa6fa 50%, #3c79d4 90%); }
 
