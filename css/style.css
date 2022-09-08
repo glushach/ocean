@@ -260,6 +260,9 @@ button {
   border: 3.12px solid transparent;
   border-image: linear-gradient(to left, #ffa6fa, #3c79d4) 1; }
 
+.view-all {
+  cursor: pointer; }
+
 @media (max-width: 640px) {
   .btn {
     width: 166px;
@@ -807,22 +810,25 @@ h1 {
   flex-wrap: nowrap; }
 
 .card-swiper-info {
-  width: 100%;
-  height: 234px;
-  background: linear-gradient(120deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.024));
-  border: 3px solid rgba(255, 255, 255, 0.28);
-  padding: 42px 20px 0 28px;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
   flex-direction: row;
-  flex-wrap: nowrap; }
+  flex-wrap: nowrap;
+  width: 100%;
+  height: 234px;
+  padding: 42px 20px 0 28px;
+  background: linear-gradient(120deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.024));
+  border: 2.88px solid;
+  border-image: linear-gradient(150deg, rgba(255, 255, 255, 0.28) 0%, rgba(255, 255, 255, 0) 100%);
+  border-image-slice: 1; }
 
 .card-swiper-info__left h4 {
   font-family: 'Rajdhani 700', sans-serif;
   font-size: 23.04px; }
 .card-swiper-info__left .email {
-  margin-top: 14px;
+  margin-top: 11px;
+  font-size: 20.16px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -837,22 +843,29 @@ h1 {
   font-size: 14.4px;
   font-family: 'Rajdhani 600', sans-serif; }
 .card-swiper-info__left .cost {
-  margin-top: 10px; }
+  margin-top: 5px;
+  margin-left: -2.6px; }
+  .card-swiper-info__left .cost .eth-icon {
+    transform: translate(3px, 4.3px);
+    width: 14.24px;
+    height: 23.19px; }
 .card-swiper-info__left .price {
   font-size: 12.66px;
-  margin: 0 5px 0 7px; }
+  margin: 0 0.7px 0 7px; }
 .card-swiper-info__left .digit {
   font-family: 'Rajdhani 400', sans-serif;
   font-size: 14.4px;
   color: rgba(255, 255, 255, 0.7); }
 
 .card-swiper-info__right h5 {
+  margin: 4px 0 0 8px;
   font-family: 'Rajdhani 600', sans-serif;
   font-size: 14.4px;
   color: rgba(255, 255, 255, 0.2); }
 .card-swiper-info__right .time {
-  width: 87%;
-  margin-top: 14px;
+  width: 88.7%;
+  margin-top: 9.5px;
+  margin-right: 8.6px;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -865,11 +878,12 @@ h1 {
     font-family: 'Rajdhani 500', sans-serif;
     color: rgba(255, 255, 255, 0.2); }
 .card-swiper-info__right .btn-border {
-  margin-top: 40px;
+  margin-top: 37.2px;
+  margin-right: 2px;
   padding: 2.88px;
   background: linear-gradient(270deg, #ffa6fa 50%, #3c79d4 90%);
   width: 160px;
-  height: 48.96px; }
+  height: 51.66px; }
 .card-swiper-info__right .btn-little {
   margin-right: 3px;
   height: 100%;
@@ -896,10 +910,11 @@ h1 {
 
   .swiper-first {
     margin-top: 36px;
-    margin-bottom: 40px; }
+    margin-bottom: 39.1px; }
 
   .card-swiper-first {
-    width: 303px; }
+    width: 303px;
+    position: relative; }
 
   .title-block h2 {
     font-size: 16px;
@@ -923,30 +938,35 @@ h1 {
   .card-swiper-info__left .email-link {
     margin: 0 3px;
     margin-right: 15px;
-    font-size: 9px; }
+    font-size: 11.9px; }
   .card-swiper-info__left h5 {
     margin-top: 20px;
     font-size: 8.5px; }
   .card-swiper-info__left .cost {
-    margin-top: 3.5px; }
+    margin-top: -3.1px; }
   .card-swiper-info__left .price {
     font-size: 7.47px;
     margin: 0 5px 0 2.1px; }
   .card-swiper-info__left .digit {
     font-size: 8.5px; }
 
+  .card-swiper-info__left .cost .eth-icon {
+    transform: translate(1.2px, 9px); }
+
   .card-swiper-info__right h5 {
     font-size: 8.5px;
-    margin-left: 5px; }
+    margin: 2px 0 0 11.1px; }
+  .card-swiper-info__right .btn-little:after {
+    top: 9.6px; }
   .card-swiper-info__right .time {
-    margin-top: 11.4px;
+    margin-top: 10.6px;
     width: 83.6%; }
     .card-swiper-info__right .time__item .clock {
       font-size: 13.6px; }
     .card-swiper-info__right .time__item .time-name {
       font-size: 8.5px; }
   .card-swiper-info__right .btn-border {
-    margin-top: 31.2px;
+    margin-top: 28.4px;
     width: 112px;
     height: 37.5px; }
   .card-swiper-info__right .btn-little {
@@ -970,30 +990,29 @@ h1 {
   margin-top: 55px; }
 
 .tabs-wrapper {
-  margin-left: 99px; }
+  margin-left: 95.4px; }
 
 .tabs {
   max-width: 800px;
-  margin-top: 47px;
+  margin-top: 43.5px;
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
   flex-direction: row;
   flex-wrap: nowrap;
   flex-wrap: wrap;
-  gap: 44px; }
+  gap: 37.25px 36.5px; }
   .tabs__item {
-    width: 368.12px;
-    height: 99.39px;
+    width: 375.92px;
+    height: 105.99px;
     font-size: 26.53px;
     color: rgba(255, 255, 255, 0.5);
-    background: none;
-    border: 2.88px solid transparent;
-    border-image: linear-gradient(to right, #ffa6fa, #3c79d4) 1; }
-
-.tabs__item_active {
-  color: white;
-  background: linear-gradient(90deg, #ff56f6, #b936ee, #3bace2, #406aff); }
+    background: url("../assets/tabs/border.png") no-repeat;
+    background-size: 100% 100%;
+    padding: 0; }
+    .tabs__item:hover {
+      color: #ffffff;
+      background: linear-gradient(90deg, #ff56f6 20%, #b936ee 50%, #3bace2 100%, #406aff 120%); }
 
 .view {
   font-size: 19.9px;

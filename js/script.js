@@ -52,16 +52,25 @@ const breakpoints = {
 new Swiper(".swiper-first", {
   loop: true,
   breakpoints: breakpoints,
+  navigation: {
+    nextEl: '.first-swiper-button-next',
+  }
 });
 
 
 new Swiper(".swiper-second", {
   loop: true,
   breakpoints: breakpoints,
+  navigation: {
+    nextEl: '.second-swiper-button-next',
+  }
 });
 
 new Swiper(".swiper-third", {
   loop: true,
+  navigation: {
+    nextEl: '.third-swiper-button-next',
+  },
   breakpoints: {
     300: {
       slidesPerView: .5,
@@ -70,6 +79,7 @@ new Swiper(".swiper-third", {
       slidesPerView: 1,
     },
     440: {
+      spaceBetween: 24.56,
       slidesPerView: 1.2,
     },
     540: {
