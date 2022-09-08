@@ -1,6 +1,6 @@
 .hero {
   width: 100%;
-  padding: 0 111px 0 102px;
+  padding: 0 111px 0 101px;
 }
 
 .promo {
@@ -28,7 +28,7 @@ h1 {
   color: #ffffff;
   font-size: 24px;
   line-height: 45px;
-  margin: 17px 0 42px;
+  margin: 17px 0 40px;
   letter-spacing: 1px;
 }
 
@@ -46,12 +46,21 @@ h1 {
 }
 
 
+.wrapper-btn-hero {
+  width: 255px;
+  height: 68.7px;
+  border-radius: 6px;
+  padding: 2.88px;
+  @include bgClipDesktop();
+  background: linear-gradient(90deg, #FFA6FA 20%, #3C79D4 50%);
+}
+
 .btn-hero {
-  background: url("../assets/hero/button-big-bg.svg");
-  background-size: cover;
-  width: 250px;
-  height: 65px;
-  border: none;
+  @include bgClipDesktop();
+  background: linear-gradient(270deg, #ff56f6 20%, #b936ee 50%, #3bace2 100%, #406aff 120%);
+  width: 100%;
+  height: 100%;
+  border-radius: 6px;
   font-size: 20px;
   line-height: 25px;
   color: #ffffff;
@@ -145,18 +154,20 @@ h1 {
     margin: 17px 0 42px;
     letter-spacing: normal;
   }
+  .wrapper-btn-hero {
+    width: 135.6px;
+    height: 36.1px;
+  }
   .btn-hero {
-    width: 133px;
-    height: 34px;
-    //background: red;
+    width: 100%;
+    height: 100%;
     font-size: 12px;
     line-height: 15.05px;
     padding-left: 28px;
     letter-spacing: normal;
-    background: url("../assets/hero/button-big-bg-mobile.png");
     div:after {
       content: url(../assets/hero/arrow-big-promo-mob.svg);
-      margin: 5px 6px 5px -1px;
+      margin: 5px 0 5px -1px;
     }
   }
 
@@ -196,7 +207,7 @@ h1 {
     font-size: 14px;
     line-height: 23.22px;
   }
-  .btn-hero {
+  .wrapper-btn-hero {
     margin-left: -3px;
   }
 
@@ -208,7 +219,7 @@ h1 {
   }
 
   .statistics {
-    margin-top: 48px;
+    margin-top: 44.3px;
   }
 }
 
