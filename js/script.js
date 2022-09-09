@@ -17,7 +17,8 @@ const breakpoints = {
     spaceBetween: 10,
   },
   375: {
-    slidesPerView: 1.05,
+    slidesPerView: 1.14,
+    spaceBetween: 24.3
   },
   440: {
     slidesPerView: 1.2,
@@ -77,10 +78,6 @@ new Swiper(".swiper-third", {
     },
     350: {
       slidesPerView: 1,
-    },
-    375: {
-      slidesPerView: 1.2,
-      spaceBetween: 24.56
     },
     440: {
       slidesPerView: 1.2,

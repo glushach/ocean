@@ -266,6 +266,9 @@ button {
 .box-shadow {
   box-shadow: 0 4.45px 107px rgba(255, 86, 246, 0.5); }
 
+.wrapper-explore-all {
+  transform: translateX(9.4px); }
+
 .view-all {
   cursor: pointer; }
 
@@ -1197,29 +1200,31 @@ h1 {
     margin-top: 30.6px;
     margin-bottom: 40px; } }
 .slider3 {
-  margin: 162px 109.89px 0 109px;
+  margin: 161.6px 109.89px 0 109px;
   text-align: center; }
 
 .slider3-title {
   font-size: 26.53px;
   max-width: 339px;
   margin: 0 auto;
-  position: relative; }
+  position: relative;
+  transform: translateX(3.3px); }
   .slider3-title span {
     color: #ff56f6; }
     .slider3-title span:after {
       content: url("../assets/top-sellers/drobdown.svg");
       position: absolute;
-      top: -7px;
-      right: -10px; }
+      top: -2.2px;
+      right: -15.5px; }
 
 .slider3-descr {
   max-width: 500px;
-  margin: 24.3px auto 0 auto;
+  margin: 24.2px auto 0 auto;
   font-family: 'Roboto 400', sans-serif;
   text-align: center;
   font-size: 17.69px;
-  line-height: 24.8px; }
+  line-height: 25.4px;
+  transform: translateX(7.3px); }
 
 .column {
   width: 437.04px;
@@ -1261,7 +1266,7 @@ h1 {
       .column .column__info .rate:before {
         content: url("../assets/top-sellers/seller-eth-icon.svg");
         position: absolute;
-        left: -15px; }
+        left: -14.2px; }
   .column .number {
     margin-top: 23px;
     margin-right: 17px;
@@ -1313,7 +1318,7 @@ h1 {
     flex-wrap: nowrap; }
 
 .swiper-third {
-  margin: 60px 0 25px 0; }
+  margin: 59.2px 0 24px 0; }
 
 .wrapper-explore-all {
   text-align: center; }
@@ -1333,7 +1338,8 @@ h1 {
 
   .slider3-title {
     font-size: 19.23px;
-    max-width: 241.19px; }
+    max-width: 241.19px;
+    transform: translateX(-4.7px); }
     .slider3-title span:after {
       top: -3px;
       right: -14px; }
@@ -1342,7 +1348,8 @@ h1 {
     font-size: 14px;
     max-width: 320px;
     line-height: 19.63px;
-    margin-top: 19.6px; }
+    margin-top: 19.6px;
+    transform: translateX(-1.6px); }
 
   .column__wrap .number {
     font-size: 13.81px;
@@ -1350,12 +1357,15 @@ h1 {
     margin-top: 16.5px; }
   .column__wrap img {
     width: 50.63px;
-    height: 50.63px; }
+    height: 50.63px;
+    transform: translateY(-1px); }
 
   .column__item {
     height: 90.21px;
     padding: 21.51px 16px 0 11px;
     margin-bottom: 24.86px; }
+    .column__item:before {
+      border-radius: 23.27px; }
 
   .column .progress {
     font-size: 10.66px;
@@ -1367,8 +1377,12 @@ h1 {
     font-size: 13.81px; }
 
   .column .column__info .rate {
-    font-size: 8.17px;
-    margin-top: 9.3px; } }
+    font-size: 9.27px;
+    margin-top: 11.3px;
+    margin-left: 20.4px; }
+    .column .column__info .rate:before {
+      left: -12.6px;
+      top: -1.5px; } }
 .info-block {
   width: 100%;
   min-height: 556.37px;
