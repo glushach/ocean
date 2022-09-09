@@ -122,7 +122,7 @@ hr {
     margin-right: 0;
   }
   .social-icon {
-    margin-bottom: 25px;
+    margin-bottom: 20.9px;
   }
 }
 
@@ -130,7 +130,7 @@ hr {
   .footer {
     margin: 103px 25px 0 25px;
     &__descr {
-      font-size: 13.28px;
+
     }
     .bottom {
       display: none;
@@ -138,15 +138,14 @@ hr {
   }
   .right-block {
     width: 100%;
-    margin-top: 30px;
-    margin-bottom: -12.5px;
+    margin: 31.6px 0 -12.5px 4.1px;
     @include flex(flex-start, center, column);
     &__item {
       margin-top: 7.2px;
       width: 100%;
       margin-right: 0;
       border-bottom: 1px solid rgba(256, 256, 256, 0.2);
-      margin-bottom: 15px;
+      margin-bottom: 14.7px;
       &:first-child {
         margin-top: 0;
       }
@@ -155,13 +154,13 @@ hr {
       }
     }
     &__title {
-      margin-bottom: 19px;
+      margin-bottom: 15.7px;
       position: relative;
       cursor: pointer;
       &:before,
       &:after {
         content: '';
-        width: 8.2px;
+        width: 10.4px;
         height: 1.3px;
         background: rgba(256, 256, 256, .6);
         position: absolute;
@@ -170,12 +169,12 @@ hr {
       &:before {
         transform: rotate(-40deg);
         right: 23.5px;
-        top: 10px;
+        top: 10.5px;
       }
       &:after {
         transform: rotate(40deg);
-        right: 30px;
-        top: 10px;
+        right:  31px;
+        top: 10.5px;
       }
     }
     &__title.active-accordion:before,
@@ -195,6 +194,22 @@ hr {
   }
   .copyright {
     @include flex(flex-start, center, column-reverse);
+    .policy,
+    .sitemap,
+    .sitemap-t {
+      display: none;
+    }
+    .condition {
+      width: 296px;
+      @include flex(space-between);
+      margin-left: 3.8px;
+      margin-top: -3.3px;
+      padding-right: 17.6px;
+    }
+    .reserved {
+      transform: translateY(-3.6px);
+      letter-spacing: 0.05px;
+    }
 
     div {
       margin-bottom: 51px;
@@ -214,6 +229,9 @@ hr {
     margin: 103px 15px 0 15px;
   }
   .copyright {
-    font-size: 10.5px;
+    font-size: 13.5px;
+    .condition {
+      padding-right: 0;
+    }
   }
 }

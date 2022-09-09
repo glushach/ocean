@@ -1691,19 +1691,16 @@ hr {
     margin-right: 0; }
 
   .social-icon {
-    margin-bottom: 25px; } }
+    margin-bottom: 20.9px; } }
 @media (max-width: 850px) {
   .footer {
     margin: 103px 25px 0 25px; }
-    .footer__descr {
-      font-size: 13.28px; }
     .footer .bottom {
       display: none; }
 
   .right-block {
     width: 100%;
-    margin-top: 30px;
-    margin-bottom: -12.5px;
+    margin: 31.6px 0 -12.5px 4.1px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -1714,18 +1711,18 @@ hr {
       width: 100%;
       margin-right: 0;
       border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-      margin-bottom: 15px; }
+      margin-bottom: 14.7px; }
       .right-block__item:first-child {
         margin-top: 0; }
       .right-block__item:last-child {
         width: 100%; }
     .right-block__title {
-      margin-bottom: 19px;
+      margin-bottom: 15.7px;
       position: relative;
       cursor: pointer; }
       .right-block__title:before, .right-block__title:after {
         content: '';
-        width: 8.2px;
+        width: 10.4px;
         height: 1.3px;
         background: rgba(255, 255, 255, 0.6);
         position: absolute;
@@ -1733,11 +1730,11 @@ hr {
       .right-block__title:before {
         transform: rotate(-40deg);
         right: 23.5px;
-        top: 10px; }
+        top: 10.5px; }
       .right-block__title:after {
         transform: rotate(40deg);
-        right: 30px;
-        top: 10px; }
+        right: 31px;
+        top: 10.5px; }
     .right-block__title.active-accordion:before, .right-block__title.active-accordion:after {
       background: #2EC5CE; }
     .right-block__title.active-accordion:before {
@@ -1753,6 +1750,23 @@ hr {
     align-items: center;
     flex-direction: column-reverse;
     flex-wrap: nowrap; }
+    .copyright .policy,
+    .copyright .sitemap,
+    .copyright .sitemap-t {
+      display: none; }
+    .copyright .condition {
+      width: 296px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      margin-left: 3.8px;
+      margin-top: -3.3px;
+      padding-right: 17.6px; }
+    .copyright .reserved {
+      transform: translateY(-3.6px);
+      letter-spacing: 0.05px; }
     .copyright div {
       margin-bottom: 51px; }
     .copyright:last-child {
@@ -1765,6 +1779,8 @@ hr {
     margin: 103px 15px 0 15px; }
 
   .copyright {
-    font-size: 10.5px; } }
+    font-size: 13.5px; }
+    .copyright .condition {
+      padding-right: 0; } }
 
 /*# sourceMappingURL=style.css.map */
