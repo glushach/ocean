@@ -51,8 +51,8 @@
   }
 
   .cost {
-    margin-top: 5px;
-    margin-left: -2.6px;
+    margin-top: 5.3px;
+    margin-left: -4.3px;
     .eth-icon {
       transform: translate(3px, 4.3px);
       width: 14.24px;
@@ -62,13 +62,14 @@
 
   .price {
     font-size: 12.66px;
-    margin: 0 0.7px 0 7px
+    margin: 0 0.7px 0 7px;
   }
 
   .digit {
     font-family: 'Rajdhani 400', sans-serif;
     font-size: 14.4px;
     color: rgba(255, 255, 255, .7);
+    margin-left: 2.3px;
   }
 }
 
@@ -94,7 +95,10 @@
       .time-name {
         font-family: 'Rajdhani 500', sans-serif;
         color: rgba(255, 255, 255, .2);
-        //margin-left: 5px;
+        transform: translateX(-1.6px);
+      }
+      &_modify {
+        transform: translate(-2.4px, 0px);
       }
     }
   }
