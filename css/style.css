@@ -1,8 +1,7 @@
 @charset "UTF-8";
 html {
   box-sizing: border-box;
-  scroll-behavior: smooth;
-  -webkit-text-size-adjust: 100%; }
+  scroll-behavior: smooth; }
 
 *, *::before, *::after {
   box-sizing: inherit; }
@@ -1383,44 +1382,52 @@ h1 {
     .column .column__info .rate:before {
       left: -12.6px;
       top: -1.5px; } }
+@font-face {
+  font-family: 'Inter800';
+  src: url("../fonts/Inter-Bold.ttf"); }
+@font-face {
+  font-family: 'Inter400';
+  src: url("../fonts/Inter-Regular.otf"); }
 .info-block {
   width: 100%;
   min-height: 556.37px;
   background: url("../assets/info-question/question-back-bg.png");
-  margin-top: 160.48px;
+  margin-top: 159.68px;
   position: relative; }
   .info-block .question {
     width: 577.05px;
     height: 473.14px;
-    padding: 60px 47.39px 50.62px 71.21px;
+    padding: 60px 47.39px 50.62px 76.31px;
     background: url("../assets/info-question/question-front-bg.png");
     position: absolute;
-    right: 8.6%;
-    bottom: -128px; }
+    right: 8.8%;
+    bottom: -130.8px;
+    font-feature-settings: 'salt' on, 'liga' off;
+    font-family: 'Inter800', sans-serif; }
     .info-block .question__title {
-      font-family: "Inter 800", sans-serif;
       font-size: 44.51px;
       line-height: 60.09px; }
     .info-block .question__descr {
-      font-family: "Inter 400", sans-serif;
+      font-family: "Inter400", sans-serif;
       font-size: 20.03px;
       line-height: 35.61px;
-      margin-top: 21px; }
+      margin-top: 20.1px;
+      margin-left: -2.3px; }
     .info-block .question__footer {
-      font-family: "Inter 500", sans-serif;
-      font-size: 16px;
+      font-weight: 500;
       line-height: 24px;
-      margin-top: 44.76px; }
+      margin-top: 44.16px; }
       .info-block .question__footer .learn {
-        margin-right: 65.65px;
-        letter-spacing: 1px; }
+        margin-right: 62.9px;
+        letter-spacing: 0.6px; }
       .info-block .question__footer .watch {
-        letter-spacing: 1px;
+        letter-spacing: 0.7px;
         position: relative; }
         .info-block .question__footer .watch:before {
           content: url("../assets/info-question/btn-play.svg");
           position: absolute;
-          left: -25px; }
+          left: -22px;
+          bottom: -4.8px; }
 
 @media (max-width: 700px) {
   .info-block {
