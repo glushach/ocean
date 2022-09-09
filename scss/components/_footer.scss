@@ -10,6 +10,7 @@ hr {
   margin: 156px 178.38px 0 82.91px;
   &__content {
     @include flex();
+    margin-bottom: 27px;
   }
   &__logo {
     width: 222px;
@@ -17,10 +18,11 @@ hr {
     background: url("../assets/footer/footer-logo.png") no-repeat;
   }
   &__descr {
-    max-width: 300px;
-    font-size: 14.18px;
+    max-width: 282.5px;
+    font-size: 15.48px;
     line-height: 26.53px;
-    margin: 33px 0 26.53px 0;
+    margin: 34.7px 0 26.53px 0;
+    letter-spacing: 0.1px;
     font-family: "Inter 400", sans-serif;
   }
 }
@@ -33,12 +35,22 @@ hr {
 .copyright {
   font-family: "Inter 400", sans-serif;
   @include flex(space-between);
-  font-size: 14.28px;
-  margin: 26.53px 0 30px 0;
+  font-size: 15.48px;
+  margin: 29.43px 0 27.4px -3px;
+  .condition {
+    margin-right: 1.2px;
+    margin-top: -2px;
+    span.sitemap {
+      padding: 0 8.1px 0 6.1px;
+    }
+    span.policy {
+      padding: 0 8.1px 0 4.7px;
+    }
+  }
 }
 
 .left-block {
-  margin-right: 73px;
+  margin-right: 90.4px;
 }
 
 .right-block {
@@ -47,7 +59,7 @@ hr {
   @include flex();
   &__item {
     width: 176.87px;
-    margin-right: 33.16px;
+    margin-right: 32.66px;
     &:last-child {
       margin-right: 0;
       width: 127.87px;
@@ -57,22 +69,24 @@ hr {
   &__title {
     font-family: 'Inter 500', sans-serif;
     font-size: 19.9px;
-    margin-bottom: 24px;
-  }
-  ul {
-    &:last-child {
-      margin-bottom: 0;
-    }
+    line-height: 26.53px;
+    margin-bottom: 19.7px;
   }
   li {
     font-family: 'Inter 400', sans-serif;
     font-size: 15.48px;
-    margin-bottom: 22px;
+    margin-bottom: 13.1px;
+    line-height: 26.53px;
     span {
       font-family: 'MuseoModerno', sans-serif;
       color: #2EC5CE;
       font-size: 22.11px;
       margin-left: 7px;
+    }
+  }
+  ul {
+    li:last-child {
+      margin-bottom: 0;
     }
   }
 }
@@ -181,7 +195,7 @@ hr {
   }
   .copyright {
     @include flex(flex-start, center, column-reverse);
-    font-size: 12.58px;
+
     div {
       margin-bottom: 51px;
     }
