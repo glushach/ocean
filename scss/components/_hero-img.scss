@@ -25,9 +25,6 @@
   margin: 2.9px 0 0 -4px
 }
 
-
-
-
 .hero-left-block {
   &-title {
     font-family: 'Rajdhani 700', sans-serif;
@@ -51,14 +48,18 @@
     opacity: 70%;
     font-size: 11.05px;
   }
+  .eth {
+    transform: translate(0px, -1.2px);
+  }
   .eth-icon {
-    width: 10.93px;
     height: 17.8px;
     transform: translateY(4.9px)
   }
 
   .eth-cost {
-    font-size: 10.22px;
+    font-size: 9.72px;
+    letter-spacing: 0.1px;
+
   }
   .eth-dollars {
     font-family: 'Rajdhani 400', sans-serif;
@@ -92,6 +93,13 @@
     font-size: 11.05px;
     opacity: 70%;
     margin-top: 3px;
+    transform: translateX(-1.4px);
+    &_modify {
+      transform: translateX(1.1px);
+    }
+  }
+  &_modify {
+    transform: translate(-1.5px, 0.6px);
   }
 }
 
@@ -114,14 +122,13 @@
   font-size: 17.69px;
   color: #ffffff;
   text-align: left;
-  padding-left: 10px;
+  padding-left: 9.3px;
   position: relative;
   &:after {
     content: url("../assets/hero/arrow-little-promo.svg");
     width: 23px;
-    //margin: 10px;
     position: absolute;
-    top: 9px;
+    top: 7.8px;
     right: 10px;
   }
 }
@@ -173,16 +180,22 @@
     }
   }
   .right-block-title {
-    margin: 2.8px 0 5px 8.5px;
+    margin: 2.8px 0 5px 10.6px;
   }
   .time__item .name {
     margin-top: 2.6px;
+    font-size: 10.66px;
+    transform: translate(-0.2px, -1px);
+    &_modify {
+      transform: translate(2.4px, 0.3px);
+    }
   }
   .time {
     width: 102.9px;
   }
   .hero-left-block .eth-cost {
-    letter-spacing: -0.8px;
+    font-size: 9.37px;
+    line-height: 11.75px;
   }
   .btn-little-promo:after {
     top: 8.4px;
