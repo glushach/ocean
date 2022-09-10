@@ -57,6 +57,13 @@ button {
   color: #ffffff;
 }
 
+@media (max-width: 375px) {
+  .container {
+    background: url("../assets/bg-main-mobile.png");
+    background-size: cover;
+  }
+}
+
 
 @import "common/fonts";
 @import "common/mixins";
