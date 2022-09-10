@@ -25,78 +25,109 @@ h1 {
 }
 
 .descr {
-  max-width: 650px;
-  font-family: 'Rajdhani 400', sans-serif;
+  max-width: 657.75px;
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: 400;
   color: #ffffff;
-  font-size: 24px;
-  line-height: 44px;
-  margin: 20.2px 0 40px 1.8px;
-  letter-spacing: 1px;
+  font-size: 26.53px;
+  line-height: 44.22px;
+  transform: translate(2.6px, -6.6px);
 }
 
 .btn-block {
+  position: relative;
   @include flex(flex-start, flex-end);
-  span {
+  .create {
     background: -webkit-linear-gradient(140deg, #42a6e3, #ff56f6);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-size: 20px;
     line-height: 25px;
-    margin-bottom: 21.6px;
-    margin-left: 35.4px;
+    position: absolute;
+    bottom: -52.8px;
+    left: 289.9px;
+  }
+  .snake {
+    position: absolute;
+    right: -77.6px;
+    bottom: -20.4px;
   }
 }
 
 
 .btn-hero {
-  width: 255px;
-  height: 68.13px;
-  background: url("../assets/hero/big-button-with-bg.svg") no-repeat;
+  width: 455.1px;
+  height: 284px;
+  background: url("../assets/hero/big-button-desktop.svg") no-repeat;
   background-size: cover;
-  -webkit-filter: drop-shadow(0px 4.45px 45.25px rgba(255, 86, 246, 0.6));
-  filter: drop-shadow(0px 4.45px 45.25px rgba(255, 86, 246, 0.6));
-  border-radius: 6px;
-  color: #ffffff;
-  padding-left: 65px;
-  font-size: 19.9px;
-  line-height: 24.95px;
+  padding: 0;
+  position: absolute;
+  top: -96.9px;
+  left: -100.6px;
+  //-webkit-filter: drop-shadow(0px 4.45px 45.25px rgba(255, 86, 246, 0.6));
+  //filter: drop-shadow(0px 4.45px 45.25px rgba(255, 86, 246, 0.6));
 }
 
 .statistics {
-color: #ffffff;
-@include flex();
-margin-top: 68.7px;
-&__item {
-padding-left: 42px;
-padding-right: 19.4px;
-border-right: 1px solid rgba(255, 255, 255, 0.26);
-&:first-child {
-  padding-left: 1px;
-  padding-right: 18.4px;
-}
-&:last-child {
-  padding-right: 0;
-  border-right: none;
-}
-&_modify {
-  .digit,
-  .text {
-    transform: translate(-5px, 0px);
+  color: #ffffff;
+  margin-top: 149.6px;
+  margin-left: -2.6px;
+  @include flex();
+  &__item {
+    padding-left: 42px;
+    padding-right: 19.4px;
+    line-height: 30.7px;
+    transform: translate(0px, 0px);
+    border-right: 1px solid rgba(255, 255, 255, 0.26);
+  &:first-child {
+    padding-left: 1px;
+    padding-right: 18.4px;
   }
-}
+  &:last-child {
+    padding-right: 0;
+    border-right: none;
+  }
 }
 
 .digit {
-font-family: 'Aldrich 400', sans-serif;
-font-size: 40px;
+  font-family: 'Aldrich', sans-serif;
+  font-weight: 400;
+  font-size: 39.8px;
+  letter-spacing: 0.22px;
+  &_first {
+    transform: translate(3.8px, 2.7px);
+  }
+  &_second {
+    transform: translate(-2.3px, 4.2px);
+  }
+  &_third {
+    transform: translate(3.7px, 3.4px);
+  }
 }
 
 .text {
-font-family: 'Alethia Next 300', sans-serif;
-font-size: 16px;
-margin-top: 1.5px;
-margin-left: 1.6px;
+  font-family: 'Alethia Next', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+    &_first {
+      transform: translate(4.65px, 5.9px);
+    }
+    &_second {
+      transform: translate(-1.4px, 6.3px);
+    }
+    &_third {
+      transform: translate(3.9px, 5.5px);
+    }
+  }
 }
+
+
+@media (max-width: 1500px) {
+  .btn-block {
+    .snake {
+      display: none;
+    }
+  }
 }
 
 @media (max-width: 1200px) {
@@ -132,29 +163,24 @@ padding: 15px 15px 0 15px;
 
 @media (max-width: 700px) {
 h1 {
-font-family: "Lato 600", sans-serif;
-line-height: 57.71px;
-font-size: 42px;
-letter-spacing: -1.9px;
-margin: 0;
+  font-family: "Lato 600", sans-serif;
+  line-height: 57.71px;
+  font-size: 42px;
+  letter-spacing: -1.9px;
+  margin: 0;
 }
 .descr {
-max-width: none;
-font-size: 20px;
-line-height: 35px;
-margin: 17px 0 42px;
-letter-spacing: normal;
+  max-width: none;
+  font-size: 20px;
+  line-height: 35px;
+  margin: 17px 0 42px;
+  letter-spacing: normal;
 }
 .btn-hero {
-width: 135.6px;
-height: 36.1px;
-}
-
-.btn-block {
-span {
-  font-size: 12px;
-  margin-bottom: 7px;
-}
+  width: 223px;
+  height: 152px;
+  top: -96.9px;
+  left: -100.6px;
 }
 
 .statistics {

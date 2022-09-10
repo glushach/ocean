@@ -438,53 +438,59 @@ h1 {
     word-spacing: 1px; }
 
 .descr {
-  max-width: 650px;
-  font-family: 'Rajdhani 400', sans-serif;
+  max-width: 657.75px;
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: 400;
   color: #ffffff;
-  font-size: 24px;
-  line-height: 44px;
-  margin: 20.2px 0 40px 1.8px;
-  letter-spacing: 1px; }
+  font-size: 26.53px;
+  line-height: 44.22px;
+  transform: translate(2.6px, -6.6px); }
 
 .btn-block {
+  position: relative;
   display: flex;
   justify-content: flex-start;
   align-items: flex-end;
   flex-direction: row;
   flex-wrap: nowrap; }
-  .btn-block span {
+  .btn-block .create {
     background: -webkit-linear-gradient(140deg, #42a6e3, #ff56f6);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-size: 20px;
     line-height: 25px;
-    margin-bottom: 21.6px;
-    margin-left: 35.4px; }
+    position: absolute;
+    bottom: -52.8px;
+    left: 289.9px; }
+  .btn-block .snake {
+    position: absolute;
+    right: -77.6px;
+    bottom: -20.4px; }
 
 .btn-hero {
-  width: 255px;
-  height: 68.13px;
-  background: url("../assets/hero/big-button-with-bg.svg") no-repeat;
+  width: 455.1px;
+  height: 284px;
+  background: url("../assets/hero/big-button-desktop.svg") no-repeat;
   background-size: cover;
-  -webkit-filter: drop-shadow(0px 4.45px 45.25px rgba(255, 86, 246, 0.6));
-  filter: drop-shadow(0px 4.45px 45.25px rgba(255, 86, 246, 0.6));
-  border-radius: 6px;
-  color: #ffffff;
-  padding-left: 65px;
-  font-size: 19.9px;
-  line-height: 24.95px; }
+  padding: 0;
+  position: absolute;
+  top: -96.9px;
+  left: -100.6px; }
 
 .statistics {
   color: #ffffff;
+  margin-top: 149.6px;
+  margin-left: -2.6px;
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
   flex-direction: row;
-  flex-wrap: nowrap;
-  margin-top: 68.7px; }
+  flex-wrap: nowrap; }
   .statistics__item {
     padding-left: 42px;
     padding-right: 19.4px;
+    line-height: 30.7px;
+    transform: translate(0px, 0px);
     border-right: 1px solid rgba(255, 255, 255, 0.26); }
     .statistics__item:first-child {
       padding-left: 1px;
@@ -492,18 +498,31 @@ h1 {
     .statistics__item:last-child {
       padding-right: 0;
       border-right: none; }
-    .statistics__item_modify .digit,
-    .statistics__item_modify .text {
-      transform: translate(-5px, 0px); }
   .statistics .digit {
-    font-family: 'Aldrich 400', sans-serif;
-    font-size: 40px; }
+    font-family: 'Aldrich', sans-serif;
+    font-weight: 400;
+    font-size: 39.8px;
+    letter-spacing: 0.22px; }
+    .statistics .digit_first {
+      transform: translate(3.8px, 2.7px); }
+    .statistics .digit_second {
+      transform: translate(-2.3px, 4.2px); }
+    .statistics .digit_third {
+      transform: translate(3.7px, 3.4px); }
   .statistics .text {
-    font-family: 'Alethia Next 300', sans-serif;
-    font-size: 16px;
-    margin-top: 1.5px;
-    margin-left: 1.6px; }
+    font-family: 'Alethia Next', sans-serif;
+    font-weight: 300;
+    font-size: 16px; }
+    .statistics .text_first {
+      transform: translate(4.65px, 5.9px); }
+    .statistics .text_second {
+      transform: translate(-1.4px, 6.3px); }
+    .statistics .text_third {
+      transform: translate(3.9px, 5.5px); }
 
+@media (max-width: 1500px) {
+  .btn-block .snake {
+    display: none; } }
 @media (max-width: 1200px) {
   .hero {
     padding: 48px 50px 0 50px; } }
@@ -542,12 +561,10 @@ h1 {
     letter-spacing: normal; }
 
   .btn-hero {
-    width: 135.6px;
-    height: 36.1px; }
-
-  .btn-block span {
-    font-size: 12px;
-    margin-bottom: 7px; }
+    width: 223px;
+    height: 152px;
+    top: -96.9px;
+    left: -100.6px; }
 
   .statistics .digit {
     font-family: 'Aldrich 400', sans-serif;
@@ -589,7 +606,7 @@ h1 {
   height: 68.12px; }
 
 .blockchain {
-  margin-top: 125.1px;
+  margin-top: 123.8px;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
@@ -597,10 +614,14 @@ h1 {
   flex-wrap: wrap; }
   .blockchain img {
     margin: 0 0 20px 9px; }
+  .blockchain .binance {
+    transform: translate(-1.7px, -0.3px); }
   .blockchain .eth {
-    transform: translate(-0.7px, 3px); }
+    transform: translate(-1.1px, 4.3px); }
   .blockchain .blockchain {
-    transform: translate(-0.1px, 1.7px); }
+    transform: translate(0.6px, 3.7px); }
+  .blockchain .bitmex {
+    transform: translate(1.5px, -0.1px); }
 
 .blockchain-modile {
   display: none;
@@ -613,7 +634,9 @@ h1 {
     margin-bottom: 30px;
     margin-right: 17.6px; }
   .blockchain-modile .blackchain-blockchain {
-    margin-left: -12.8px; }
+    transform: translate(0.4px, 3.6px); }
+  .blockchain-modile .blackchain-bitmex {
+    transform: translate(0.4px, 3.6px); }
 
 @media (max-width: 1000px) {
   .blockchain {

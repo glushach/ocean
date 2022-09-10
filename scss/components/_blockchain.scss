@@ -1,16 +1,24 @@
 .blockchain {
-  margin-top: 125.1px;
+  margin-top: 123.8px;
   @include flex(space-between, flex-end, row, wrap);
   img {
     margin: 0 0 20px 9px;
   }
+  .binance {
+    transform: translate(-1.7px, -0.3px);
+  }
   .eth {
-    transform: translate(-0.7px, 3px);
+    transform: translate(-1.1px, 4.3px);
   }
   .blockchain {
-    transform: translate(-0.1px, 1.7px);
+    transform: translate(0.6px, 3.7px);
   }
+  .bitmex {
+    transform: translate(1.5px, -0.1px);
+  }
+
 }
+
 .blockchain-modile {
   display: none;
   max-width: 308px;
@@ -24,12 +32,17 @@
     margin-right: 17.6px;
   }
   .blackchain-blockchain {
-    margin-left: -12.8px;
+    transform: translate(0.4px, 3.6px);
   }
   .blackchain-bitmex {
-
+    transform: translate(0.4px, 3.6px);
   }
 }
+
+
+
+
+
 
 @media (max-width: 1000px) {
   .blockchain {
