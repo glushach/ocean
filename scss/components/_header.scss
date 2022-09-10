@@ -20,18 +20,26 @@
   left: 2px;
   top: 2px;
   z-index: 5;
+  transform: translate(-1.7px, -0.6px);
 }
 
 .menu__li {
   margin-right: 66px;
+  &:first-child {
+    transform: translate(-1.4px, 5.7px);
+  }
+  &_second {
+    transform: translate(-0.4px, 5.7px);
+  }
   &:last-child {
     margin-right: 0;
+    transform: translate(0.2px, 5.7px);
   }
 }
 
 .menu__link {
-  font-size: 20px;
-  line-height: 34px;
+  font-size: 19.9px;
+  line-height: 24.95px;
   color: #ffffff;
   opacity: 60%;
 }
@@ -39,6 +47,16 @@
 .user-desktop {
   width: 93px;
   margin-top: 6px;
+  .basket {
+    width: 28.74px;
+    height: 28.74px;
+    transform: translate(1.3px, -0.6px);
+  }
+  .profile {
+    width: 22.11px;
+    height: 22.11px;
+    transform: translate(-1.6px, 0.1px);
+  }
 }
 
 .user-mobile {
@@ -104,9 +122,26 @@
   }
 
   .logо {
+    width: 140.17px;
+    height: 29.42px;
     background: url("../assets/header/logo-mob.png") no-repeat;
-    left: 7px;
-    top: 8px;
+    position: relative;
+    left: 2px;
+    top: 2px;
+    z-index: 5;
+    transform: translate(6.1px, 6.1px);
+  }
+  .menu__li {
+    &:first-child {
+      transform: translate(0, 0);
+    }
+    &_second {
+      transform: translate(0, 0);
+    }
+    &:last-child {
+      margin-right: 0;
+      transform: translate(0, 0);
+    }
   }
 }
 
