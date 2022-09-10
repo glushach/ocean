@@ -142,17 +142,16 @@ padding: 48px 50px 0 50px;
 }
 
 h1 {
-max-width: none;
-font-size: 60px;
-line-height: 92px;
-letter-spacing: 2px;
+  max-width: none;
+  font-size: 60px;
+  line-height: 92px;
 }
 
 .statistics {
-.digit {
-  font-size: 30px;
-}
-}
+    .digit {
+      font-size: 30px;
+    }
+  }
 }
 
 @media (max-width: 940px) {
@@ -163,10 +162,10 @@ padding: 15px 15px 0 15px;
 
 @media (max-width: 700px) {
 h1 {
-  font-family: "Lato 600", sans-serif;
+  font-family: "Lato", sans-serif;
+  font-weight: 600;
   line-height: 57.71px;
   font-size: 42px;
-  letter-spacing: -1.9px;
   margin: 0;
 }
 .descr {
@@ -179,40 +178,63 @@ h1 {
 .btn-hero {
   width: 223px;
   height: 152px;
-  top: -96.9px;
-  left: -100.6px;
+  background: url("../assets/hero/big-button-mobile.png");
+  top: -54.9px;
+  left: -32.9px;
+}
+.btn-block {
+  .create {
+    font-size: 12px;
+    line-height: 15.05px;
+    bottom: -27.1px;
+    left: 150.8px;
+  }
 }
 
 .statistics {
-.digit {
-  font-family: 'Aldrich 400', sans-serif;
-  font-size: 18px;
-}
+    .digit {
+      font-size: 18px;
+      &_second {
+        transform: translate(3.4px, 3.3px);
+      }
+      &_third {
+        transform: translate(9.1px, 3.4px);
+      }
+    }
 
-.text {
-  font-family: 'Alethia Next 300', sans-serif;
-  font-size: 12px;
-  margin-top: 6px;
-}
-}
+    .text {
+      font-size: 12px;
+      font-family: 'Lato', sans-serif;
+      &_first {
+        transform: translate(1.75px, -4px);
+      }
+      &_second {
+        transform: translate(3.6px, -2.9px);
+      }
+      &_third {
+        transform: translate(8.9px, -4px);
+      }
+    }
+  }
 }
 
 @media (max-width: 375px) {
 h1 {
-max-width: 290px;
-margin: 1px 0 0 0;
+  max-width: 290px;
+  transform: translate(-2.7px, 0);
+  word-spacing: 1.6px;
 }
 .promo-text {
-margin-left: 18px;
+  margin-left: 18px;
 }
 .descr {
-margin: 25.7px 0 32.5px 0.1px;
-font-size: 14px;
-line-height: 23.22px;
-transform: translateX(-1.1px);
+  margin: 25.7px 0 32.5px 0.1px;
+  font-size: 14px;
+  line-height: 23.22px;
+  transform: translate(-2.2px, 1.6px);
 }
 .wrapper-btn-hero {
-margin-left: -3px;
+  margin-left: -3px;
 }
 
 .btn-block {
@@ -223,8 +245,9 @@ span {
 }
 
 .statistics {
-margin-top: 44.3px;
+  margin-top: 73.7px;
 &__item {
+  border-right: none;
   &:first-child {
     transform: translate(-3.6px, 0px);
   }
