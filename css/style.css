@@ -49,9 +49,18 @@ button {
   color: #ffffff; }
 
 @media (max-width: 375px) {
-  .container {
+  body {
+    position: relative;
     background: url("../assets/bg-main-mobile.png");
-    background-size: cover; } }
+    background-size: 100% 100%; }
+    body:before {
+      content: "";
+      position: absolute;
+      width: 335px;
+      top: 555px;
+      height: 445px;
+      background: url("../assets/body-graduent-before.png");
+      background-size: 100% 100%; } }
 /* orbitron-700 - latin */
 @font-face {
   font-family: 'Orbitron 700';
@@ -678,49 +687,61 @@ h1 {
   height: 181.3px;
   background: url("../assets/hero/hero-promo-bg.png") no-repeat;
   position: absolute;
-  bottom: -64px;
-  right: -88.4px;
+  bottom: -48.5px;
+  right: -63.8px;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
   flex-direction: row;
   flex-wrap: nowrap;
-  padding: 36px 19.1px 0 24px; }
+  padding: 34.9px 19.1px 0 24px;
+  transform: translate(0px, 0px); }
 
 .img-banner {
   background: url("../assets/hero/hero-promo.png") no-repeat;
-  width: 401.28px;
-  height: 477.33px;
-  margin: 2.9px 0 0 -4px; }
+  width: 431.98px;
+  height: 492.83px;
+  margin: 2.9px 0 0 -4px;
+  transform: translate(-0.2px, 1px); }
 
 .hero-left-block-title {
-  font-family: 'Rajdhani 700', sans-serif;
-  font-size: 17.69px; }
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: 700;
+  font-size: 17.69px;
+  transform: translate(-1.5px, 1.4px); }
+.hero-left-block .hero-descr-avatar {
+  width: 30.74px;
+  height: 28.74px;
+  transform: translate(-2.2px, 0px); }
 .hero-left-block .email, .hero-left-block .price {
-  font-family: 'Rajdhani 600', sans-serif; }
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: 600; }
 .hero-left-block .email {
   margin-top: 9.2px;
+  font-size: 15.05px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
   flex-direction: row;
   flex-wrap: nowrap; }
   .hero-left-block .email span {
-    margin: 0 2.9px 0 0.4px; }
+    transform: translate(0.8px, 1.1px); }
+.hero-left-block .hero-descr-checked {
+  transform: translate(6.5px, 0.2px); }
 .hero-left-block .price {
   margin-top: 20.8px;
-  margin-bottom: 4.3px; }
+  margin-bottom: 4.3px;
+  transform: translate(-1.8px, 1.5px); }
 .hero-left-block .price, .hero-left-block .eth-dollars {
   opacity: 70%;
   font-size: 11.05px; }
 .hero-left-block .eth {
-  transform: translate(0px, -1.2px); }
+  transform: translate(-8.2px, -1.4px); }
 .hero-left-block .eth-icon {
-  height: 17.8px;
-  transform: translateY(4.9px); }
+  width: 19.44px;
+  transform: translate(3.4px, 6.2px); }
 .hero-left-block .eth-cost {
-  font-size: 9.72px;
-  letter-spacing: 0.1px; }
+  font-size: 9.72px; }
 .hero-left-block .eth-dollars {
   font-family: 'Rajdhani 400', sans-serif; }
 
@@ -735,31 +756,51 @@ h1 {
 
 .right-block-title {
   margin: 4.4px 0 5px 9.3px;
-  font-family: 'Rajdhani 600', sans-serif;
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: 600;
   opacity: 70%;
-  font-size: 11.05px; }
+  font-size: 11.05px;
+  transform: translate(-0.9px, 0.9px); }
 
 .time__item .digit {
-  font-family: 'Rajdhani 600', sans-serif;
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: 600;
   font-size: 17.69px; }
 .time__item .name {
-  font-family: 'Rajdhani 500', sans-serif;
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: 500;
   font-size: 11.05px;
   opacity: 70%;
-  margin-top: 3px;
-  transform: translateX(-1.4px); }
-  .time__item .name_modify {
-    transform: translateX(1.1px); }
-.time__item_modify {
-  transform: translate(-1.5px, 0.6px); }
+  margin-top: 3px; }
+
+.hero-digit_first {
+  transform: translate(1px, 1.8px); }
+
+.hero-digit_second {
+  transform: translate(-3px, 1.8px); }
+
+.hero-digit_third {
+  transform: translate(-0.1px, 1.8px); }
+
+.hero-name_first {
+  transform: translate(-2.3px, 0.9px); }
+
+.hero-name_second {
+  transform: translate(-2.7px, 0.9px); }
+
+.hero-name_third {
+  transform: translate(0.8px, 0.9px); }
 
 .btn-little-wrapper {
+  transform: translate(-1.5px, 0px);
   margin-top: 29px;
   padding: 2.21px;
   width: 122px;
   height: 41.9px;
   border-radius: 2.21px;
-  background: linear-gradient(270deg, #ffa6fa 50%, #3c79d4 90%); }
+  background: linear-gradient(270deg, #ffa6fa 50%, #3c79d4 90%);
+  -webkit-filter: drop-shadow(0px 4.45px 45.25px rgba(255, 86, 246, 0.6));
+  filter: drop-shadow(0px 4.45px 45.25px rgba(255, 86, 246, 0.6)); }
 
 .btn-little-promo {
   background: linear-gradient(90deg, #ff56f6 20%, #b936ee 50%, #3bace2 100%, #406aff 120%);
@@ -773,6 +814,8 @@ h1 {
   text-align: left;
   padding-left: 9.3px;
   position: relative; }
+  .btn-little-promo div {
+    transform: translate(-0.1px, 0.6px); }
   .btn-little-promo:after {
     content: url("../assets/hero/arrow-little-promo.svg");
     width: 23px;
@@ -788,67 +831,116 @@ h1 {
     right: 0; } }
 @media (max-width: 1000px) {
   .promo-banner {
-    margin-top: 57px;
+    margin-top: 55.6px;
     margin-left: 0;
-    min-width: 330px;
+    min-width: 400.5px;
     height: 174.79px; }
 
   .hero-descr {
-    right: -10.5px;
-    bottom: -39px;
+    right: 25.8px;
+    bottom: -40.3px;
     background: url("../assets/hero/hero-promo-bg-modile.png") no-repeat;
     padding: 35.5px 30.5px 0 21.4px; }
 
   .img-banner {
     width: 100%;
     height: 100%;
-    background: url("../assets/hero/hero-promo-mobile.png") no-repeat; }
+    background: url("../assets/hero/hero-promo-mobile.png") no-repeat;
+    margin: 2px 0 0 0;
+    transform: translate(33.3px, 1px); }
 
   .hero-left-block-title {
-    font-size: 17.05px; }
+    font-size: 17.05px;
+    transform: translate(0.3px, 1px); }
+
+  .hero-left-block .hero-descr-avatar {
+    width: 27.71px;
+    height: 27.71px;
+    transform: translate(1px, 0px); }
 
   .hero-left-block .email {
     margin-top: 8.6px; }
     .hero-left-block .email span {
       font-size: 14.92px;
-      margin: 0 4px 0.8px 0.7px; }
+      margin: 0 -0.8px 0.8px 2.2px; }
   .hero-left-block .price {
     margin-top: 20px;
     margin-bottom: 6.3px; }
 
+  .hero-right-block {
+    width: 122px; }
+
   .right-block-title {
-    margin: 2.8px 0 5px 10.6px; }
+    margin: 2.8px 0 5px 13.5px;
+    font-size: 10.66px; }
 
   .time__item .name {
     margin-top: 2.6px;
-    font-size: 10.66px;
-    transform: translate(-0.2px, -1px); }
-    .time__item .name_modify {
-      transform: translate(2.4px, 0.3px); }
+    font-size: 10.66px; }
 
   .time {
     width: 102.9px; }
 
   .hero-left-block .eth-cost {
     font-size: 9.37px;
-    line-height: 11.75px; }
+    line-height: 11.75px;
+    margin-right: 2px; }
 
+  .btn-little-promo div {
+    font-size: 17.69px;
+    transform: translate(-1.1px, 0.2px); }
   .btn-little-promo:after {
-    top: 8.4px;
-    right: 10.7px; }
+    top: 7.2px;
+    right: 9.5px;
+    width: 23px;
+    content: url("../assets/hero/Photo-arrow-mobile.png"); }
 
   .hero-left-block .price {
-    margin-top: 19.2px;
-    margin-bottom: 1.8px; }
+    font-size: 10.66px;
+    transform: translate(1.3px, 0.8px); }
+
+  .hero-left-block .eth-dollars {
+    font-size: 10.66px; }
+
+  .hero-left-block .eth {
+    transform: translate(-8.1px, -3.8px); }
+
+  .hero-left-block .eth-icon {
+    transform: translate(4.6px, 6px); }
 
   .btn-little-wrapper {
-    margin-top: 25.6px; } }
+    margin-top: 28.6px;
+    width: 119.1px;
+    height: 39.8px;
+    transform: translate(2.8px, 0px);
+    border-radius: 4.03px; }
+
+  .hero-digit_first {
+    transform: translate(2px, 1.8px); }
+
+  .hero-digit_second {
+    transform: translate(-0.8px, 1.8px); }
+
+  .hero-digit_third {
+    transform: translate(1.3px, 1.8px); }
+
+  .hero-name_first {
+    transform: translate(0.7px, -0.2px); }
+
+  .hero-name_second {
+    transform: translate(-0.6px, -0.2px); }
+
+  .hero-name_third {
+    transform: translate(2.6px, -0.2px); } }
 @media (max-width: 350px) {
   .hero {
     padding: 15px 0 0 0; }
 
   .promo-banner {
     min-width: 300px; }
+
+  .img-banner {
+    transform: translate(0px, 0px); }
 
   .hero-descr {
     width: 300px;
@@ -988,7 +1080,7 @@ h1 {
     margin: 200px 0 0 50px; } }
 @media (max-width: 640px) {
   .slider1 {
-    margin: 140px 0 0 25px; }
+    margin: 141.9px 0 0 25px; }
 
   .swiper-first {
     margin-top: 36px;

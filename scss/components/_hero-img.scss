@@ -12,53 +12,67 @@
   height: 181.3px;
   background: url("../assets/hero/hero-promo-bg.png") no-repeat;
   position: absolute;
-  bottom: -64px;
-  right: -88.4px;
+  bottom: -48.5px;
+  right: -63.8px;
   @include flex(space-between);
-  padding: 36px 19.1px 0 24px;
+  padding: 34.9px 19.1px 0 24px;
+  transform: translate(0px, 0px);
 }
 
 .img-banner {
   background: url("../assets/hero/hero-promo.png") no-repeat;
-  width: 401.28px;
-  height: 477.33px;
-  margin: 2.9px 0 0 -4px
+  width: 431.98px;
+  height: 492.83px;
+  margin: 2.9px 0 0 -4px;
+  transform: translate(-0.2px, 1px);
 }
 
 .hero-left-block {
   &-title {
-    font-family: 'Rajdhani 700', sans-serif;
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 700;
     font-size: 17.69px;
+    transform: translate(-1.5px, 1.4px);
+  }
+  .hero-descr-avatar {
+    width: 30.74px;
+    height: 28.74px;
+    transform: translate(-2.2px, 0px);
   }
   .email, .price {
-    font-family: 'Rajdhani 600', sans-serif;
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 600;
   }
   .email {
     margin-top: 9.2px;
+    font-size: 15.05px;
     @include flex(flex-start, center);
     span {
-      margin: 0 2.9px 0 0.4px;
+      transform: translate(0.8px, 1.1px);
     }
+  }
+  .hero-descr-checked {
+    transform: translate(6.5px, 0.2px);
   }
   .price {
     margin-top: 20.8px;
     margin-bottom: 4.3px;
+    transform: translate(-1.8px, 1.5px);
   }
   .price, .eth-dollars {
     opacity: 70%;
     font-size: 11.05px;
   }
   .eth {
-    transform: translate(0px, -1.2px);
+    transform: translate(-8.2px, -1.4px);
   }
   .eth-icon {
-    height: 17.8px;
-    transform: translateY(4.9px)
+    width: 19.44px;
+    transform: translate(3.4px, 6.2px);
   }
 
   .eth-cost {
     font-size: 9.72px;
-    letter-spacing: 0.1px;
 
   }
   .eth-dollars {
@@ -78,38 +92,56 @@
 }
 .right-block-title {
   margin: 4.4px 0 5px 9.3px;
-  font-family: 'Rajdhani 600', sans-serif;
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: 600;
   opacity: 70%;
   font-size: 11.05px;
+  transform: translate(-0.9px, 0.9px);
 }
 
 .time__item {
   .digit {
-    font-family: 'Rajdhani 600', sans-serif;
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 600;
     font-size: 17.69px;
   }
   .name {
-    font-family: 'Rajdhani 500', sans-serif;
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 500;
     font-size: 11.05px;
     opacity: 70%;
     margin-top: 3px;
-    transform: translateX(-1.4px);
-    &_modify {
-      transform: translateX(1.1px);
-    }
   }
-  &_modify {
-    transform: translate(-1.5px, 0.6px);
-  }
+}
+.hero-digit_first {
+  transform: translate(1px, 1.8px);
+}
+.hero-digit_second {
+  transform: translate(-3px, 1.8px);
+}
+.hero-digit_third {
+  transform: translate(-0.1px, 1.8px);
+}
+.hero-name_first {
+  transform: translate(-2.3px, 0.9px);
+}
+.hero-name_second {
+  transform: translate(-2.7px, 0.9px);
+}
+.hero-name_third {
+  transform: translate(0.8px, 0.9px);
 }
 
 .btn-little-wrapper {
+  transform: translate(-1.5px, 0px);
   margin-top: 29px;
   padding: 2.21px;
   width: 122px;
   height: 41.9px;
   border-radius: 2.21px;
   background: linear-gradient(270deg, #ffa6fa 50%, #3c79d4 90%);
+  -webkit-filter: drop-shadow(0px 4.45px 45.25px rgba(255, 86, 246, 0.6));
+  filter: drop-shadow(0px 4.45px 45.25px rgba(255, 86, 246, 0.6));
 }
 
 .btn-little-promo {
@@ -124,6 +156,9 @@
   text-align: left;
   padding-left: 9.3px;
   position: relative;
+  div {
+    transform: translate(-0.1px, 0.6px);
+  }
   &:after {
     content: url("../assets/hero/arrow-little-promo.svg");
     width: 23px;
@@ -146,14 +181,14 @@
 // This moment change position of banner
 @media (max-width: 1000px) {
   .promo-banner {
-    margin-top: 57px;
+    margin-top: 55.6px;
     margin-left: 0;
-    min-width: 330px;
+    min-width: 400.5px;
     height: 174.79px
   }
   .hero-descr {
-    right: -10.5px;
-    bottom: -39px;
+    right: 25.8px;
+    bottom: -40.3px;
     background: url("../assets/hero/hero-promo-bg-modile.png") no-repeat;
     padding: 35.5px 30.5px 0 21.4px;
   }
@@ -161,9 +196,17 @@
     width: 100%;
     height: 100%;
     background: url("../assets/hero/hero-promo-mobile.png") no-repeat;
+    margin: 2px 0 0 0;
+    transform: translate(33.3px, 1px);
   }
   .hero-left-block-title {
     font-size: 17.05px;
+    transform: translate(0.3px, 1px);
+  }
+  .hero-left-block .hero-descr-avatar {
+    width: 27.71px;
+    height: 27.71px;
+    transform: translate(1px, 0px);
   }
 
   .hero-left-block {
@@ -171,7 +214,7 @@
       margin-top: 8.6px;
       span {
         font-size: 14.92px;
-        margin: 0 4px 0.8px 0.7px;
+        margin: 0 -0.8px 0.8px 2.2px;
       }
     }
     .price {
@@ -179,16 +222,16 @@
       margin-bottom: 6.3px;
     }
   }
+  .hero-right-block {
+    width: 122px;
+  }
   .right-block-title {
-    margin: 2.8px 0 5px 10.6px;
+    margin: 2.8px 0 5px 13.5px;
+    font-size: 10.66px;
   }
   .time__item .name {
     margin-top: 2.6px;
     font-size: 10.66px;
-    transform: translate(-0.2px, -1px);
-    &_modify {
-      transform: translate(2.4px, 0.3px);
-    }
   }
   .time {
     width: 102.9px;
@@ -196,18 +239,60 @@
   .hero-left-block .eth-cost {
     font-size: 9.37px;
     line-height: 11.75px;
+    margin-right: 2px;
   }
-  .btn-little-promo:after {
-    top: 8.4px;
-    right: 10.7px;
+
+  .btn-little-promo {
+    div {
+      font-size: 17.69px;
+      transform: translate(-1.1px, 0.2px);
+    }
+    &:after {
+      top: 7.2px;
+      right: 9.5px;
+      width: 23px;
+      content: url("../assets/hero/Photo-arrow-mobile.png");
+    }
   }
   .hero-left-block .price {
-    margin-top: 19.2px;
-    margin-bottom: 1.8px;
+    font-size: 10.66px;
+    transform: translate(1.3px, 0.8px);
+  }
+  .hero-left-block .eth-dollars {
+    font-size: 10.66px;
+  }
+  .hero-left-block .eth {
+    transform: translate(-8.1px, -3.8px);
+  }
+  .hero-left-block .eth-icon {
+    transform: translate(4.6px, 6px);
   }
 
   .btn-little-wrapper {
-    margin-top: 25.6px;
+    margin-top: 28.6px;
+    width: 119.1px;
+    height: 39.8px;
+    transform: translate(2.8px, 0px);
+    border-radius: 4.03px;
+  }
+
+  .hero-digit_first {
+    transform: translate(2px, 1.8px);
+  }
+  .hero-digit_second {
+    transform: translate(-0.8px, 1.8px);
+  }
+  .hero-digit_third {
+    transform: translate(1.3px, 1.8px);
+  }
+  .hero-name_first {
+    transform: translate(0.7px, -0.2px);
+  }
+  .hero-name_second {
+    transform: translate(-0.6px, -0.2px);
+  }
+  .hero-name_third {
+    transform: translate(2.6px, -0.2px);
   }
 }
 
@@ -217,6 +302,9 @@
   }
   .promo-banner {
     min-width: 300px;
+  }
+  .img-banner {
+    transform: translate(0px, 0px);
   }
   .hero-descr {
     width: 300px;

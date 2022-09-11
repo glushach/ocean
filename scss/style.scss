@@ -58,9 +58,19 @@ button {
 }
 
 @media (max-width: 375px) {
-  .container {
+  body {
+    position: relative;
     background: url("../assets/bg-main-mobile.png");
-    background-size: cover;
+    background-size: 100% 100%;
+    &:before {
+      content: "";
+      position: absolute;
+      width: 335px;
+      top: 555px;
+      height: 445px;
+      background: url("../assets/body-graduent-before.png");
+      background-size: 100% 100%;
+    }
   }
 }
 
