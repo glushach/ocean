@@ -10,33 +10,50 @@
 }
 
 .card-swiper-first {
-  width: 439px;
+  width: 437.76px;
   @include flex(flex-start, flex-start, column);
+}
+
+.hero-descr-avatar {
 }
 
 // CARD WITH INFO UNDER PHOTO
 .card-swiper-info {
   @include flex(space-between);
   width: 100%;
-  height: 234px;
-  padding: 42px 20px 0 28px;
+  height: 235px;
+  padding: 42.9px 20px 0 28px;
   background: linear-gradient(120deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.024));
   border: 2.88px solid;
   border-image: linear-gradient(150deg, rgba(255, 255, 255, 0.28) 0%, rgba(255, 255, 255, 0) 100%);
   border-image-slice: 1;
+  transform: translateY(-1px);
 }
 
+.slider1-checked {
+  transform: translate(0px, 0px);
+}
+.slider1-checked-slide1 {
+  transform: translate(0.1px, 0px);
+}
+.slider1-checked-slide2 {
+  transform: translate(1.4px, 0px);
+}
+.slider1-checked-slide3 {
+  transform: translate(2px, 0px);
+}
 
 .card-swiper-info__left {
   h4 {
-    font-family: 'Rajdhani 700', sans-serif;
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 700;
     font-size: 23.04px;
   }
 
   .email {
-    margin-top: 11px;
+    margin-top: 12.5px;
     font-size: 20.16px;
-    @include flex(flex-start, center)
+    @include flex(flex-start, center);
   }
 
   .email-link {
@@ -51,25 +68,25 @@
   }
 
   .cost {
-    margin-top: 5.3px;
-    margin-left: -4.3px;
+    margin-top: 3.85px;
+    margin-left: -8.9px;
     .eth-icon {
-      transform: translate(3px, 4.3px);
-      width: 14.24px;
-      height: 23.19px;
+      transform: translate(3px, 7px);
+      width: 25.32px;
+      height: 25.32px;
     }
   }
 
   .price {
     font-size: 12.66px;
-    margin: 0 0.7px 0 7px;
   }
 
   .digit {
-    font-family: 'Rajdhani 400', sans-serif;
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 400;
     font-size: 14.4px;
     color: rgba(255, 255, 255, .7);
-    margin-left: 2.3px;
+    margin-left: 3.4px;
   }
 }
 
@@ -77,31 +94,42 @@
 
 .card-swiper-info__right {
   h5 {
-    margin: 4px 0 0 8px;
-    font-family: 'Rajdhani 600', sans-serif;
+    transform: translate(13.7px, 4.9px);
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 600;
     font-size: 14.4px;
     color: rgba(255, 255, 255, .2);
   }
-  .time {
-    width: 88.7%;
-    margin-top: 9.5px;
-    margin-right: 8.6px;
-    @include flex(space-between);
+  .time-s1 {
+    width: 135.9px;
+    margin: 14.5px auto 0 12.4px;
+    @include flex();
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 600;
+    font-size: 23.6873px;
     &__item {
-      .clock {
-        font-family: 'Rajdhani 600', sans-serif;
-        font-size: 23.04px;
+      width: 30px;
+      margin-right: 25px;
+      &:first-child {
+        margin-right: 31.2px;
       }
-      .time-name {
-        font-family: 'Rajdhani 500', sans-serif;
-        color: rgba(255, 255, 255, .2);
-        transform: translateX(-1.6px);
-      }
-      &_modify {
-        transform: translate(-2.4px, 0px);
+      &:last-child {
+        margin-right: 0;
+        margin-left: 10px;
       }
     }
   }
+  .name-s1 {
+    width: 100%;
+    @include flex();
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 500;
+    font-size: 14.4546px;
+    color: rgba(255, 255, 255, .2);
+    margin-left: 10px;
+  }
+
+
 
   .btn-border {
     margin-top: 37.2px;
@@ -123,6 +151,8 @@
     @include placeBidBg();
     position: relative;
     border: none;
+    -webkit-filter: drop-shadow(0px 4.45px 45.25px rgba(255, 86, 246, 0.6));
+    filter: drop-shadow(0px 4.45px 45.25px rgba(255, 86, 246, 0.6));
     &:after {
       content: url("../assets/slider1/arrow.svg");
       position: absolute;
