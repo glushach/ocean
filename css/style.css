@@ -1740,20 +1740,22 @@ h1 {
 @media (max-width: 700px) {
   .info-block {
     margin-top: 103px;
-    min-height: 300px; }
+    min-height: 300px;
+    background: url("../assets/info-question/question-back-bg-mobile.png"); }
     .info-block .question {
       width: 335px;
       height: 275px;
-      right: 50%;
-      bottom: -33.2%;
+      right: 50.4%;
+      bottom: -32.7%;
       transform: translateX(50%);
       background: url("../assets/info-question/question-front-mobile.png");
-      padding: 33.68px 27.54px 29.27px 40.69px; }
+      padding: 34.48px 27.54px 30.27px 41.39px; }
       .info-block .question__title {
         font-size: 25.87px;
         line-height: 34.92px; }
       .info-block .question__descr {
-        font-size: 11.64px;
+        transform: translate(1.2px, 0px);
+        font-size: 11.6415px;
         line-height: 20.7px;
         margin-top: 9.3px; }
       .info-block .question__footer {
@@ -1794,14 +1796,13 @@ h1 {
   .contact__title {
     font-size: 39.8px;
     line-height: 49.9px;
-    font-family: "Orbitron-700", sans-serif; }
+    font-family: "Orbitron-700", sans-serif;
+    transform: translate(1.3px, 2px); }
   .contact__descr {
     font-family: "Inter400", sans-serif;
     font-size: 19.9px;
     line-height: 35.37px;
-    margin-top: 28.5px;
-    margin-left: 2.3px;
-    letter-spacing: 0.1px; }
+    margin-top: 28.2px; }
   .contact form {
     margin-top: 50px;
     display: flex;
@@ -1814,12 +1815,13 @@ h1 {
     line-height: 26.53px;
     width: 274px;
     height: 53.06px;
-    padding-left: 20px;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
     border: none;
     color: #474A57;
-    padding-bottom: 5px; }
+    padding-bottom: 3.3px;
+    padding-left: 18.9px;
+    font-size: 15.48px; }
   .contact .button-overlay {
     width: 149.2px;
     height: 53px;
@@ -1832,13 +1834,15 @@ h1 {
     border-top-right-radius: 9px;
     border-bottom-right-radius: 9px;
     background: linear-gradient(270deg, #ffa6fa 50%, #3c79d4 90%);
-    position: relative; }
+    position: relative;
+    -webkit-filter: drop-shadow(0px 4.45px 45.25px rgba(255, 86, 246, 0.6));
+    filter: drop-shadow(0px 4.45px 45.25px rgba(255, 86, 246, 0.6)); }
     .contact .button-overlay button {
       width: 100%;
       height: 100%;
       line-height: 22.11px;
-      padding-bottom: 6px;
-      padding-left: 4.4px;
+      padding-bottom: 5.1px;
+      padding-left: 3.5px;
       border-top-right-radius: 9px;
       border-bottom-right-radius: 9px;
       border: transparent;
@@ -1877,14 +1881,17 @@ h1 {
     width: 180.5px;
     height: 35.5px;
     font-size: 10.22px;
-    padding-left: 13.6px; }
+    padding-left: 12.6px; }
   .contact .button-overlay {
     width: 96.3px;
     height: 36px;
     font-size: 10.22px;
-    padding: 2.11px; }
+    padding: 1.59px;
+    border-radius: 0px 3.64865px 3.64865px 0px;
+    transform: translate(-0.8px, -0.7px); }
     .contact .button-overlay button {
-      padding-bottom: 5.5px; }
+      padding-bottom: 3.6px;
+      border-radius: 0px 3.64865px 3.64865px 0px; }
   .contact form {
     margin-top: 32px;
     font-size: 10.22px; } }
