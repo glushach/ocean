@@ -179,12 +179,15 @@
 
 
 @media (max-width: 640px) {
+  .card-swiper-info {
+    transform: translateY(-0.5px);
+  }
   .slider1 {
     margin: 141.9px 0 0 25px;
   }
   .swiper-first {
-    margin-top: 36px;
-    margin-bottom: 39.1px;
+    margin-top: 37.6px;
+    margin-bottom: 37.6px;
   }
   .card-swiper-first {
     width: 303px;
@@ -205,14 +208,15 @@
 
   // CARD INFO UNDER PHOTO
   .card-swiper-info {
-    padding: 32.8px 11.6px 0 18.1px;
+    padding: 30.4px 11.6px 0 19.1px;
     height: 166px;
   }
   .card-swiper-info__left {
     .email {
-      margin-top: 9.5px;
+      margin-top: 10.3px;
+      margin-left: 0.5px;
       img[alt=avatar] {
-        width: 26px;
+        width: 27.2px;
       }
       img[alt=checked] {
         width: 11px;
@@ -222,8 +226,8 @@
       font-size: 13.6px;
     }
     .email-link {
-      margin: 0 3px;
-      margin-right: 15px;
+      margin-left: 1.8px;
+      margin-right: 13px;
       font-size: 11.9px;
     }
     h5 {
@@ -231,7 +235,8 @@
       font-size: 8.5px;
     }
     .cost {
-      margin-top: -3.1px;
+      margin-top: -7.8px;
+      margin-left: -3.2px;
     }
     .price {
       font-size: 7.47px;
@@ -242,42 +247,67 @@
     }
   }
   .card-swiper-info__left .cost .eth-icon {
-    transform: translate(1.2px, 9px);
+    width: 11.01px;
+    transform: translate(2.5px, 12.2px);
   }
   .card-swiper-info__right {
     h5 {
       font-size: 8.5px;
-      margin: 2px 0 0 11.1px;
+      margin: -1.1px 0 0 -2.6px;
     }
     .btn-little:after {
       top: 9.6px;
     }
-    .time {
-      margin-top: 10.6px;
-      width: 83.6%;
+
+
+
+
+    .time-s1 {
+      width: 92px;
+      font-size: 13.6px;
+      margin-top: 13.8px;
+      margin-left: 10.5px;
       &__item {
-        .clock {
-          font-size: 13.6px;
+        &:first-child {
+          margin-right: 26.2px;
         }
-        .time-name {
-          font-size: 8.5px;
+        &:last-child {
+          margin-left: 0;
+          margin-right: 8.4px;
+        }
+      }
+    }
+    .name-s1 {
+      font-size: 8.5px;
+      margin-top: 2.4px;
+      margin-left: 8.4px;
+      &__item {
+        &:first-child {
+          margin-right: 20px;
+        }
+        &:last-child {
+          margin-left: 24.3px;
         }
       }
     }
 
     .btn-border {
-      margin-top: 28.4px;
+      margin-top: 27.1px;
+      padding: 1.7px;
       width: 112px;
       height: 37.5px;
+      transform: translate(0.7px, 0px);
     }
     .btn-little {
       width: 100%;
       height: 100%;
       font-size: 13.6px;
-      padding-left: 7.2px;
+      padding-left: 9.4px;
+      padding-bottom: 6.4px;
       &:after {
         content: url("../assets/slider1/arrow-mobile.svg");
-        right: 5.5px;
+        right: 7.9px;
+        top: 10.2px;
       }
     }
   }
