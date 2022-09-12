@@ -1232,6 +1232,9 @@ h1 {
 .tabs-wrapper {
   margin-left: 95.4px; }
 
+.girl {
+  transform: translate(0px, 2.2px); }
+
 .tabs {
   max-width: 800px;
   margin-top: 43.5px;
@@ -1246,13 +1249,20 @@ h1 {
     width: 375.92px;
     height: 105.99px;
     font-size: 26.53px;
+    font-weight: 700;
     color: rgba(255, 255, 255, 0.5);
     background: url("../assets/tabs/border.png") no-repeat;
     background-size: 100% 100%;
-    padding: 0; }
+    padding: 1.5px 0 0 1.2px; }
+    .tabs__item_modify {
+      transform: translate(0px, 2.6px);
+      background-size: 100% 100%;
+      padding: 0 0 4.2px 2.3px; }
     .tabs__item:hover {
       color: #ffffff;
-      background: linear-gradient(90deg, #ff56f6 20%, #b936ee 50%, #3bace2 100%, #406aff 120%); }
+      background: url("../assets/tabs/bg-hover.png") no-repeat;
+      background-size: cover;
+      border-radius: 2.21px; }
 
 .view {
   font-size: 19.9px;
@@ -1312,26 +1322,32 @@ h1 {
 
   .tabs {
     max-width: 336.4px;
-    margin-top: 20.5px;
-    gap: 17.9px 18.7px;
+    margin-top: 19.6px;
+    gap: 16.18px 15.48px;
     margin-left: 15px; }
 
   .tabs__item {
     font-size: 10.99px;
-    width: 152.52px;
-    height: 41.36px; }
+    width: 154.09px;
+    height: 43.14px;
+    padding: 0.5px 0.7px 0 0; }
+    .tabs__item_modify {
+      transform: translate(0px, 1.8px);
+      background-size: 100% 100%;
+      padding: 0 0.4px 4.2px 0; }
 
   .view {
     font-size: 8.24px;
-    margin-top: 19.7px;
-    margin-right: 42.9px; }
+    margin-top: 19.2px;
+    margin-right: 42.4px; }
     .view:after {
       content: url(../assets/tabs/arrow-all-mob.svg);
       right: -29px; }
 
   .girl {
     width: 185px;
-    margin-top: 5px; } }
+    margin-top: 5px;
+    transform: translate(2.9px, -0.7px); } }
 @media (max-width: 370px) {
   .tabs {
     max-width: 305px; }
