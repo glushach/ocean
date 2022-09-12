@@ -1,3 +1,8 @@
+@font-face {
+  font-family: 'Orbitron-700';
+  src: url('../fonts/Orbitron-700.otf');
+}
+
 .subscribe {
   margin: 292.4px 0 0 110.55px;
   @include flex();
@@ -10,12 +15,14 @@
   max-width: 574px;
   padding: 31px 0 0 74px;
   font-size: 15.48px;
+  font-feature-settings: 'salt' on, 'liga' off;
   &__title {
     font-size: 39.8px;
     line-height: 49.9px;
+    font-family: "Orbitron-700", sans-serif;
   }
   &__descr {
-    font-family: "Inter 400", sans-serif;
+    font-family: "Inter400", sans-serif;
     font-size: 19.9px;
     line-height: 35.37px;
     margin-top: 28.5px;
@@ -29,7 +36,7 @@
   }
 
   input {
-    font-family: "Inter 400", sans-serif;
+    font-family: "Inter400", sans-serif;
     line-height: 26.53px;
     width: 274px;
     height: 53.06px;

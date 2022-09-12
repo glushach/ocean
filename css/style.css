@@ -1772,6 +1772,9 @@ h1 {
   .info-block .question {
     padding: 21px 29px;
     width: 300px; } }
+@font-face {
+  font-family: 'Orbitron-700';
+  src: url("../fonts/Orbitron-700.otf"); }
 .subscribe {
   margin: 292.4px 0 0 110.55px;
   display: flex;
@@ -1786,12 +1789,14 @@ h1 {
 .contact {
   max-width: 574px;
   padding: 31px 0 0 74px;
-  font-size: 15.48px; }
+  font-size: 15.48px;
+  font-feature-settings: 'salt' on, 'liga' off; }
   .contact__title {
     font-size: 39.8px;
-    line-height: 49.9px; }
+    line-height: 49.9px;
+    font-family: "Orbitron-700", sans-serif; }
   .contact__descr {
-    font-family: "Inter 400", sans-serif;
+    font-family: "Inter400", sans-serif;
     font-size: 19.9px;
     line-height: 35.37px;
     margin-top: 28.5px;
@@ -1805,7 +1810,7 @@ h1 {
     flex-direction: row;
     flex-wrap: nowrap; }
   .contact input {
-    font-family: "Inter 400", sans-serif;
+    font-family: "Inter400", sans-serif;
     line-height: 26.53px;
     width: 274px;
     height: 53.06px;
