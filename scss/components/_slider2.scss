@@ -81,9 +81,6 @@
       margin: 3.3px auto 38.1px auto;
       font-style: normal;
     }
-    .folowers {
-      //margin-left: 40.9px;
-    }
     .folowers_modify1 {
       margin-left: 41.8px;
       margin-right: 65.9px;
@@ -129,34 +126,60 @@
     .card {
       background-image: url("../assets/slider2/top-bg-mob.png");
       padding-top: 70px;
+
+      img {
+        width: 112.82px;
+        transform: translate(0.9px, 1.6px);
+      }
       &-avatar {
         width: 112.52px;
       }
       &__name {
-        margin-top: 7px;
+        margin-top: 5.9px;
         font-size: 16.84px;
       }
       &__email {
         font-size: 13.96px;
         margin-top: 3px;
         width: 73.8px;
+        transform: translate(0px, 0px);
         &:after {
           content: url(../assets/slider2/checked-mob.svg);
           top: 1.3px;
         }
       }
-      &__popular {
-        margin-top: 24px;
-        margin-bottom: 27px;
-        width: 244px;
+      .statistic-block {
+        width: 220.8px;
+        font-size: 21.9417px;
+        margin: 23.8px auto 2.5px auto;
       }
-      .statistic {
-        font-size: 21.94px;
-        margin-bottom: 1.2px;
+      .statistic:first-child {
+        margin-right: 61.9px;
+      }
+      .statistic:last-child {
+        margin-left: 67.5px;
+      }
+      .statistic_last {
+        transform: translate(-3.2px, 0px);
       }
 
-      .folowers {
-        font-size: 13.71px;
+
+      .folowers-block {
+        font-size: 13.7136px;
+        margin: -0.7px auto 26.1px auto;
+      }
+      .folowers_modify1 {
+        margin-left: 28px;
+        margin-right: 46.5px;
+        letter-spacing: -0.55px;
+      }
+      .folowers_modify2 {
+        margin-left: 41.8px;
+        margin-right: 64.4px;
+        letter-spacing: -0.5px
+      }
+      .folowers:last-child {
+        margin-left: 46.1px;
       }
     }
   }

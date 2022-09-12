@@ -1461,27 +1461,45 @@ h1 {
     .slider2 .card {
       background-image: url("../assets/slider2/top-bg-mob.png");
       padding-top: 70px; }
+      .slider2 .card img {
+        width: 112.82px;
+        transform: translate(0.9px, 1.6px); }
       .slider2 .card-avatar {
         width: 112.52px; }
       .slider2 .card__name {
-        margin-top: 7px;
+        margin-top: 5.9px;
         font-size: 16.84px; }
       .slider2 .card__email {
         font-size: 13.96px;
         margin-top: 3px;
-        width: 73.8px; }
+        width: 73.8px;
+        transform: translate(0px, 0px); }
         .slider2 .card__email:after {
           content: url(../assets/slider2/checked-mob.svg);
           top: 1.3px; }
-      .slider2 .card__popular {
-        margin-top: 24px;
-        margin-bottom: 27px;
-        width: 244px; }
-      .slider2 .card .statistic {
-        font-size: 21.94px;
-        margin-bottom: 1.2px; }
-      .slider2 .card .folowers {
-        font-size: 13.71px; }
+      .slider2 .card .statistic-block {
+        width: 220.8px;
+        font-size: 21.9417px;
+        margin: 23.8px auto 2.5px auto; }
+      .slider2 .card .statistic:first-child {
+        margin-right: 61.9px; }
+      .slider2 .card .statistic:last-child {
+        margin-left: 67.5px; }
+      .slider2 .card .statistic_last {
+        transform: translate(-3.2px, 0px); }
+      .slider2 .card .folowers-block {
+        font-size: 13.7136px;
+        margin: -0.7px auto 26.1px auto; }
+      .slider2 .card .folowers_modify1 {
+        margin-left: 28px;
+        margin-right: 46.5px;
+        letter-spacing: -0.55px; }
+      .slider2 .card .folowers_modify2 {
+        margin-left: 41.8px;
+        margin-right: 64.4px;
+        letter-spacing: -0.5px; }
+      .slider2 .card .folowers:last-child {
+        margin-left: 46.1px; }
 
   .swiper-second {
     margin-top: 30.6px;
