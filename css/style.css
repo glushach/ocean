@@ -261,12 +261,13 @@ button {
     font-size: 26.53px; }
 
 .view-all {
-  margin-right: 81px;
+  margin-right: 80.7px;
   position: relative; }
   .view-all:after {
     content: url("../assets/slider1/arrow-right.svg");
     position: absolute;
-    right: -60%; }
+    right: -58.7%;
+    bottom: -2.9px; }
 
 .view-all-slide1 {
   transform: translate(1px, 1.4px); }
@@ -274,8 +275,8 @@ button {
     right: -57.8%; }
 
 .btn {
-  width: 240px;
-  height: 55px;
+  width: 239.5px;
+  height: 56.3px;
   font-family: 'Rajdhani 600', sans-serif;
   font-size: 19.9px;
   background: linear-gradient(90deg, #ff56f6 20%, #b936ee 50%, #3bace2 100%, #406aff 120%);
@@ -1363,27 +1364,33 @@ h1 {
   .slider2 .card {
     background-image: url("../assets/slider2/top-bg.png"), linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.024));
     background-repeat: no-repeat;
-    border: 2.88px solid;
+    border: 3px solid;
     border-image: linear-gradient(150deg, rgba(255, 255, 255, 0.28) 0%, rgba(255, 255, 255, 0) 100%);
     border-image-slice: 1;
     text-align: center;
     padding-top: 100px; }
+    .slider2 .card img {
+      transform: translate(0.7px, 1.6px); }
     .slider2 .card__name {
       margin-top: 8.5px;
-      font-family: 'Rajdhani 500', sans-serif;
-      font-size: 24.32px; }
+      font-family: 'Rajdhani', sans-serif;
+      font-weight: 500;
+      font-size: 24.32px;
+      transform: translate(1.1px); }
     .slider2 .card__email {
       width: 117px;
-      margin: 5.8px auto 0 auto;
-      font-family: 'Rajdhani 400', sans-serif;
+      margin: 7.3px auto 0 auto;
+      font-family: 'Rajdhani', sans-serif;
+      font-weight: 400;
       color: #ffb1ee;
       font-size: 20.16px;
-      position: relative; }
+      position: relative;
+      transform: translate(-1.3px, 0px); }
       .slider2 .card__email:after {
         content: url("../assets/slider2/checked.svg");
         position: absolute;
-        top: 3.1px;
-        right: -10px; }
+        top: 2.4px;
+        right: -11.1px; }
     .slider2 .card__popular {
       display: flex;
       justify-content: space-between;
@@ -1392,14 +1399,48 @@ h1 {
       flex-wrap: nowrap;
       margin: 33.5px auto 39px auto;
       width: 350px; }
-    .slider2 .card .statistic {
-      font-family: 'Rajdhani 600', sans-serif;
+    .slider2 .card .statistic-block {
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      font-family: 'Rajdhani', sans-serif;
+      font-weight: 600;
       font-size: 31.69px;
-      margin-bottom: 2.5px; }
-    .slider2 .card .folowers {
-      font-family: 'Rajdhani 500', sans-serif;
-      font-size: 19.81px;
-      color: rgba(255, 255, 255, 0.7); }
+      width: 323.9px;
+      margin: 32px auto 2.5px auto; }
+    .slider2 .card .statistic_modify {
+      margin-left: 4.3px; }
+    .slider2 .card .statistic:first-child {
+      margin-right: 90.4px; }
+    .slider2 .card .statistic:last-child {
+      margin-left: 97.9px; }
+    .slider2 .card .statistic_last {
+      transform: translate(-3.2px, 0px); }
+    .slider2 .card .folowers-block {
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      font-family: 'Rajdhani', sans-serif;
+      font-weight: 500;
+      font-size: 19.8061px;
+      color: rgba(255, 255, 255, 0.7);
+      width: 100%;
+      margin: 3.3px auto 38.1px auto;
+      font-style: normal; }
+    .slider2 .card .folowers_modify1 {
+      margin-left: 41.8px;
+      margin-right: 65.9px;
+      letter-spacing: -0.95px; }
+    .slider2 .card .folowers_modify2 {
+      margin-left: 41.8px;
+      margin-right: 64.4px;
+      letter-spacing: -0.5px; }
+    .slider2 .card .folowers:last-child {
+      margin-left: 66.3px; }
 
 .swiper-second {
   margin-top: 47.53px; }

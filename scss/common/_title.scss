@@ -11,12 +11,13 @@
   }
 }
 .view-all {
-  margin-right: 81px;
+  margin-right: 80.7px;
   position: relative;
   &:after {
     content: url("../assets/slider1/arrow-right.svg");
     position: absolute;
-    right: -60%;
+    right: -58.7%;
+    bottom: -2.9px;
   }
 }
 .view-all-slide1 {

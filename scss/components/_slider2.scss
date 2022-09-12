@@ -8,30 +8,38 @@
   .card {
     background-image: url("../assets/slider2/top-bg.png"), linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.024));
     background-repeat: no-repeat;
-    border: 2.88px solid;
+    border: 3px solid;
     border-image: linear-gradient(150deg, rgba(255, 255, 255, 0.28) 0%, rgba(255, 255, 255, 0) 100%);
     border-image-slice: 1;
     text-align: center;
     padding-top: 100px;
 
+    img {
+      transform: translate(0.7px, 1.6px);
+    }
+
     &__name {
       margin-top: 8.5px;
-      font-family: 'Rajdhani 500', sans-serif;
+      font-family: 'Rajdhani', sans-serif;
+      font-weight: 500;
       font-size: 24.32px;
+      transform: translate(1.1px);
     }
 
     &__email {
       width: 117px;
-      margin: 5.8px auto 0 auto;
-      font-family: 'Rajdhani 400', sans-serif;
+      margin: 7.3px auto 0 auto;
+      font-family: 'Rajdhani', sans-serif;
+      font-weight: 400;
       color: rgba(255, 177, 238, 1);
       font-size: 20.16px;
       position: relative;
+      transform: translate(-1.3px, 0px);
       &:after {
         content: url("../assets/slider2/checked.svg");
         position: absolute;
-        top: 3.1px;
-        right: -10px;
+        top: 2.4px;
+        right: -11.1px;
       }
     }
 
@@ -41,17 +49,55 @@
       width: 350px;
     }
 
-    .statistic {
-      font-family: 'Rajdhani 600', sans-serif;
+    .statistic-block {
+      @include flex();
+      font-family: 'Rajdhani', sans-serif;
+      font-weight: 600;
       font-size: 31.69px;
-      margin-bottom: 2.5px;
+      width: 323.9px;
+      margin: 32px auto 2.5px auto;
+    }
+    .statistic_modify {
+      margin-left: 4.3px;
+    }
+    .statistic:first-child {
+      margin-right: 90.4px;
+    }
+    .statistic:last-child {
+      margin-left: 97.9px;
+    }
+    .statistic_last {
+      transform: translate(-3.2px, 0px);
     }
 
-    .folowers {
-      font-family: 'Rajdhani 500', sans-serif;
-      font-size: 19.81px;
+
+    .folowers-block {
+      @include flex();
+      font-family: 'Rajdhani', sans-serif;
+      font-weight: 500;
+      font-size: 19.8061px;
       color: rgba(255, 255, 255, .7);
+      width: 100%;
+      margin: 3.3px auto 38.1px auto;
+      font-style: normal;
     }
+    .folowers {
+      //margin-left: 40.9px;
+    }
+    .folowers_modify1 {
+      margin-left: 41.8px;
+      margin-right: 65.9px;
+      letter-spacing: -0.95px;
+    }
+    .folowers_modify2 {
+      margin-left: 41.8px;
+      margin-right: 64.4px;
+      letter-spacing: -0.5px
+    }
+    .folowers:last-child {
+      margin-left: 66.3px;
+    }
+
   }
 }
 
