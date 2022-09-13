@@ -876,11 +876,13 @@ h1 {
   .hero-left-block .price {
     margin-top: 20px;
     margin-bottom: 6.3px; }
+  .hero-left-block .hero-descr-checked {
+    width: 13.92px;
+    height: 13.92px;
+    transform: translate(6px, 0.8px); }
 
   .hero-right-block {
     width: 122px; }
-    .hero-right-block .hero-descr-checked {
-      transform: translate(5.7px, 0.5px); }
 
   .right-block-title {
     margin: 2.8px 0 5px 13.5px;
@@ -962,7 +964,7 @@ h1 {
   display: none;
   width: 138px;
   height: 38px;
-  margin-left: 96px;
+  margin-left: 95px;
   background: transparent url("../assets/explore-border.png") no-repeat;
   border: none; }
 
@@ -1138,29 +1140,35 @@ h1 {
     margin-bottom: 37.6px; }
 
   .card-swiper-first {
-    width: 303px;
+    width: 305.2px;
     position: relative; }
 
   .title-block h2 {
     font-size: 16px;
-    line-height: 20.06px; }
+    line-height: 20.06px;
+    margin-left: 1px; }
 
   .view-all {
     display: none; }
 
   .card-swiper-info {
     padding: 30.4px 11.6px 0 19.1px;
-    height: 166px; }
+    height: 164.2px; }
+
+  .card-swiper-info {
+    transform: translateY(-1.9px); }
 
   .card-swiper-info__left .email {
     margin-top: 10.3px;
     margin-left: 0.5px; }
     .card-swiper-info__left .email img[alt=avatar] {
-      width: 27.2px; }
+      width: 27.2px;
+      transform: translate(-0.8px, -0.2px); }
     .card-swiper-info__left .email img[alt=checked] {
       width: 11px; }
   .card-swiper-info__left h4 {
-    font-size: 13.6px; }
+    font-size: 13.6px;
+    transform: translate(0px, 0.7px); }
   .card-swiper-info__left .email-link {
     margin-left: 1.8px;
     margin-right: 13px;
@@ -1179,18 +1187,18 @@ h1 {
 
   .card-swiper-info__left .cost .eth-icon {
     width: 11.01px;
-    transform: translate(2.5px, 12.2px); }
+    transform: translate(2.7px, 11.6px); }
 
   .card-swiper-info__right h5 {
     font-size: 8.5px;
-    margin: -1.1px 0 0 -2.6px; }
+    margin: -1.6px 0 0 -6px; }
   .card-swiper-info__right .btn-little:after {
     top: 9.6px; }
   .card-swiper-info__right .time-s1 {
     width: 92px;
     font-size: 13.6px;
     margin-top: 13.8px;
-    margin-left: 10.5px; }
+    margin-left: 8.8px; }
     .card-swiper-info__right .time-s1__item:first-child {
       margin-right: 26.2px; }
     .card-swiper-info__right .time-s1__item:last-child {
@@ -1198,8 +1206,8 @@ h1 {
       margin-right: 8.4px; }
   .card-swiper-info__right .name-s1 {
     font-size: 8.5px;
-    margin-top: 2.4px;
-    margin-left: 8.4px; }
+    margin-top: 2.7px;
+    margin-left: 6.3px; }
     .card-swiper-info__right .name-s1__item:first-child {
       margin-right: 20px; }
     .card-swiper-info__right .name-s1__item:last-child {
@@ -1209,16 +1217,16 @@ h1 {
     padding: 1.7px;
     width: 112px;
     height: 37.5px;
-    transform: translate(0.7px, 0px); }
+    transform: translate(-0.1px, 0px); }
   .card-swiper-info__right .btn-little {
     width: 100%;
     height: 100%;
     font-size: 13.6px;
-    padding-left: 9.4px;
-    padding-bottom: 6.4px; }
+    padding-left: 8.8px;
+    padding-bottom: 5.5px; }
     .card-swiper-info__right .btn-little:after {
       content: url("../assets/slider1/arrow-mobile.svg");
-      right: 7.9px;
+      right: 8.5px;
       top: 10.2px; } }
 .tabs-section {
   display: flex;
@@ -1277,7 +1285,8 @@ h1 {
   .view:after {
     content: url("../assets/tabs/arrow-all.svg");
     position: absolute;
-    right: -70px; }
+    right: -70px;
+    bottom: -1.45px; }
 
 @media (max-width: 1470px) {
   .tabs {
@@ -1346,12 +1355,13 @@ h1 {
     margin-right: 42.4px; }
     .view:after {
       content: url(../assets/tabs/arrow-all-mob.svg);
-      right: -29px; }
+      right: -29px;
+      bottom: -0.65px; }
 
   .girl {
     width: 185px;
     margin-top: 5px;
-    transform: translate(2.9px, -0.7px); } }
+    transform: translate(2.3px, -1.4px); } }
 @media (max-width: 370px) {
   .tabs {
     max-width: 305px; }

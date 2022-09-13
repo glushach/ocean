@@ -222,12 +222,14 @@
       margin-top: 20px;
       margin-bottom: 6.3px;
     }
+    .hero-descr-checked {
+      width: 13.92px;
+      height: 13.92px;
+      transform: translate(6px, 0.8px);
+    }
   }
   .hero-right-block {
     width: 122px;
-    .hero-descr-checked {
-      transform: translate(5.7px, 0.5px);
-    }
   }
   .right-block-title {
     margin: 2.8px 0 5px 13.5px;

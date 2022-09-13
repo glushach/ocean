@@ -58,6 +58,7 @@
     content: url("../assets/tabs/arrow-all.svg");
     position: absolute;
     right: -70px;
+    bottom: -1.45px;
   }
 }
 
@@ -144,13 +145,14 @@
     &:after {
       content: url(../assets/tabs/arrow-all-mob.svg);
       right: -29px;
+      bottom: -0.65px;
     }
   }
 
   .girl {
     width: 185px;
     margin-top: 5px;
-    transform: translate(2.9px, -0.7px);
+    transform: translate(2.3px, -1.4px);
   }
 }
 

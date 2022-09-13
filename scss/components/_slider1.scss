@@ -190,7 +190,7 @@
     margin-bottom: 37.6px;
   }
   .card-swiper-first {
-    width: 303px;
+    width: 305.2px;
     position: relative;
   }
 
@@ -198,6 +198,7 @@
     h2 {
       font-size: 16px;
       line-height: 20.06px;
+      margin-left: 1px;
     }
   }
 
@@ -209,7 +210,10 @@
   // CARD INFO UNDER PHOTO
   .card-swiper-info {
     padding: 30.4px 11.6px 0 19.1px;
-    height: 166px;
+    height: 164.2px;
+  }
+  .card-swiper-info {
+    transform: translateY(-1.9px);
   }
   .card-swiper-info__left {
     .email {
@@ -217,6 +221,7 @@
       margin-left: 0.5px;
       img[alt=avatar] {
         width: 27.2px;
+        transform: translate(-0.8px, -0.2px);
       }
       img[alt=checked] {
         width: 11px;
@@ -224,6 +229,7 @@
     }
     h4 {
       font-size: 13.6px;
+      transform: translate(0px, 0.7px);
     }
     .email-link {
       margin-left: 1.8px;
@@ -248,12 +254,12 @@
   }
   .card-swiper-info__left .cost .eth-icon {
     width: 11.01px;
-    transform: translate(2.5px, 12.2px);
+    transform: translate(2.7px, 11.6px);
   }
   .card-swiper-info__right {
     h5 {
       font-size: 8.5px;
-      margin: -1.1px 0 0 -2.6px;
+      margin: -1.6px 0 0 -6px;
     }
     .btn-little:after {
       top: 9.6px;
@@ -266,7 +272,7 @@
       width: 92px;
       font-size: 13.6px;
       margin-top: 13.8px;
-      margin-left: 10.5px;
+      margin-left: 8.8px;
       &__item {
         &:first-child {
           margin-right: 26.2px;
@@ -279,8 +285,8 @@
     }
     .name-s1 {
       font-size: 8.5px;
-      margin-top: 2.4px;
-      margin-left: 8.4px;
+      margin-top: 2.7px;
+      margin-left: 6.3px;
       &__item {
         &:first-child {
           margin-right: 20px;
@@ -296,17 +302,17 @@
       padding: 1.7px;
       width: 112px;
       height: 37.5px;
-      transform: translate(0.7px, 0px);
+      transform: translate(-0.1px, 0px);
     }
     .btn-little {
       width: 100%;
       height: 100%;
       font-size: 13.6px;
-      padding-left: 9.4px;
-      padding-bottom: 6.4px;
+      padding-left: 8.8px;
+      padding-bottom: 5.5px;
       &:after {
         content: url("../assets/slider1/arrow-mobile.svg");
-        right: 7.9px;
+        right: 8.5px;
         top: 10.2px;
       }
     }
