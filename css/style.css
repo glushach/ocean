@@ -1328,7 +1328,7 @@ h1 {
 
   .tads-title {
     font-size: 16px;
-    margin-left: 15.3px; }
+    margin-left: 14.2px; }
 
   .tabs-wrapper {
     margin: 0; }
@@ -1476,7 +1476,7 @@ h1 {
       padding-top: 70px; }
       .slider2 .card img {
         width: 112.82px;
-        transform: translate(0.9px, 1.6px); }
+        transform: translate(1.3px, 0.4px); }
       .slider2 .card-avatar {
         width: 112.52px; }
       .slider2 .card__name {
@@ -1658,7 +1658,7 @@ h1 {
   .slider3-title {
     font-size: 19.23px;
     max-width: 241.19px;
-    transform: translateX(-4.7px); }
+    transform: translate(-5.9px, -0.6px); }
     .slider3-title span:after {
       content: url("../assets/top-sellers/drobdown.svg");
       top: -3px;
@@ -1884,7 +1884,8 @@ h1 {
     margin: 167px 0 0 0; }
 
   .contact__title {
-    font-size: 26.27px; }
+    font-size: 26.27px;
+    transform: translate(0.5px, 1.3px); }
   .contact__descr {
     font-size: 13.14px;
     line-height: 23.35px;
@@ -1894,12 +1895,14 @@ h1 {
     width: 180.5px;
     height: 35.5px;
     font-size: 10.22px;
-    padding-left: 12.6px; }
+    padding-left: 11.8px;
+    transform: translate(1px, -0.4px); }
   .contact .button-overlay {
-    width: 96.3px;
+    width: 97.8px;
     height: 36px;
     font-size: 10.22px;
     padding: 1.59px;
+    margin-left: 6.7px;
     border-radius: 0px 3.64865px 3.64865px 0px;
     transform: translate(-0.8px, -0.7px); }
     .contact .button-overlay button {

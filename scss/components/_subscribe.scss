@@ -100,6 +100,7 @@
   .contact {
     &__title {
       font-size: 26.27px;
+      transform: translate(0.5px, 1.3px);
     }
     &__descr {
       font-size: 13.14px;
@@ -112,13 +113,15 @@
       width: 180.5px;
       height: 35.5px;
       font-size: 10.22px;
-      padding-left: 12.6px;
+      padding-left: 11.8px;
+      transform: translate(1px, -0.4px);
     }
     .button-overlay {
-      width: 96.3px;
+      width: 97.8px;
       height: 36px;
       font-size: 10.22px;
       padding: 1.59px;
+      margin-left: 6.7px;
       border-radius: 0px 3.64865px 3.64865px 0px;
       transform: translate(-0.8px, -0.7px);
       button {
