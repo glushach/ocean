@@ -182,6 +182,9 @@
 
 
 @media (max-width: 640px) {
+  .slider1-photo {
+    transform: translate(0px, 0px);
+  }
   .card-swiper-info {
     transform: translateY(-0.5px);
   }
