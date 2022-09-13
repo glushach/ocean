@@ -1954,11 +1954,10 @@ hr {
     background: url("../assets/footer/footer-logo.png") no-repeat;
     transform: translate(-0.7px, 0.8px); }
   .footer__descr {
-    width: 285.9px;
+    width: 281.8px;
     font-size: 15.48px;
     line-height: 26.53px;
     margin: 34.7px 0 25.93px 0;
-    letter-spacing: 0.1px;
     font-family: "Inter-Regular-400", sans-serif;
     font-weight: 400; }
 
@@ -1999,8 +1998,7 @@ hr {
   justify-content: flex-start;
   align-items: flex-start;
   flex-direction: row;
-  flex-wrap: nowrap;
-  transform: translate(-4.2px, 0px); }
+  flex-wrap: nowrap; }
   .right-block__item {
     width: 176.87px;
     margin-right: 32.66px; }
@@ -2058,13 +2056,21 @@ hr {
     margin-bottom: 20.9px; } }
 @media (max-width: 850px) {
   .footer {
-    margin: 103px 25px 0 25px; }
+    margin: 103px 25px 126px 25px; }
     .footer .bottom {
       display: none; }
+    .footer__logo {
+      transform: translate(-0.7px, 0.5px); }
+    .footer__descr {
+      width: 325.5px;
+      letter-spacing: 0px;
+      margin-bottom: 24.73px; }
+    .footer .right-block__title_modify {
+      margin-bottom: 15.7px; }
 
   .right-block {
     width: 100%;
-    margin: 31.6px 0 -12.5px 4.1px;
+    margin: 32.4px 0 -12.5px 3.8px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -2081,24 +2087,25 @@ hr {
       .right-block__item:last-child {
         width: 100%; }
     .right-block__title {
-      margin-bottom: 15.7px;
+      margin-bottom: 16px;
       position: relative;
-      cursor: pointer; }
+      cursor: pointer;
+      font-size: 19.8983px; }
       .right-block__title:before, .right-block__title:after {
         content: '';
-        width: 10.4px;
+        width: 9.3px;
         height: 1.3px;
         background: rgba(255, 255, 255, 0.6);
         position: absolute;
         transition: all .5s; }
       .right-block__title:before {
         transform: rotate(-40deg);
-        right: 23.5px;
-        top: 10.5px; }
+        right: 24px;
+        top: 11.5px; }
       .right-block__title:after {
         transform: rotate(40deg);
-        right: 31px;
-        top: 10.5px; }
+        right: 30.5px;
+        top: 11.7px; }
     .right-block__title.active-accordion:before, .right-block__title.active-accordion:after {
       background: #2EC5CE; }
     .right-block__title.active-accordion:before {
@@ -2129,8 +2136,8 @@ hr {
       margin-top: -3.3px;
       padding-right: 17.6px; }
     .copyright .reserved {
-      transform: translateY(-3.6px);
-      letter-spacing: 0.05px; }
+      transform: translate(0.5px, -3px);
+      letter-spacing: normal; }
     .copyright div {
       margin-bottom: 51px; }
     .copyright:last-child {

@@ -29,11 +29,10 @@ hr {
     transform: translate(-0.7px, 0.8px);
   }
   &__descr {
-    width: 285.9px;
+    width: 281.8px;
     font-size: 15.48px;
     line-height: 26.53px;
     margin: 34.7px 0 25.93px 0;
-    letter-spacing: 0.1px;
     font-family: "Inter-Regular-400", sans-serif;
     font-weight: 400;
   }
@@ -70,7 +69,6 @@ hr {
   margin-top: 3px;
   margin-bottom: 58px;
   @include flex();
-  transform: translate(-4.2px, 0px);
   &__item {
     width: 176.87px;
     margin-right: 32.66px;
@@ -145,17 +143,28 @@ hr {
 
 @media (max-width: 850px) {
   .footer {
-    margin: 103px 25px 0 25px;
+    margin: 103px 25px 126px 25px;
     &__descr {
 
     }
     .bottom {
       display: none;
     }
+    &__logo {
+      transform: translate(-0.7px, 0.5px);
+    }
+    &__descr {
+      width: 325.5px;
+      letter-spacing: 0px;
+      margin-bottom: 24.73px;
+    }
+    .right-block__title_modify {
+      margin-bottom: 15.7px;
+    }
   }
   .right-block {
     width: 100%;
-    margin: 31.6px 0 -12.5px 4.1px;
+    margin: 32.4px 0 -12.5px 3.8px;
     @include flex(flex-start, center, column);
     &__item {
       margin-top: 7.2px;
@@ -171,13 +180,14 @@ hr {
       }
     }
     &__title {
-      margin-bottom: 15.7px;
+      margin-bottom: 16px;
       position: relative;
       cursor: pointer;
+      font-size: 19.8983px;
       &:before,
       &:after {
         content: '';
-        width: 10.4px;
+        width: 9.3px;
         height: 1.3px;
         background: rgba(256, 256, 256, .6);
         position: absolute;
@@ -185,13 +195,13 @@ hr {
       }
       &:before {
         transform: rotate(-40deg);
-        right: 23.5px;
-        top: 10.5px;
+        right: 24px;
+        top: 11.5px;
       }
       &:after {
         transform: rotate(40deg);
-        right:  31px;
-        top: 10.5px;
+        right: 30.5px;
+        top: 11.7px;
       }
     }
     &__title.active-accordion:before,
@@ -224,8 +234,8 @@ hr {
       padding-right: 17.6px;
     }
     .reserved {
-      transform: translateY(-3.6px);
-      letter-spacing: 0.05px;
+      transform: translate(0.5px, -3px);
+      letter-spacing: normal;
     }
 
     div {
