@@ -183,21 +183,22 @@
   .promo-banner {
     margin-top: 55.6px;
     margin-left: 0;
-    min-width: 400.5px;
-    height: 174.79px
+    width: 334px;
+    height: 395px
   }
   .hero-descr {
     right: 25.8px;
     bottom: -40.3px;
     background: url("../assets/hero/hero-promo-bg-modile.png") no-repeat;
-    padding: 35.5px 30.5px 0 21.4px;
+    padding: 33.85px 30.5px 0 22.05px;
+    transform: translate(-1.2px, 1.2px);
   }
   .img-banner {
     width: 100%;
     height: 100%;
     background: url("../assets/hero/hero-promo-mobile.png") no-repeat;
     margin: 2px 0 0 0;
-    transform: translate(33.3px, 1px);
+    transform: translate(35.05px, 1px);
   }
   .hero-left-block-title {
     font-size: 17.05px;
@@ -206,7 +207,7 @@
   .hero-left-block .hero-descr-avatar {
     width: 27.71px;
     height: 27.71px;
-    transform: translate(1px, 0px);
+    transform: translate(0.5px, 0.3px);
   }
 
   .hero-left-block {
@@ -214,7 +215,7 @@
       margin-top: 8.6px;
       span {
         font-size: 14.92px;
-        margin: 0 -0.8px 0.8px 2.2px;
+        margin: -1.15px -1.3px 0px 2.25px;
       }
     }
     .price {
@@ -224,10 +225,14 @@
   }
   .hero-right-block {
     width: 122px;
+    .hero-descr-checked {
+      transform: translate(5.7px, 0.5px);
+    }
   }
   .right-block-title {
     margin: 2.8px 0 5px 13.5px;
     font-size: 10.66px;
+    transform: translate(-0.9px, 1.4px);
   }
   .time__item .name {
     margin-top: 2.6px;
@@ -244,8 +249,8 @@
 
   .btn-little-promo {
     div {
-      font-size: 17.69px;
-      transform: translate(-1.1px, 0.2px);
+      font-size: 17.0526px;
+      transform: translate(0.1px, 0.2px);
     }
     &:after {
       top: 7.2px;
@@ -256,7 +261,7 @@
   }
   .hero-left-block .price {
     font-size: 10.66px;
-    transform: translate(1.3px, 0.8px);
+    transform: translate(0.65px, 0.55px);
   }
   .hero-left-block .eth-dollars {
     font-size: 10.66px;
@@ -271,8 +276,8 @@
   .btn-little-wrapper {
     margin-top: 28.6px;
     width: 119.1px;
-    height: 39.8px;
-    transform: translate(2.8px, 0px);
+    height: 40.15px;
+    transform: translate(3px, 0.1px);
     border-radius: 4.03px;
   }
 
@@ -301,14 +306,13 @@
     padding: 15px 0 0 0;
   }
   .promo-banner {
-    min-width: 300px;
+    width: 300px;
   }
   .img-banner {
-    transform: translate(0px, 0px);
+    transform: translate(32.2px, 0px);
   }
   .hero-descr {
-    width: 300px;
-    right: -3px;
+    right: 27px;
     padding: 35.5px 15px 0 10px;
   }
 }
