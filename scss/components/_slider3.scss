@@ -37,7 +37,7 @@
   &__item {
     margin-bottom: 34.26px;
     @include flex(space-between);
-    padding: 27.51px 20.29px 26.46px 18px;
+    padding: 26.71px 20.29px 26.46px 17.7px;
     width: 100%;
     height: 123.81px;
     position: relative;
@@ -48,14 +48,17 @@
 
   .column__info {
     text-align: left;
+    transform: translate(0px, 2.1px);
     .name {
-      font-family: 'Roboto 500', sans-serif;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 500;
       font-size: 19.05px;
       margin-left: 12px;
       margin-top: 5px;
     }
     .rate {
-      font-family: 'Roboto 500', sans-serif;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 500;
       font-size: 13.76px;
       margin-left: 25px;
       margin-top: 16px;
@@ -63,7 +66,8 @@
       &:before {
         content: url("../assets/top-sellers/seller-eth-icon.svg");
         position: absolute;
-        left: -14.2px;
+        left: -12.9px;
+        bottom: -2.4px;
       }
     }
   }
@@ -80,7 +84,8 @@
 
   .progress {
     margin-top: 24px;
-    font-family: 'Roboto 500', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
     font-size: 14.7px;
     height: 35.37px;
     width: 100.59px;
@@ -128,13 +133,16 @@
 
 @media (max-width: 640px) {
   .swiper-third {
-    margin: 25px 0 8px 29px;
+    margin: 25px 0 7.5px 29px;
   }
   .slider3 {
     margin: 106px 0 0 0;
   }
   .column {
     width: 316.8px;
+    .column__info {
+      transform: translate(-0.6px, 0.1px);
+    }
   }
   .slider3-title {
     font-size: 19.23px;
@@ -172,7 +180,7 @@
     padding: 21.51px 16px 0 11px;
     margin-bottom: 24.86px;
     &:before {
-      border-radius: 23.27px;
+      border-radius: 20.7108px;
     }
   }
   .column .progress {
@@ -190,7 +198,8 @@
     margin-top: 11.3px;
     margin-left: 20.4px;
     &:before {
-      left: -12.6px;
+      content: url(../assets/top-sellers/seller-eth-icon-mob.png);
+      left: -10.5px;
       top: -1.5px;
     }
   }
