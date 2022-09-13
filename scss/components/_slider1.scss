@@ -5,6 +5,9 @@
   margin: 200px 106.52px 0 109.44px;
 }
 
+.slider1-photo {
+  transform: translate(1.6px, 0px);
+}
 .swiper-first {
   margin-top: 50px;
 }
@@ -94,7 +97,7 @@
 
 .card-swiper-info__right {
   h5 {
-    transform: translate(13.7px, 4.9px);
+    transform: translate(13px, 4.9px);
     font-family: 'Rajdhani', sans-serif;
     font-weight: 600;
     font-size: 14.4px;
@@ -115,7 +118,7 @@
       }
       &:last-child {
         margin-right: 0;
-        margin-left: 10px;
+        margin-left: 9.8px;
       }
     }
   }
